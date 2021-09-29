@@ -36,6 +36,7 @@ pip install -e .
 ```
 
 * We may need to install some dependencies, based on the hints when we run the `test.py`.
+* Don't add `gym` source code to our repository
 
 ## Refercences
 
