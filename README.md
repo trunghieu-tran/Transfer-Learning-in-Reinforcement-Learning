@@ -48,4 +48,8 @@ pip install -e .
 ### Related papers
 1. Transfer Learning for Related Reinforcement Learning Tasks via Image-to-Image Translation ([paper](https://arxiv.org/pdf/1806.07377.pdf)), ([repo](https://github.com/ShaniGam/RL-GAN))
 2. Deep Transfer Reinforcement Learning for Text Summarization ([paper](https://arxiv.org/abs/1810.06667)),([repo](https://github.com/yaserkl/TransferRL)) 
-3. Using Transfer Learning Between Games to Improve Deep Reinforcement Learning Performance and Stability ([paper](https://web.stanford.edu/class/cs234/past_projects/2017/2017_Asawa_Elamri_Pan_Transfer_Learning_Paper.pdf))
+3. Using Transfer Learning Between Games to Improve Deep Reinforcement Learning Performance and Stability ([paper](https://web.stanford.edu/class/cs234/past_projects/2017/2017_Asawa_Elamri_Pan_Transfer_Learning_Paper.pdf)), ([poster](https://web.stanford.edu/class/cs234/past_projects/2017/2017_Asawa_Elamri_Pan_Transfer_Learning_Poster.pdf))
+
+## Our presentations
+
+* Presentation 1 (Check file in our github repo)
