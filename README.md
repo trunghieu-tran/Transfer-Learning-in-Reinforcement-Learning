@@ -52,6 +52,7 @@ pip install -e .
 3. Using Transfer Learning Between Games to Improve Deep Reinforcement Learning Performance and Stability ([paper](https://web.stanford.edu/class/cs234/past_projects/2017/2017_Asawa_Elamri_Pan_Transfer_Learning_Paper.pdf)), ([poster](https://web.stanford.edu/class/cs234/past_projects/2017/2017_Asawa_Elamri_Pan_Transfer_Learning_Poster.pdf))
 4. Multi-Source Policy Aggregation for Transfer Reinforcement Learning between Diverse Environmental Dynamics (IJCAI 2020) ([paper](https://arxiv.org/pdf/1909.13111.pdf)), ([repo](https://github.com/Mohammadamin-Barekatain/multipolar))
 5. Using Transfer Learning Between Games to Improve Deep Reinforcement Learning Performance and Stability ([paper](https://web.stanford.edu/class/cs234/past_projects/2017/2017_Asawa_Elamri_Pan_Transfer_Learning_Paper.pdf)), ([poster](https://web.stanford.edu/class/cs234/past_projects/2017/2017_Asawa_Elamri_Pan_Transfer_Learning_Poster.pdf))
+6. Deep Reinforcement Learning and Transfer Learning with Flappy Bird ([paper](https://www.cedrick.ai/pdfs/cs221-report.pdf)), ([poster](https://www.cedrick.ai/pdfs/cs221-poster.pdf))
 
 ## Our presentations
 
