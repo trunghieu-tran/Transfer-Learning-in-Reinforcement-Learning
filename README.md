@@ -43,6 +43,7 @@ pip install -e .
 1. OpenAI Gym [repo](https://github.com/openai/gym)
 2. OpenAI Gym [website](https://gym.openai.com/)
 3. Example code of TL in DL [repo](https://github.com/anksng/Transfer-learning-in-Deep-Reinforcement-learning)
+4. Retro Contest - a transfer learning contest that measures a reinforcement learning algorithm’s ability to generalize from previous experience (hosted by OpenAI) (link)[https://openai.com/blog/retro-contest/]
 
 ### Related papers
 1. Transfer Learning for Related Reinforcement Learning Tasks via Image-to-Image Translation ([paper](https://arxiv.org/pdf/1806.07377.pdf)), ([repo](https://github.com/ShaniGam/RL-GAN))
