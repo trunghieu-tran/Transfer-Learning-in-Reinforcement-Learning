@@ -43,4 +43,7 @@ pip install -e .
 1. OpenAI Gym [repo](https://github.com/openai/gym)
 2. OpenAI Gym [website](https://gym.openai.com/)
 3. Example code of TL in DL [repo](https://github.com/anksng/Transfer-learning-in-Deep-Reinforcement-learning)
-4. Transfer Learning for Related Reinforcement Learning Tasks via Image-to-Image Translation [paper](https://arxiv.org/pdf/1806.07377.pdf) [repo](https://github.com/ShaniGam/RL-GAN)
+
+### Related papers
+1. Transfer Learning for Related Reinforcement Learning Tasks via Image-to-Image Translation ([paper](https://arxiv.org/pdf/1806.07377.pdf)), ([repo](https://github.com/ShaniGam/RL-GAN))
+2. Deep Transfer Reinforcement Learning for Text Summarization ([paper](https://arxiv.org/abs/1810.06667)),([repo](https://github.com/yaserkl/TransferRL)) 
