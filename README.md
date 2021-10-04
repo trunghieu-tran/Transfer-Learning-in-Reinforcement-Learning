@@ -42,7 +42,7 @@ pip install -e .
 
 1. OpenAI Gym [repo](https://github.com/openai/gym)
 2. OpenAI Gym [website](https://gym.openai.com/)
-3. Gyem extension [repos](https://github.com/Breakend/gym-extensions)
+3. Gyem extension [repos](https://github.com/Breakend/gym-extensions) - This python package is an extension to OpenAI Gym for auxiliary tasks (multitask learning, transfer learning, inverse reinforcement learning, etc.)
 4. Example code of TL in DL [repo](https://github.com/anksng/Transfer-learning-in-Deep-Reinforcement-learning)
 5. Retro Contest - a transfer learning contest that measures a reinforcement learning algorithm’s ability to generalize from previous experience (hosted by OpenAI) [link](https://openai.com/blog/retro-contest/)
 
