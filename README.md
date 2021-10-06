@@ -57,6 +57,7 @@ pip install -e .
 7. Decoupling Dynamics and Reward for Transfer Learning ([paper](https://arxiv.org/pdf/1804.10689.pdf)), ([repo](https://github.com/facebookresearch/ddr))
 8. Progressive Neural Networks ([paper](https://arxiv.org/pdf/1606.04671.pdf))
 9. Deep Learning for Video Game Playing ([paper](https://arxiv.org/pdf/1708.07902.pdf))
+10. Disentangled Skill Embeddings for Reinforcement Learning ([paper](https://arxiv.org/pdf/1906.09223.pdf))
 
 ## Our presentations
 
