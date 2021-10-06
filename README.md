@@ -59,6 +59,7 @@ pip install -e .
 9. Deep Learning for Video Game Playing ([paper](https://arxiv.org/pdf/1708.07902.pdf))
 10. Disentangled Skill Embeddings for Reinforcement Learning ([paper](https://arxiv.org/pdf/1906.09223.pdf))
 11. Playing Atari with Deep Reinforcement Learning ([paper](https://arxiv.org/pdf/1312.5602.pdf))
+12. Dueling Network Architectures for Deep Reinforcement Learning ([paper](http://proceedings.mlr.press/v48/wangf16.pdf))
 
 ## Our presentations
 
