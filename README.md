@@ -65,3 +65,4 @@ pip install -e .
 ## Our presentations
 
 * Presentation 1 (Check file in our github repo)
+* Google Doc Folder [here](https://drive.google.com/drive/folders/17gtCWIyYdYkFkTXkSYCy4eERVDjVqPDb)
