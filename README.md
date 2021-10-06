@@ -58,6 +58,7 @@ pip install -e .
 8. Progressive Neural Networks ([paper](https://arxiv.org/pdf/1606.04671.pdf))
 9. Deep Learning for Video Game Playing ([paper](https://arxiv.org/pdf/1708.07902.pdf))
 10. Disentangled Skill Embeddings for Reinforcement Learning ([paper](https://arxiv.org/pdf/1906.09223.pdf))
+11. Playing Atari with Deep Reinforcement Learning ([paper](https://arxiv.org/pdf/1312.5602.pdf))
 
 ## Our presentations
 
