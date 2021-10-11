@@ -19,6 +19,7 @@ A rough timeline of the project would be as follows:
 6. Analyze these results and begin writing the paper, noting the goal and contribution, related work, process, experiments, etc
 
 
+
 ## Install GYM
 
 Using pip:
@@ -45,7 +46,8 @@ pip install -e .
 3. Gyem extension [repos](https://github.com/Breakend/gym-extensions) - This python package is an extension to OpenAI Gym for auxiliary tasks (multitask learning, transfer learning, inverse reinforcement learning, etc.)
 4. Example code of TL in DL [repo](https://github.com/anksng/Transfer-learning-in-Deep-Reinforcement-learning)
 5. Retro Contest - a transfer learning contest that measures a reinforcement learning algorithm’s ability to generalize from previous experience (hosted by OpenAI) [link](https://openai.com/blog/retro-contest/)
-6. Rainbow: Combining Improvements in Deep Reinforcement Learning  ([repo](https://github.com/Kaixhin/Rainbow)), ([paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/17204/16680)
+6. Rainbow: Combining Improvements in Deep Reinforcement Learning  ([repo](https://github.com/Kaixhin/Rainbow)), ([paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/17204/16680))
+7. Experience replay ([link](https://paperswithcode.com/method/experience-replay))
 
 
 
