@@ -71,3 +71,7 @@ pip install -e .
 
 * Presentation 1 (Check file in our github repo)
 * Google Doc Folder [here](https://drive.google.com/drive/folders/17gtCWIyYdYkFkTXkSYCy4eERVDjVqPDb)
+
+## Google Colab
+
+https://colab.research.google.com/drive/1NpICoFrJNTNOGjx8E7JcEedIZjbhDjnh
