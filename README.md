@@ -39,6 +39,24 @@ pip install -e .
 * We may need to install some dependencies, based on the hints when we run the `test.py`.
 * Don't add `gym` source code to our repository
 
+# Install Mujoco
+
+First way:
+1. Follow this: https://github.com/openai/mujoco-py/#install-mujoco
+2. Then install mujoco-py
+   1. pip3 install -U 'mujoco-py<2.1,>=2.0'
+   2. You may need to install some depencies (based on the HINT on error message when you run command below)
+
+Other way, just run:
+``
+pip install mujoco_py==2.0.2.8
+``
+
+Unfortunately, I can not run Mujoco in Macbook M1. :(
+https://github.com/openai/mujoco-py/issues/605
+
+If you guys use linux, you can follow this
+https://www.chenshiyu.top/blog/2019/06/19/Tutorial-Installation-and-Configuration-of-MuJoCo-Gym-Baselines/
 ## Refercences
 
 1. OpenAI Gym [repo](https://github.com/openai/gym)
