@@ -57,6 +57,15 @@ https://github.com/openai/mujoco-py/issues/605
 
 If you guys use linux, you can follow this
 https://www.chenshiyu.top/blog/2019/06/19/Tutorial-Installation-and-Configuration-of-MuJoCo-Gym-Baselines/
+
+# Install Stable-Baseline3
+
+Stable Baselines 3 [repo](https://github.com/DLR-RM/stable-baselines3)
+```
+pip install 'stable-baselines3[extra]'
+```
+
+
 ## Refercences
 
 1. OpenAI Gym [repo](https://github.com/openai/gym)
