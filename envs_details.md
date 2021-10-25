@@ -15,6 +15,8 @@
 | Taxi | Discrete(6)| https://gym.openai.com/envs/Taxi-v3/|
 | ... | | |
 
-* Note: This table does not consider 3-D environments from `MuJoCo` and `Robotics` (since they are not working for my MacBook M1)
+## Notes 
++ This table does not consider 3-D environments from `MuJoCo` and `Robotics` (since they are not working for my MacBook M1)
++ `Atari` has been removed from Gym OpenAI
 
 
