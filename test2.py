@@ -4,6 +4,8 @@ import gym
 env = gym.make('CartPole-v0')
 # env = gym.make('HalfCheetah-v3')
 # env = gym.make('MountainCar-v0')
+# env = gym.make('MsPacman-v0')
+print(env.action_space)
 for i_episode in range(20):
     observation = env.reset()
     for t in range(100):
