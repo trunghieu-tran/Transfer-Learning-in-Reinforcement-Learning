@@ -122,3 +122,6 @@ python -m atari_py.import_roms "/Users/harrytran/OneDrive - The University of Te
 ## Google Colab
 
 https://colab.research.google.com/drive/1NpICoFrJNTNOGjx8E7JcEedIZjbhDjnh
+
+Stable Baselines3 - Getting Started
+https://colab.research.google.com/drive/1OTIlqgskIlnj48H0CRCy6mb63H-33sKf?usp=sharing
