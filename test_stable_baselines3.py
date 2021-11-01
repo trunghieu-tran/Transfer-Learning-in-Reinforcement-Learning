@@ -70,8 +70,8 @@ for _ in range(10):
 # The main idea is that after an update, the new policy should be not too far form the old policy.
 # For that, ppo uses clipping to avoid too large update.
 # Details at: https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html
-# model = PPO("MlpPolicy", env, verbose=1)
-# model.learn(total_timesteps=10000)
+model = PPO("MlpPolicy", env, verbose=1)
+model.learn(total_timesteps=10000)
 
 # Learn with A2C. Details at https://stable-baselines3.readthedocs.io/en/master/modules/a2c.html
 # A synchronous, deterministic variant of Asynchronous Advantage Actor Critic (A3C).
@@ -79,8 +79,8 @@ for _ in range(10):
 # model = A2C('MlpPolicy', 'CartPole-v1').learn(10000)
 
 # Learn with DDPG. Details at https://stable-baselines3.readthedocs.io/en/master/modules/ddpg.html
-model = DDPG("MlpPolicy", env, verbose=1)
-model.learn(total_timesteps=1000)
+# model = DDPG("MlpPolicy", env, verbose=1)
+# model.learn(total_timesteps=1000)
 
 obs = env.reset()
 for i in range(1000):
@@ -91,3 +91,7 @@ for i in range(1000):
       obs = env.reset()
 
 env.close()
+
+from stable_baselines3.common.evaluation import evaluate_policy
+mean_reward, std_reward = evaluate_policy(model, env, n_eval_episodes=100)
+print(f"mean_reward:{mean_reward:.2f} +/- {std_reward:.2f}")
