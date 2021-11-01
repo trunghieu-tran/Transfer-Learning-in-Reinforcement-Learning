@@ -96,6 +96,7 @@ python -m atari_py.import_roms "/Users/harrytran/OneDrive - The University of Te
 7. Retro Contest - a transfer learning contest that measures a reinforcement learning algorithm’s ability to generalize from previous experience (hosted by OpenAI) [link](https://openai.com/blog/retro-contest/)
 8. Rainbow: Combining Improvements in Deep Reinforcement Learning  ([repo](https://github.com/Kaixhin/Rainbow)), ([paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/17204/16680))
 9. Experience replay ([link](https://paperswithcode.com/method/experience-replay))
+10. Solving RL classic control ([link](https://shiva-verma.medium.com/solving-reinforcement-learning-classic-control-problems-openaigym-1b50413265dd))
 
 
 
