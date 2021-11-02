@@ -114,6 +114,7 @@ python -m atari_py.import_roms "/Users/harrytran/OneDrive - The University of Te
 11. Playing Atari with Deep Reinforcement Learning ([paper](https://arxiv.org/pdf/1312.5602.pdf))
 12. Dueling Network Architectures for Deep Reinforcement Learning ([paper](http://proceedings.mlr.press/v48/wangf16.pdf))
 13. ACTOR-MIMIC DEEP MULTITASK AND TRANSFER REINFORCEMENT LEARNING ([paper](https://arxiv.org/pdf/1511.06342.pdf))
+14. DDPG ([link](https://spinningup.openai.com/en/latest/algorithms/ddpg.html))
 
 ## Our presentations
 
