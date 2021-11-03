@@ -33,19 +33,25 @@ class NewPendulumEnv(gym.Wrapper):
         self.low, self.high = action_space.low, action_space.high
 
         # We modify the action space, so all actions will lie in [-1, 1]
-        env.action_space = gym.spaces.Box(low=-1, high=1, shape=action_space.shape, dtype=np.float32)
+        # env.action_space = gym.spaces.Box(low=-1, high=1, shape=action_space.shape, dtype=np.float32)
 
         # Call the parent constructor, so we can access self.env later
         super(NewPendulumEnv, self).__init__(env)
 
     def rescale_action(self, scaled_action):
         """
-        Rescale the action from [-1, 1] to [low, high]
+        Rescale the action from [low, high] to [0, high]
         (no need for symmetric action space)
         :param scaled_action: (np.ndarray)
         :return: (np.ndarray)
         """
-        return self.low + (0.5 * (scaled_action + 1.0) * (self.high - self.low))
+        return np.clip(scaled_action, 0, self.high)
+        # tmp = self.low + (0.5 * (scaled_action + 1.0) * (self.high - self.low))
+        # tmp = scaled_action
+        # if tmp > 0:
+        #     return tmp
+        # else:
+        #     return 0
 
     def reset(self):
         """
@@ -59,7 +65,7 @@ class NewPendulumEnv(gym.Wrapper):
         :param action: ([float] or int) Action taken by the agent
         :return: (np.ndarray, float, bool, dict) observation, reward, is the episode over?, additional informations
         """
-        # Rescale action from [-1, 1] to original [low, high] interval
+        # Rescale the action from [low, high] to [0, high]
         rescaled_action = self.rescale_action(action)
         obs, reward, done, info = self.env.step(rescaled_action)
         # add reward-shaping here
