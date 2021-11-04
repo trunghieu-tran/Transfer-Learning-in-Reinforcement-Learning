@@ -20,6 +20,7 @@ from stable_baselines3.common.distributions import (
     StateDependentNoiseDistribution,
     make_proba_distribution,
 )
+from stable_baselines3.common.last_mlp import LastMLP
 from stable_baselines3.common.preprocessing import get_action_dim, is_image_space, maybe_transpose, preprocess_obs
 from stable_baselines3.common.torch_layers import (
     BaseFeaturesExtractor,
@@ -868,7 +869,7 @@ class ContinuousCritic(BaseModel):
         self.q_networks = []
         for idx in range(n_critics):
             q_net = create_mlp(features_dim + action_dim, 1, net_arch, activation_fn)
-            q_net = nn.Sequential(*q_net)
+            q_net = LastMLP(q_net)
             self.add_module(f"qf{idx}", q_net)
             self.q_networks.append(q_net)
 
@@ -880,16 +881,25 @@ class ContinuousCritic(BaseModel):
         qvalue_input = th.cat([features, actions], dim=1)
         return tuple(q_net(qvalue_input) for q_net in self.q_networks)
 
-    def q1_forward(self, obs: th.Tensor, actions: th.Tensor) -> th.Tensor:
+    def q1_forward(self, obs: th.Tensor, actions: th.Tensor, last=False) -> th.Tensor:
         """
         Only predict the Q-value using the first network.
         This allows to reduce computation when all the estimates are not needed
         (e.g. when updating the policy in TD3).
+
+        NOTE: We modify this function to include a 'last' parameter, which gives 
+        the last linear-layer embedding beforer the q-val is given.
         """
         with th.no_grad():
             features = self.extract_features(obs)
-        return self.q_networks[0](th.cat([features, actions], dim=1))
-
+            
+        # If last, then we should also get the last linear layer embedding
+        if last:
+            q_val, last_lin_layer_embeddings = self.q_networks[0](th.cat([features, actions], dim=1))
+            return q_val, last_lin_layer_embeddings
+        else:
+            return self.q_networks[0](th.cat([features, actions], dim=1))
+        
 
 def create_sde_features_extractor(
     features_dim: int, sde_net_arch: List[int], activation_fn: Type[nn.Module]
