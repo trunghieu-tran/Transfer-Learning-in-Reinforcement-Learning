@@ -895,7 +895,7 @@ class ContinuousCritic(BaseModel):
             
         # If last, then we should also get the last linear layer embedding
         if last:
-            q_val, last_lin_layer_embeddings = self.q_networks[0](th.cat([features, actions], dim=1))
+            q_val, last_lin_layer_embeddings = self.q_networks[0](th.cat([features, actions], dim=1), last=last)
             return q_val, last_lin_layer_embeddings
         else:
             return self.q_networks[0](th.cat([features, actions], dim=1))
