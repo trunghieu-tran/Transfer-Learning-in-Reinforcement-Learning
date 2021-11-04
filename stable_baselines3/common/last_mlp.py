@@ -14,6 +14,8 @@ class LastMLP(nn.Module):
         Constructs the MLP by applying the operations given sequentially.
         """
 
+        super(LastMLP, self).__init__()
+
         # We assume first that the MLP's last operation is the last linear layer.
         lin_layer_output = len(full_mlp_op_list) - 1
 
