@@ -1,0 +1,91 @@
+/Users/harrytran/anaconda3/envs/graph_python/bin/python "/Users/harrytran/OneDrive - The University of Texas at Dallas/Fall 2021/CS 7301/project/Transfer-Learning-in-Reinforcement-Learning/tl/transfer_model_CarRacing.py"
+/Users/harrytran/anaconda3/envs/graph_python/lib/python3.8/site-packages/ale_py/roms/__init__.py:84: DeprecationWarning: Automatic importing of atari-py roms won't be supported in future releases of ale-py. Please migrate over to using `ale-import-roms` OR an ALE-supported ROM package. To make this warning disappear you can run `ale-import-roms --import-from-pkg atari_py.atari_roms`.For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
+  __all__ = _resolve_roms()
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+/Users/harrytran/OneDrive - The University of Texas at Dallas/Fall 2021/CS 7301/project/Transfer-Learning-in-Reinforcement-Learning/stable_baselines3/common/buffers.py:219: UserWarning: This system does not have apparently enough memory to store the complete replay buffer 55.32GB > 1.23GB
+  warnings.warn(
+>>[Source] Evaluate un-trained agent:
+Track generation: 1237..1551 -> 314-tiles track
+2021-11-08 14:55:21.480 python[15595:1064623] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7fcce7b8d6b0>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-11-08 14:55:21.480 python[15595:1064623] Warning: Expected min height of view: (<NSButton: 0x7fcce7c88bb0>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-11-08 14:55:21.482 python[15595:1064623] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7fcce7c84010>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-11-08 14:55:21.483 python[15595:1064623] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7fcce7c8a130>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+Track generation: 1336..1674 -> 338-tiles track
+Track generation: 1189..1491 -> 302-tiles track
+Track generation: 1092..1369 -> 277-tiles track
+Track generation: 1140..1429 -> 289-tiles track
+Track generation: 1102..1389 -> 287-tiles track
+Track generation: 1207..1513 -> 306-tiles track
+Track generation: 1251..1568 -> 317-tiles track
+Track generation: 1296..1629 -> 333-tiles track
+Track generation: 1079..1353 -> 274-tiles track
+Mean reward: -26.201885 Num episodes: 5
+Track generation: 1273..1595 -> 322-tiles track
+Track generation: 1208..1514 -> 306-tiles track
+>>[Source] Evaluate trained agent:
+Track generation: 1211..1518 -> 307-tiles track
+Track generation: 1140..1429 -> 289-tiles track
+Track generation: 1124..1409 -> 285-tiles track
+Track generation: 1139..1431 -> 292-tiles track
+retry to generate track (normal if there are not manyinstances of this message)
+Track generation: 1068..1339 -> 271-tiles track
+Track generation: 1216..1531 -> 315-tiles track
+Track generation: 1189..1490 -> 301-tiles track
+Track generation: 1139..1428 -> 289-tiles track
+Track generation: 1037..1305 -> 268-tiles track
+Track generation: 1204..1509 -> 305-tiles track
+Track generation: 1171..1468 -> 297-tiles track
+Mean reward: -93.30495 Num episodes: 5
+pre saved (array([1., 0., 0.], dtype=float32), None)
+/Users/harrytran/OneDrive - The University of Texas at Dallas/Fall 2021/CS 7301/project/Transfer-Learning-in-Reinforcement-Learning/stable_baselines3/common/buffers.py:219: UserWarning: This system does not have apparently enough memory to store the complete replay buffer 55.32GB > 1.00GB
+  warnings.warn(
+loaded (array([1., 0., 0.], dtype=float32), None)
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Track generation: 1127..1413 -> 286-tiles track
+2021-11-08 15:05:57.143 python[15595:1064623] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7fccf5f491a0>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-11-08 15:05:57.143 python[15595:1064623] Warning: Expected min height of view: (<NSButton: 0x7fcce7cba430>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-11-08 15:05:57.144 python[15595:1064623] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7fcce7cba6e0>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-11-08 15:05:57.146 python[15595:1064623] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x7fcce7cbad20>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+Track generation: 1149..1441 -> 292-tiles track
+>>[Target] Evaluate trained agent using source model:
+Track generation: 985..1239 -> 254-tiles track
+Track generation: 1215..1523 -> 308-tiles track
+Track generation: 1051..1318 -> 267-tiles track
+Track generation: 1223..1533 -> 310-tiles track
+Track generation: 1371..1718 -> 347-tiles track
+Track generation: 1160..1454 -> 294-tiles track
+Track generation: 1151..1443 -> 292-tiles track
+Track generation: 1131..1418 -> 287-tiles track
+Track generation: 1052..1323 -> 271-tiles track
+retry to generate track (normal if there are not manyinstances of this message)
+Track generation: 1198..1501 -> 303-tiles track
+Track generation: 1151..1443 -> 292-tiles track
+Mean reward: -93.05923 Num episodes: 5
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a VecTransposeImage.
+Track generation: 1162..1457 -> 295-tiles track
+Track generation: 1205..1510 -> 305-tiles track
+>>[Target] Evaluate trained agent without TL:
+Track generation: 997..1250 -> 253-tiles track
+Track generation: 961..1212 -> 251-tiles track
+Track generation: 1236..1552 -> 316-tiles track
+retry to generate track (normal if there are not manyinstances of this message)
+Track generation: 1199..1503 -> 304-tiles track
+Track generation: 1143..1433 -> 290-tiles track
+Track generation: 1167..1463 -> 296-tiles track
+Track generation: 1120..1404 -> 284-tiles track
+Track generation: 1214..1522 -> 308-tiles track
+Track generation: 1243..1558 -> 315-tiles track
+Track generation: 1115..1398 -> 283-tiles track
+Track generation: 1112..1394 -> 282-tiles track
+Mean reward: -82.5375 Num episodes: 5
+--- 1877.874528169632 seconds ---
+
+Process finished with exit code 0
