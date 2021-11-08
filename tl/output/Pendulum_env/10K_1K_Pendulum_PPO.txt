@@ -1,0 +1,144 @@
+/Users/harrytran/anaconda3/envs/graph_python/bin/python "/Users/harrytran/OneDrive - The University of Texas at Dallas/Fall 2021/CS 7301/project/Transfer-Learning-in-Reinforcement-Learning/tl/transfer_model.py"
+/Users/harrytran/anaconda3/envs/graph_python/lib/python3.8/site-packages/ale_py/roms/__init__.py:84: DeprecationWarning: Automatic importing of atari-py roms won't be supported in future releases of ale-py. Please migrate over to using `ale-import-roms` OR an ALE-supported ROM package. To make this warning disappear you can run `ale-import-roms --import-from-pkg atari_py.atari_roms`.For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
+  __all__ = _resolve_roms()
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+>>[Source] Evaluate un-trained agent:
+Mean reward: -1210.6731 Num episodes: 100
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.22e+03 |
+| time/              |           |
+|    fps             | 4053      |
+|    iterations      | 1         |
+|    time_elapsed    | 0         |
+|    total_timesteps | 2048      |
+----------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.19e+03    |
+| time/                   |              |
+|    fps                  | 2631         |
+|    iterations           | 2            |
+|    time_elapsed         | 1            |
+|    total_timesteps      | 4096         |
+| train/                  |              |
+|    approx_kl            | 0.0044353157 |
+|    clip_fraction        | 0.0288       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.41        |
+|    explained_variance   | 0.000964     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 4.67e+03     |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.00194     |
+|    std                  | 0.987        |
+|    value_loss           | 9.41e+03     |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 200         |
+|    ep_rew_mean          | -1.17e+03   |
+| time/                   |             |
+|    fps                  | 2375        |
+|    iterations           | 3           |
+|    time_elapsed         | 2           |
+|    total_timesteps      | 6144        |
+| train/                  |             |
+|    approx_kl            | 0.002995888 |
+|    clip_fraction        | 0.00854     |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.4        |
+|    explained_variance   | 0.162       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 3.51e+03    |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.00107    |
+|    std                  | 0.979       |
+|    value_loss           | 8.19e+03    |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.23e+03    |
+| time/                   |              |
+|    fps                  | 2268         |
+|    iterations           | 4            |
+|    time_elapsed         | 3            |
+|    total_timesteps      | 8192         |
+| train/                  |              |
+|    approx_kl            | 0.0010555213 |
+|    clip_fraction        | 0.000977     |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.4         |
+|    explained_variance   | 0.0587       |
+|    learning_rate        | 0.0003       |
+|    loss                 | 3.04e+03     |
+|    n_updates            | 30           |
+|    policy_gradient_loss | -0.000731    |
+|    std                  | 0.983        |
+|    value_loss           | 7.82e+03     |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 200          |
+|    ep_rew_mean          | -1.2e+03     |
+| time/                   |              |
+|    fps                  | 2205         |
+|    iterations           | 5            |
+|    time_elapsed         | 4            |
+|    total_timesteps      | 10240        |
+| train/                  |              |
+|    approx_kl            | 0.0034082474 |
+|    clip_fraction        | 0.0134       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.4         |
+|    explained_variance   | 0.00605      |
+|    learning_rate        | 0.0003       |
+|    loss                 | 6.21e+03     |
+|    n_updates            | 40           |
+|    policy_gradient_loss | -0.00171     |
+|    std                  | 0.977        |
+|    value_loss           | 1.1e+04      |
+------------------------------------------
+>>[Source] Evaluate trained agent:
+Mean reward: -1144.2982 Num episodes: 100
+pre saved (array([-0.15043977], dtype=float32), None)
+loaded (array([-0.15043977], dtype=float32), None)
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+>>[Target] Evaluate un-trained agent using source model:
+Mean reward: -1225.3661 Num episodes: 100
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.28e+03 |
+| time/              |           |
+|    fps             | 3909      |
+|    iterations      | 1         |
+|    time_elapsed    | 0         |
+|    total_timesteps | 2048      |
+----------------------------------
+>>[Target] Evaluate trained agent using source model:
+Mean reward: -1319.0328 Num episodes: 100
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.28e+03 |
+| time/              |           |
+|    fps             | 4097      |
+|    iterations      | 1         |
+|    time_elapsed    | 0         |
+|    total_timesteps | 2048      |
+----------------------------------
+>>[Target] Evaluate trained agent without TL:
+Mean reward: -1187.8772 Num episodes: 100
+--- 28.815062999725342 seconds ---
+
+Process finished with exit code 0

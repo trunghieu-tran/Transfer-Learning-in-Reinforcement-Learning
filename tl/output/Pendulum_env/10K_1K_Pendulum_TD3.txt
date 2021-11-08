@@ -5,231 +5,232 @@ Using cpu device
 Wrapping the env with a `Monitor` wrapper
 Wrapping the env in a DummyVecEnv.
 >>[Source] Evaluate un-trained agent:
-Mean reward: -1402.6312 Num episodes: 100
+Mean reward: -1175.5782 Num episodes: 100
 ----------------------------------
 | rollout/           |           |
 |    ep_len_mean     | 200       |
-|    ep_rew_mean     | -1.69e+03 |
+|    ep_rew_mean     | -1.37e+03 |
 | time/              |           |
 |    episodes        | 4         |
-|    fps             | 121       |
-|    time_elapsed    | 6         |
+|    fps             | 113       |
+|    time_elapsed    | 7         |
 |    total timesteps | 800       |
 | train/             |           |
-|    actor_loss      | 25        |
-|    critic_loss     | 0.0209    |
+|    actor_loss      | 12        |
+|    critic_loss     | 0.0662    |
 |    learning_rate   | 0.001     |
 |    n_updates       | 600       |
 ----------------------------------
 ----------------------------------
 | rollout/           |           |
 |    ep_len_mean     | 200       |
-|    ep_rew_mean     | -1.58e+03 |
+|    ep_rew_mean     | -1.37e+03 |
 | time/              |           |
 |    episodes        | 8         |
-|    fps             | 104       |
-|    time_elapsed    | 15        |
+|    fps             | 96        |
+|    time_elapsed    | 16        |
 |    total timesteps | 1600      |
 | train/             |           |
-|    actor_loss      | 51.9      |
-|    critic_loss     | 0.04      |
+|    actor_loss      | 23.3      |
+|    critic_loss     | 0.042     |
 |    learning_rate   | 0.001     |
 |    n_updates       | 1400      |
 ----------------------------------
 ----------------------------------
 | rollout/           |           |
 |    ep_len_mean     | 200       |
-|    ep_rew_mean     | -1.48e+03 |
+|    ep_rew_mean     | -1.37e+03 |
 | time/              |           |
 |    episodes        | 12        |
-|    fps             | 100       |
-|    time_elapsed    | 23        |
+|    fps             | 91        |
+|    time_elapsed    | 26        |
 |    total timesteps | 2400      |
 | train/             |           |
-|    actor_loss      | 76        |
-|    critic_loss     | 0.15      |
+|    actor_loss      | 35.6      |
+|    critic_loss     | 0.189     |
 |    learning_rate   | 0.001     |
 |    n_updates       | 2200      |
 ----------------------------------
 ----------------------------------
 | rollout/           |           |
 |    ep_len_mean     | 200       |
-|    ep_rew_mean     | -1.41e+03 |
+|    ep_rew_mean     | -1.34e+03 |
 | time/              |           |
 |    episodes        | 16        |
-|    fps             | 98        |
-|    time_elapsed    | 32        |
+|    fps             | 90        |
+|    time_elapsed    | 35        |
 |    total timesteps | 3200      |
 | train/             |           |
-|    actor_loss      | 92.8      |
-|    critic_loss     | 0.352     |
+|    actor_loss      | 47.1      |
+|    critic_loss     | 0.209     |
 |    learning_rate   | 0.001     |
 |    n_updates       | 3000      |
 ----------------------------------
 ----------------------------------
 | rollout/           |           |
 |    ep_len_mean     | 200       |
-|    ep_rew_mean     | -1.44e+03 |
+|    ep_rew_mean     | -1.24e+03 |
 | time/              |           |
 |    episodes        | 20        |
-|    fps             | 96        |
-|    time_elapsed    | 41        |
+|    fps             | 88        |
+|    time_elapsed    | 45        |
 |    total timesteps | 4000      |
 | train/             |           |
-|    actor_loss      | 103       |
-|    critic_loss     | 1.68      |
+|    actor_loss      | 55.7      |
+|    critic_loss     | 0.32      |
 |    learning_rate   | 0.001     |
 |    n_updates       | 3800      |
 ----------------------------------
 ----------------------------------
 | rollout/           |           |
 |    ep_len_mean     | 200       |
-|    ep_rew_mean     | -1.37e+03 |
+|    ep_rew_mean     | -1.15e+03 |
 | time/              |           |
 |    episodes        | 24        |
-|    fps             | 96        |
-|    time_elapsed    | 49        |
+|    fps             | 88        |
+|    time_elapsed    | 54        |
 |    total timesteps | 4800      |
 | train/             |           |
-|    actor_loss      | 113       |
-|    critic_loss     | 1.52      |
+|    actor_loss      | 62.8      |
+|    critic_loss     | 0.487     |
 |    learning_rate   | 0.001     |
 |    n_updates       | 4600      |
 ----------------------------------
 ----------------------------------
 | rollout/           |           |
 |    ep_len_mean     | 200       |
-|    ep_rew_mean     | -1.37e+03 |
+|    ep_rew_mean     | -1.05e+03 |
 | time/              |           |
 |    episodes        | 28        |
-|    fps             | 95        |
-|    time_elapsed    | 58        |
+|    fps             | 87        |
+|    time_elapsed    | 63        |
 |    total timesteps | 5600      |
 | train/             |           |
-|    actor_loss      | 120       |
-|    critic_loss     | 2.39      |
+|    actor_loss      | 64.5      |
+|    critic_loss     | 0.595     |
 |    learning_rate   | 0.001     |
 |    n_updates       | 5400      |
 ----------------------------------
-----------------------------------
-| rollout/           |           |
-|    ep_len_mean     | 200       |
-|    ep_rew_mean     | -1.22e+03 |
-| time/              |           |
-|    episodes        | 32        |
-|    fps             | 94        |
-|    time_elapsed    | 67        |
-|    total timesteps | 6400      |
-| train/             |           |
-|    actor_loss      | 120       |
-|    critic_loss     | 2.37      |
-|    learning_rate   | 0.001     |
-|    n_updates       | 6200      |
-----------------------------------
 ---------------------------------
 | rollout/           |          |
 |    ep_len_mean     | 200      |
-|    ep_rew_mean     | -1.1e+03 |
+|    ep_rew_mean     | -939     |
+| time/              |          |
+|    episodes        | 32       |
+|    fps             | 87       |
+|    time_elapsed    | 73       |
+|    total timesteps | 6400     |
+| train/             |          |
+|    actor_loss      | 66       |
+|    critic_loss     | 0.829    |
+|    learning_rate   | 0.001    |
+|    n_updates       | 6200     |
+---------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -848     |
 | time/              |          |
 |    episodes        | 36       |
-|    fps             | 94       |
-|    time_elapsed    | 76       |
+|    fps             | 86       |
+|    time_elapsed    | 82       |
 |    total timesteps | 7200     |
 | train/             |          |
-|    actor_loss      | 116      |
-|    critic_loss     | 2.79     |
+|    actor_loss      | 64.8     |
+|    critic_loss     | 1.13     |
 |    learning_rate   | 0.001    |
 |    n_updates       | 7000     |
 ---------------------------------
-----------------------------------
-| rollout/           |           |
-|    ep_len_mean     | 200       |
-|    ep_rew_mean     | -1.01e+03 |
-| time/              |           |
-|    episodes        | 40        |
-|    fps             | 93        |
-|    time_elapsed    | 85        |
-|    total timesteps | 8000      |
-| train/             |           |
-|    actor_loss      | 108       |
-|    critic_loss     | 2.91      |
-|    learning_rate   | 0.001     |
-|    n_updates       | 7800      |
-----------------------------------
 ---------------------------------
 | rollout/           |          |
 |    ep_len_mean     | 200      |
-|    ep_rew_mean     | -929     |
+|    ep_rew_mean     | -773     |
+| time/              |          |
+|    episodes        | 40       |
+|    fps             | 86       |
+|    time_elapsed    | 92       |
+|    total timesteps | 8000     |
+| train/             |          |
+|    actor_loss      | 63.3     |
+|    critic_loss     | 1.23     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 7800     |
+---------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -741     |
 | time/              |          |
 |    episodes        | 44       |
-|    fps             | 93       |
-|    time_elapsed    | 94       |
+|    fps             | 86       |
+|    time_elapsed    | 101      |
 |    total timesteps | 8800     |
 | train/             |          |
-|    actor_loss      | 100      |
-|    critic_loss     | 2.85     |
+|    actor_loss      | 64.8     |
+|    critic_loss     | 1.22     |
 |    learning_rate   | 0.001    |
 |    n_updates       | 8600     |
 ---------------------------------
 ---------------------------------
 | rollout/           |          |
 |    ep_len_mean     | 200      |
-|    ep_rew_mean     | -862     |
+|    ep_rew_mean     | -690     |
 | time/              |          |
 |    episodes        | 48       |
-|    fps             | 93       |
-|    time_elapsed    | 102      |
+|    fps             | 86       |
+|    time_elapsed    | 111      |
 |    total timesteps | 9600     |
 | train/             |          |
-|    actor_loss      | 91.9     |
-|    critic_loss     | 3.36     |
+|    actor_loss      | 63.7     |
+|    critic_loss     | 1.59     |
 |    learning_rate   | 0.001    |
 |    n_updates       | 9400     |
 ---------------------------------
 >>[Source] Evaluate trained agent:
-Mean reward: -154.39577 Num episodes: 100
-pre saved (array([2.], dtype=float32), None)
-loaded (array([2.], dtype=float32), None)
+Mean reward: -147.90672 Num episodes: 100
+pre saved (array([-1.9894387], dtype=float32), None)
+loaded (array([-1.9894387], dtype=float32), None)
 Wrapping the env with a `Monitor` wrapper
 Wrapping the env in a DummyVecEnv.
 >>[Target] Evaluate un-trained agent using source model:
-Mean reward: -982.9779 Num episodes: 100
-----------------------------------
-| rollout/           |           |
-|    ep_len_mean     | 200       |
-|    ep_rew_mean     | -1.03e+03 |
-| time/              |           |
-|    episodes        | 4         |
-|    fps             | 123       |
-|    time_elapsed    | 6         |
-|    total timesteps | 800       |
-| train/             |           |
-|    actor_loss      | 89.7      |
-|    critic_loss     | 11        |
-|    learning_rate   | 0.001     |
-|    n_updates       | 10600     |
-----------------------------------
+Mean reward: -1054.5427 Num episodes: 100
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -806     |
+| time/              |          |
+|    episodes        | 4        |
+|    fps             | 113      |
+|    time_elapsed    | 7        |
+|    total timesteps | 800      |
+| train/             |          |
+|    actor_loss      | 68.8     |
+|    critic_loss     | 1.92     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 10600    |
+---------------------------------
 >>[Target] Evaluate trained agent using source model:
-Mean reward: -805.20514 Num episodes: 100
+Mean reward: -300.79803 Num episodes: 100
 Using cpu device
 Wrapping the env with a `Monitor` wrapper
 Wrapping the env in a DummyVecEnv.
 ----------------------------------
 | rollout/           |           |
 |    ep_len_mean     | 200       |
-|    ep_rew_mean     | -1.42e+03 |
+|    ep_rew_mean     | -1.61e+03 |
 | time/              |           |
 |    episodes        | 4         |
-|    fps             | 122       |
-|    time_elapsed    | 6         |
+|    fps             | 112       |
+|    time_elapsed    | 7         |
 |    total timesteps | 800       |
 | train/             |           |
-|    actor_loss      | 20.1      |
-|    critic_loss     | 0.107     |
+|    actor_loss      | 15.2      |
+|    critic_loss     | 0.125     |
 |    learning_rate   | 0.001     |
 |    n_updates       | 600       |
 ----------------------------------
 >>[Target] Evaluate trained agent without TL:
-Mean reward: -1409.1702 Num episodes: 100
+Mean reward: -1634.221 Num episodes: 100
+--- 159.76600408554077 seconds ---
 
 Process finished with exit code 0

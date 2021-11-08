@@ -26,6 +26,7 @@ Using pip:
 
 ```
 pip install gym
+pip install Box2D
 ```
 
 Or Building from Source
