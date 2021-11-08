@@ -40,7 +40,7 @@ pip install -e .
 * We may need to install some dependencies, based on the hints when we run the `test.py`.
 * Don't add `gym` source code to our repository
 
-# Install Mujoco
+# Install Mujoco (optional)
 
 First way:
 1. Follow this: https://github.com/openai/mujoco-py/#install-mujoco
@@ -59,7 +59,7 @@ https://github.com/openai/mujoco-py/issues/605
 If you guys use linux, you can follow this
 https://www.chenshiyu.top/blog/2019/06/19/Tutorial-Installation-and-Configuration-of-MuJoCo-Gym-Baselines/
 
-# Install Stable-Baseline3
+# Install Stable-Baseline3 (optional - since I added it to repos now)
 
 Stable Baselines 3 [repo](https://github.com/DLR-RM/stable-baselines3)
 ```
