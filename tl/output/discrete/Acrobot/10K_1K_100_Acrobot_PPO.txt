@@ -1,0 +1,138 @@
+/Users/harrytran/anaconda3/envs/graph_python/bin/python "/Users/harrytran/OneDrive - The University of Texas at Dallas/Fall 2021/CS 7301/project/Transfer-Learning-in-Reinforcement-Learning/tl/transfer_model_Acrobot.py"
+/Users/harrytran/anaconda3/envs/graph_python/lib/python3.8/site-packages/ale_py/roms/__init__.py:84: DeprecationWarning: Automatic importing of atari-py roms won't be supported in future releases of ale-py. Please migrate over to using `ale-import-roms` OR an ALE-supported ROM package. To make this warning disappear you can run `ale-import-roms --import-from-pkg atari_py.atari_roms`.For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
+  __all__ = _resolve_roms()
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+>>[Source] Evaluate un-trained agent:
+Mean reward: -474.04 Num episodes: 100
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 500      |
+|    ep_rew_mean     | -500     |
+| time/              |          |
+|    fps             | 3426     |
+|    iterations      | 1        |
+|    time_elapsed    | 0        |
+|    total_timesteps | 2048     |
+---------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 497          |
+|    ep_rew_mean          | -496         |
+| time/                   |              |
+|    fps                  | 2383         |
+|    iterations           | 2            |
+|    time_elapsed         | 1            |
+|    total_timesteps      | 4096         |
+| train/                  |              |
+|    approx_kl            | 0.0035086465 |
+|    clip_fraction        | 0.00244      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.1         |
+|    explained_variance   | -0.0125      |
+|    learning_rate        | 0.0003       |
+|    loss                 | 12.9         |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.00192     |
+|    value_loss           | 135          |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 464          |
+|    ep_rew_mean          | -464         |
+| time/                   |              |
+|    fps                  | 2155         |
+|    iterations           | 3            |
+|    time_elapsed         | 2            |
+|    total_timesteps      | 6144         |
+| train/                  |              |
+|    approx_kl            | 0.0084272325 |
+|    clip_fraction        | 0.0434       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.09        |
+|    explained_variance   | 0.128        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 23.2         |
+|    n_updates            | 20           |
+|    policy_gradient_loss | -0.00623     |
+|    value_loss           | 108          |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 399         |
+|    ep_rew_mean          | -399        |
+| time/                   |             |
+|    fps                  | 2056        |
+|    iterations           | 4           |
+|    time_elapsed         | 3           |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.009702475 |
+|    clip_fraction        | 0.0856      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.07       |
+|    explained_variance   | 0.0627      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 22.1        |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.0109     |
+|    value_loss           | 96          |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 349         |
+|    ep_rew_mean          | -348        |
+| time/                   |             |
+|    fps                  | 2003        |
+|    iterations           | 5           |
+|    time_elapsed         | 5           |
+|    total_timesteps      | 10240       |
+| train/                  |             |
+|    approx_kl            | 0.007191519 |
+|    clip_fraction        | 0.0215      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -1.06       |
+|    explained_variance   | 0.224       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 22          |
+|    n_updates            | 40          |
+|    policy_gradient_loss | -0.0049     |
+|    value_loss           | 82.3        |
+-----------------------------------------
+>>[Source] Evaluate trained agent:
+Mean reward: -213.11 Num episodes: 100
+pre saved (0, None)
+loaded (0, None)
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 216      |
+|    ep_rew_mean     | -215     |
+| time/              |          |
+|    fps             | 3393     |
+|    iterations      | 1        |
+|    time_elapsed    | 0        |
+|    total_timesteps | 2048     |
+---------------------------------
+>>[Target] Evaluate trained agent using source model:
+Mean reward: -189.7 Num episodes: 100
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 500      |
+|    ep_rew_mean     | -500     |
+| time/              |          |
+|    fps             | 3407     |
+|    iterations      | 1        |
+|    time_elapsed    | 0        |
+|    total_timesteps | 2048     |
+---------------------------------
+>>[Target] Evaluate trained agent without TL:
+Mean reward: -486.32 Num episodes: 100
+--- 43.817599058151245 seconds ---
+
+Process finished with exit code 0

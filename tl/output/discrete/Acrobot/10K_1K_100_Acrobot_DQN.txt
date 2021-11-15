@@ -1,0 +1,79 @@
+/Users/harrytran/anaconda3/envs/graph_python/bin/python "/Users/harrytran/OneDrive - The University of Texas at Dallas/Fall 2021/CS 7301/project/Transfer-Learning-in-Reinforcement-Learning/tl/transfer_model_Acrobot.py"
+/Users/harrytran/anaconda3/envs/graph_python/lib/python3.8/site-packages/ale_py/roms/__init__.py:84: DeprecationWarning: Automatic importing of atari-py roms won't be supported in future releases of ale-py. Please migrate over to using `ale-import-roms` OR an ALE-supported ROM package. To make this warning disappear you can run `ale-import-roms --import-from-pkg atari_py.atari_roms`.For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
+  __all__ = _resolve_roms()
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+>>[Source] Evaluate un-trained agent:
+Mean reward: -500.0 Num episodes: 100
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 500      |
+|    ep_rew_mean      | -500     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 4        |
+|    fps              | 9530     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 2000     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 500      |
+|    ep_rew_mean      | -500     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 8        |
+|    fps              | 9570     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 4000     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 500      |
+|    ep_rew_mean      | -500     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 12       |
+|    fps              | 9566     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 6000     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 500      |
+|    ep_rew_mean      | -500     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 16       |
+|    fps              | 9518     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 8000     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 500      |
+|    ep_rew_mean      | -500     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 20       |
+|    fps              | 9488     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 10000    |
+----------------------------------
+>>[Source] Evaluate trained agent:
+Mean reward: -500.0 Num episodes: 100
+pre saved (0, None)
+loaded (0, None)
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+>>[Target] Evaluate trained agent using source model:
+Mean reward: -500.0 Num episodes: 100
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+>>[Target] Evaluate trained agent without TL:
+Mean reward: -500.0 Num episodes: 100
+--- 35.740273237228394 seconds ---
+
+Process finished with exit code 0
