@@ -119,7 +119,7 @@ def transfer_execute_with_DQN(source_env, target_env):
     evaluate(target_model, evaluate_episode_num)
 
     #### Train target model without transfer
-    target_model_wo_TL = DQN(policy_name, source_env, verbose=verbose)
+    target_model_wo_TL = DQN(policy_name, target_env, verbose=verbose)
     target_model_wo_TL.learn(total_timesteps=step_number_small)
     print(">>[Target] Evaluate trained agent without TL:")
     evaluate(target_model_wo_TL, evaluate_episode_num)
