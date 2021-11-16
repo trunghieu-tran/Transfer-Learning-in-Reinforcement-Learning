@@ -53,11 +53,11 @@ def transfer_execute_with_DDPG(source_env, target_env):
 ######
 policy_name = 'MlpPolicy'
 step_number = 10000
-step_number_small = 1000
+step_number_small = 10000
 env_name = 'Pendulum-v1'
 
-callback_check_freq = 50
-moving_window = 30
+callback_check_freq = 200
+moving_window = 50
 log_dir_w_TL = "/tmp/gym/w_tl/"
 log_dir_wo_TL = "/tmp/gym/wo_tl/"
 os.makedirs(log_dir_w_TL, exist_ok=True)
@@ -67,7 +67,9 @@ source_env = gym.make(env_name)
 target_env = NewPendulumEnv(gym.make(env_name))
 
 transfer_execute_with_DDPG(source_env, target_env)
-plot_results(log_dir_wo_TL, title="Without TL Learning Curve", moving_window=moving_window)
-plot_results(log_dir_w_TL, title="With TL Learning Curve", moving_window=moving_window)
+extraInfo = "(Pendulum_DDPG)"
+
+plot_results(log_dir_wo_TL, title="Without-TL Learning Curve"+extraInfo, moving_window=moving_window)
+plot_results(log_dir_w_TL, title="With-TL Learning Curve"+extraInfo, moving_window=moving_window)
 ######
 print("--- %s seconds ---" % (time.time() - start_time))
