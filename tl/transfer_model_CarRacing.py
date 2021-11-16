@@ -46,7 +46,7 @@ def transfer_execute_with_DDPG(source_env, target_env):
     evaluate(target_model, evaluate_episode_num)
 
     #### Train target model without transfer
-    target_model_wo_TL = DDPG(policy_name, source_env, verbose=2)
+    target_model_wo_TL = DDPG(policy_name, target_env, verbose=2)
     target_model_wo_TL.learn(total_timesteps=step_number_small)
     print(">>[Target] Evaluate trained agent without TL:")
     evaluate(target_model_wo_TL, evaluate_episode_num)
@@ -85,7 +85,7 @@ def transfer_execute_with_A2C(source_env, target_env):
     evaluate(target_model, evaluate_episode_num)
 
     #### Train target model without transfer
-    target_model_wo_TL = A2C(policy_name, source_env, verbose=2)
+    target_model_wo_TL = A2C(policy_name, target_env, verbose=2)
     target_model_wo_TL.learn(total_timesteps=step_number_small)
     print(">>[Target] Evaluate trained agent without TL:")
     evaluate(target_model_wo_TL, evaluate_episode_num)
@@ -123,7 +123,7 @@ def transfer_execute_with_PPO(source_env, target_env):
     evaluate(target_model, evaluate_episode_num)
 
     #### Train target model without transfer
-    target_model_wo_TL = PPO(policy_name, source_env, verbose=2)
+    target_model_wo_TL = PPO(policy_name, target_env, verbose=2)
     target_model_wo_TL.learn(total_timesteps=step_number_small)
     print(">>[Target] Evaluate trained agent without TL:")
     evaluate(target_model_wo_TL, evaluate_episode_num)
@@ -161,7 +161,7 @@ def transfer_execute_with_SAC(source_env, target_env):
     evaluate(target_model, evaluate_episode_num)
 
     #### Train target model without transfer
-    target_model_wo_TL = SAC(policy_name, source_env, verbose=2)
+    target_model_wo_TL = SAC(policy_name, target_env, verbose=2)
     target_model_wo_TL.learn(total_timesteps=step_number_small)
     print(">>[Target] Evaluate trained agent without TL:")
     evaluate(target_model_wo_TL, evaluate_episode_num)
@@ -200,7 +200,7 @@ def transfer_execute_with_TD3(source_env, target_env):
     evaluate(target_model, evaluate_episode_num)
 
     #### Train target model without transfer
-    target_model_wo_TL = TD3(policy_name, source_env, verbose=2)
+    target_model_wo_TL = TD3(policy_name, target_env, verbose=2)
     target_model_wo_TL.learn(total_timesteps=step_number_small)
     print(">>[Target] Evaluate trained agent without TL:")
     evaluate(target_model_wo_TL, evaluate_episode_num)
