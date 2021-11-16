@@ -34,8 +34,6 @@ def transfer_execute_with_DDPG(source_env, target_env):
     target_env_monitor_with_TL = Monitor(target_env, log_dir_w_TL)
     target_model.set_env(target_env_monitor_with_TL)
     callback_w_TL = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_w_TL)
-    print(">>[Target] Evaluate un-trained agent using source model:")
-    evaluate(target_model, 100)
     # and continue training
     target_model.learn(step_number_small, callback=callback_w_TL)
     print(">>[Target] Evaluate trained agent using source model:")
