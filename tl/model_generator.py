@@ -17,6 +17,9 @@ def get_model(policy_name, env, verbose=2, algo='DDPG'):
     if algo == 'TD3':
         return TD3(policy_name, env, verbose=verbose)
 
+    if algo == 'SAC':
+        return SAC(policy_name, env, verbose=verbose)
+
     return DDPG(policy_name, env, verbose=verbose)
 
 
@@ -29,5 +32,8 @@ def load_model(algo='DDPG', src="./source_model_trained"):
 
     if algo == 'TD3':
         return TD3.load(src)
+
+    if algo == 'SAC':
+        return SAC.load(src)
 
     return DDPG.load(src)

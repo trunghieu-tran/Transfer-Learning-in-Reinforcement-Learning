@@ -1,19 +1,22 @@
-import gym
-from tl.new_pendulum_env import NewPendulumEnv
 from transfer_learning import *
+from environment_generator import *
 import time
+
 
 start_time = time.time()
 
+#### >>>>>> We only need to env_name and algorithm
 env_name = 'Pendulum-v1'
-algorithm = 'TD3'
+algorithm = 'SAC'
+#### <<<<<<<
+
 moving_window = 50
 log_dir_w_TL = "/tmp/gym/w_tl/"
 log_dir_wo_TL = "/tmp/gym/wo_tl/"
 extraInfo = "(" + env_name + '_' + algorithm + ")"
 
-source_env = gym.make(env_name)
-target_env = NewPendulumEnv(gym.make(env_name))
+source_env = get_source_env(env_name)
+target_env = get_target_env(env_name)
 
 transfer_execute(source_env=source_env,
                  target_env=target_env,
