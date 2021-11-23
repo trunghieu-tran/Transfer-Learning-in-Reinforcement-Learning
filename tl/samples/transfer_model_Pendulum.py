@@ -6,8 +6,8 @@ from stable_baselines3 import TD3
 
 
 import gym
-from tl.new_pendulum_env import NewPendulumEnv
-from model_evaluation import evaluate
+from tl.envs.new_pendulum_env import NewPendulumEnv
+from tl.utils.model_evaluation import evaluate
 
 import time
 start_time = time.time()

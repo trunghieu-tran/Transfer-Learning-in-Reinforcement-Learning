@@ -2,8 +2,8 @@ import gym
 
 from stable_baselines3 import TD3
 from stable_baselines3.common.monitor import Monitor
-from tl.plot_utils import *
-from tl.new_pendulum_env import NewPendulumEnv
+from tl.utils.plot_utils import *
+from tl.envs.new_pendulum_env import NewPendulumEnv
 
 
 

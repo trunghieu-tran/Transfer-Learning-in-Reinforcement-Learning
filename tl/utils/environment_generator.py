@@ -1,6 +1,6 @@
 import gym
-from tl.new_pendulum_env import NewPendulumEnv
-from tl.new_acrobot_env import NewAcrobotEnv
+from tl.envs.new_pendulum_env import NewPendulumEnv
+from tl.envs.new_acrobot_env import NewAcrobotEnv
 
 supported_envs = ['Pendulum-v1', 'Acrobot-v1']
 

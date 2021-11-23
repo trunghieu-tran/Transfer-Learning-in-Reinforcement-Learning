@@ -46,7 +46,7 @@ class NewBipedalWalkerEnv(gym.Wrapper):
         # env.action_space = gym.spaces.Box(low=-1, high=1, shape=action_space.shape, dtype=np.float32)
 
         # Call the parent constructor, so we can access self.env later
-        super(NewPendulumEnv, self).__init__(env)
+        super(NewBipedalWalkerEnv, self).__init__(env)
 
     def rescale_action(self, scaled_action):
         """

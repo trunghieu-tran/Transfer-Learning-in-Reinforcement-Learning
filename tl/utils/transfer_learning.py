@@ -1,18 +1,18 @@
 from stable_baselines3.common.monitor import Monitor
-from tl.model_evaluation import *
-from tl.plot_utils import *
-from model_generator import *
+from tl.utils.model_evaluation import *
+from tl.utils.plot_utils import *
+from tl.utils.model_generator import *
 
 def transfer_execute(source_env,
                      target_env,
                      algo='DDPG',
                      policy_name='MlpPolicy',
-                     step_number = 10000,
-                     step_number_small = 10000,
-                     callback_check_freq = 200,
-                     moving_window = 50,
-                     log_dir_w_TL = "/tmp/gym/w_tl/",
-                     log_dir_wo_TL = "/tmp/gym/wo_tl/"
+                     step_number=10000,
+                     step_number_small=10000,
+                     callback_check_freq=200,
+                     evaluation_step=100,
+                     log_dir_w_TL="/tmp/gym/w_tl/",
+                     log_dir_wo_TL="/tmp/gym/wo_tl/"
                      ):
     print(">>Executing with algorithm " + algo + "...")
 
@@ -20,14 +20,14 @@ def transfer_execute(source_env,
     os.makedirs(log_dir_wo_TL, exist_ok=True)
 
     source_model = get_model(policy_name, source_env, verbose=2, algo=algo)
-
-    print(">>[Source] Evaluate un-trained agent:")
-    evaluate(source_model, 100)
+    #
+    # print(">>[Source] Evaluate un-trained agent:")
+    # evaluate(source_model, evaluation_step)
 
     source_model.learn(total_timesteps=step_number)
     source_model.save("./source_model_trained")
     print(">>[Source] Evaluate trained agent:")
-    evaluate(source_model, 100)
+    evaluate(source_model, evaluation_step)
 
     # sample an observation from the environment
     obs = source_model.env.observation_space.sample()
@@ -49,7 +49,7 @@ def transfer_execute(source_env,
     # and continue training
     target_model.learn(step_number_small, callback=callback_w_TL)
     print(">>[Target] Evaluate trained agent using source model:")
-    evaluate(target_model, 100)
+    evaluate(target_model, evaluation_step)
 
     #### Train target model without transfer
     target_env_monitor = Monitor(target_env, log_dir_wo_TL)
@@ -57,4 +57,4 @@ def transfer_execute(source_env,
     target_model_wo_TL = get_model(policy_name, target_env_monitor, verbose=2, algo='A2C')
     target_model_wo_TL.learn(total_timesteps=step_number_small, callback=callback)
     print(">>[Target] Evaluate trained agent without TL:")
-    evaluate(target_model_wo_TL, 100)
+    evaluate(target_model_wo_TL, evaluation_step)

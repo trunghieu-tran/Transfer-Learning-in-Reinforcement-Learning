@@ -109,6 +109,14 @@ Actions `gym.spaces`:
  * `MultiBinary`: A list of possible actions, where each timestep any of the actions can be used in any combination.
 
 
+## How to run?
+
+1. Open `main.py`
+2. Modify `env_name` and `algorithm` that you want to run
+3. Modify parameters in `transfer_execute` function if needed
+4. Log will be printed out to the terminal and the plotting result will be shown on the new windows.
+
+
 ## Refercences
 
 1. OpenAI Gym [repo](https://github.com/openai/gym)
