@@ -6,9 +6,10 @@ import time
 start_time = time.time()
 
 #### >>>>>> We only need to env_name and algorithm
-# env_name = 'Pendulum-v1'
-env_name = 'CarRacing-v0'
-algorithm = 'A2C'
+# env = ['Pendulum-v1', 'CarRacing-v0', 'Acrobot-v1']
+env_name = 'Pendulum-v1'
+# for each selected algorithm, please choose algorithm supporting its action space
+algorithm = 'TD3'
 #### <<<<<<<
 
 moving_window = 50
