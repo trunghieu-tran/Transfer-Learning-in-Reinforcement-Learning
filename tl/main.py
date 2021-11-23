@@ -8,10 +8,10 @@ start_time = time.time()
 #### >>>>>> We only need to env_name and algorithm
 # env_name = 'Pendulum-v1'
 env_name = 'CarRacing-v0'
-algorithm = 'PPO'
+algorithm = 'A2C'
 #### <<<<<<<
 
-moving_window = 5
+moving_window = 50
 log_dir_w_TL = "/tmp/gym/w_tl/"
 log_dir_wo_TL = "/tmp/gym/wo_tl/"
 extraInfo = "(" + env_name + '_' + algorithm + ")"
@@ -23,10 +23,10 @@ transfer_execute(source_env=source_env,
                  target_env=target_env,
                  algo=algorithm,
                  policy_name='MlpPolicy',
-                 step_number=3000,
-                 step_number_small=3000,
-                 callback_check_freq=50,
-                 evaluation_step=5,
+                 step_number=10000,
+                 step_number_small=10000,
+                 callback_check_freq=500,
+                 evaluation_step=20,
                  log_dir_w_TL=log_dir_w_TL,
                  log_dir_wo_TL=log_dir_wo_TL,
                  )
