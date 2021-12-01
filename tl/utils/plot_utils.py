@@ -12,6 +12,16 @@ def moving_average(values, window):
     :param window: (int)
     :return: (numpy array)
     """
+    if window == -1: # average from begining to current position
+        moving_averages = []
+        i = 0
+        s = 0
+        while i < len(values):
+            s += values[i]
+            moving_averages.append(s / (i + 1))
+            i += 1
+        return moving_averages
+
     weights = np.repeat(1.0, window) / window
     return np.convolve(values, weights, 'valid')
 

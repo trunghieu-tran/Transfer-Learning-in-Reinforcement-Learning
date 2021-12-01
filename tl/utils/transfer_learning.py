@@ -12,7 +12,8 @@ def transfer_execute(source_env,
                      callback_check_freq=200,
                      evaluation_step=100,
                      log_dir_w_TL="/tmp/gym/w_tl/",
-                     log_dir_wo_TL="/tmp/gym/wo_tl/"
+                     log_dir_wo_TL="/tmp/gym/wo_tl/",
+                     run_evaluation=False
                      ):
     print(">>Executing with algorithm " + algo + "...")
 
@@ -26,8 +27,10 @@ def transfer_execute(source_env,
 
     source_model.learn(total_timesteps=step_number)
     source_model.save("./source_model_trained")
-    print(">>[Source] Evaluate trained agent:")
-    evaluate(source_model, evaluation_step)
+
+    if run_evaluation:
+        print(">>[Source] Evaluate trained agent:")
+        evaluate(source_model, evaluation_step)
 
     # sample an observation from the environment
     obs = source_model.env.observation_space.sample()
@@ -48,13 +51,15 @@ def transfer_execute(source_env,
     callback_w_TL = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_w_TL)
     # and continue training
     target_model.learn(step_number_small, callback=callback_w_TL)
-    print(">>[Target] Evaluate trained agent using source model:")
-    evaluate(target_model, evaluation_step)
+    if run_evaluation:
+        print(">>[Target] Evaluate trained agent using source model:")
+        evaluate(target_model, evaluation_step)
 
     #### Train target model without transfer
     target_env_monitor = Monitor(target_env, log_dir_wo_TL)
     callback = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_wo_TL)
-    target_model_wo_TL = get_model(policy_name, target_env_monitor, verbose=2, algo='A2C')
+    target_model_wo_TL = get_model(policy_name, target_env_monitor, verbose=2, algo=algo)
     target_model_wo_TL.learn(total_timesteps=step_number_small, callback=callback)
-    print(">>[Target] Evaluate trained agent without TL:")
-    evaluate(target_model_wo_TL, evaluation_step)
+    if run_evaluation:
+        print(">>[Target] Evaluate trained agent without TL:")
+        evaluate(target_model_wo_TL, evaluation_step)

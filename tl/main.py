@@ -9,10 +9,11 @@ start_time = time.time()
 # env = ['Pendulum-v1', 'CarRacing-v0', 'Acrobot-v1']
 env_name = 'Pendulum-v1'
 # for each selected algorithm, please choose algorithm supporting its action space
+# We currently focus on TD3, DDPG, DQN
 algorithm = 'TD3'
 #### <<<<<<<
 
-moving_window = 50
+moving_window = -1
 log_dir_w_TL = "/tmp/gym/w_tl/"
 log_dir_wo_TL = "/tmp/gym/wo_tl/"
 extraInfo = "(" + env_name + '_' + algorithm + ")"
@@ -30,6 +31,7 @@ transfer_execute(source_env=source_env,
                  evaluation_step=20,
                  log_dir_w_TL=log_dir_w_TL,
                  log_dir_wo_TL=log_dir_wo_TL,
+                 run_evaluation=False
                  )
 
 plot_results(log_dir_wo_TL, title=extraInfo+"Without-TL Learning Curve", moving_window=moving_window)
