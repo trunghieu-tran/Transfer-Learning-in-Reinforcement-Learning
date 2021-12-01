@@ -141,16 +141,18 @@ class RewardShapedTD3(TD3):
                 next_q_values, _ = th.min(next_q_values, dim=1, keepdim=True)
                 
                 # Calculate the auxiliary reward
-                current_states = replay_data.observations
-                current_actions = replay_data.actions
-                next_states = replay_data.next_observations
+                current_states = replay_data.observations.cpu().numpy()
+                current_actions = replay_data.actions.cpu().numpy()
+                next_states = replay_data.next_observations.cpu().numpy()
                 
                 num_points = len(current_states)
                 aux_rewards = th.tensor([0. for x in range(num_points)])
                 
                 for pt_num, (current_state, current_action, next_state, next_action) in enumerate(zip(current_states, current_actions, next_states, next_actions)):
                     
-                    aux_rewards[pt_num] = self.reward_shaper.get_auxiliary_reward(current_state, current_action, next_state, next_action)
+                    aux_rewards[pt_num] = self.reward_shaper.get_auxiliary_reward(current_state, current_action, next_state, next_action.cpu().numpy())
+                
+                aux_rewards = th.reshape(aux_rewards, (num_points,-1)).to(self.device)
                 
                 # Shape the reward by adding it to that which is used in computing the target_q_val
                 target_q_values = replay_data.rewards + self.aux_scaling_factor * aux_rewards + (1 - replay_data.dones) * self.gamma * next_q_values

@@ -172,6 +172,8 @@ class RewardShapedDQN(DQN):
                     
                     aux_rewards[pt_num] = self.reward_shaper.get_auxiliary_reward(current_state, current_action, next_state, next_action)
                 
+                aux_rewards = th.reshape(aux_rewards, (num_points,-1)).to(self.device)
+                
                 # 1-step TD target
                 target_q_values = replay_data.rewards + self.aux_scaling_factor * aux_rewards + (1 - replay_data.dones) * self.gamma * next_q_values
 

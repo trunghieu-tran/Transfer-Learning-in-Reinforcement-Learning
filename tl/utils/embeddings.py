@@ -63,9 +63,23 @@ def get_ddpg_embeddings(ddpg_model, num_episodes):
         all_episode_embeddings.append(th.vstack(episode_embeddings))
         all_episode_q_values.append(th.tensor(episode_q_values))
 
-    # Return the gathered embeddings
-    return all_episode_embeddings, all_episode_q_values
+    full_embeddings = None
+    full_q_vals = None
+    
+    for episode_embeddings, episode_q_vals in zip(all_episode_embeddings, all_episode_q_values):
+        
+        if full_embeddings is None:
+            full_embeddings = episode_embeddings
+        else:
+            full_embeddings = th.cat([full_embeddings, episode_embeddings])
+            
+        if full_q_vals is None:
+            full_q_vals = episode_q_vals
+        else:
+            full_q_vals = th.cat([full_q_vals, episode_q_vals])
 
+    # Return the gathered embeddings
+    return full_embeddings, full_q_vals
 
 def get_dqn_embeddings(dqn_model, num_episodes):
 
@@ -131,5 +145,20 @@ def get_dqn_embeddings(dqn_model, num_episodes):
         all_episode_embeddings.append(th.vstack(episode_embeddings))
         all_episode_q_values.append(th.tensor(episode_q_values))
 
+    full_embeddings = None
+    full_q_vals = None
+    
+    for episode_embeddings, episode_q_vals in zip(all_episode_embeddings, all_episode_q_values):
+        
+        if full_embeddings is None:
+            full_embeddings = episode_embeddings
+        else:
+            full_embeddings = th.cat([full_embeddings, episode_embeddings])
+            
+        if full_q_vals is None:
+            full_q_vals = episode_q_vals
+        else:
+            full_q_vals = th.cat([full_q_vals, episode_q_vals])
+
     # Return the gathered embeddings
-    return all_episode_embeddings, all_episode_q_values
+    return full_embeddings, full_q_vals

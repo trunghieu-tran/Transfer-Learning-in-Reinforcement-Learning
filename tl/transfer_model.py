@@ -1,39 +1,36 @@
-from stable_baselines3 import DDPG
-from stable_baselines3 import A2C
-from stable_baselines3 import PPO
+import sys
+sys.path.append("C:/Users/nbeck/OneDrive/Documents/Github/Transfer-Learning-in-Reinforcement-Learning")
+
+from stable_baselines3.ddpg.ddpg import DDPG
+from stable_baselines3.td3.td3 import TD3
+from stable_baselines3.ddpg.reward_shaped_ddpg import RewardShapedDDPG
+from stable_baselines3.td3.reward_shaped_td3 import RewardShapedTD3
+from stable_baselines3.dqn.reward_shaped_dqn import RewardShapedDQN
 import gym
 from tl.new_pendulum_env import NewPendulumEnv
+from tl.utils.reward_shapers import create_ddpg_reward_shaper, create_dqn_reward_shaper, create_td3_reward_shaper
 from model_evaluation import evaluate
 
 policy_name = 'MlpPolicy'
-step_number = 10000
-step_number_small = 1000
+step_number = 100000
+step_number_small = 5000
 env_name = 'Pendulum-v1'
 
 source_env = gym.make(env_name)
 target_env = NewPendulumEnv(gym.make(env_name))
 
-source_model = DDPG(policy_name, source_env, verbose=2)
+source_model = TD3(policy_name, source_env, verbose=2)
 print(">>[Source] Evaluate un-trained agent:")
 evaluate(source_model, 100)
 
 source_model.learn(total_timesteps=step_number)
-source_model.save("./source_model_trained")
 print(">>[Source] Evaluate trained agent:")
 evaluate(source_model, 100)
 
-# sample an observation from the environment
-obs = source_model.env.observation_space.sample()
-
-# Check prediction before saving
-print("pre saved", source_model.predict(obs, deterministic=True))
-
-del source_model  # delete trained model to demonstrate loading
-
 ##### LOAD source model and train with target domain
-target_model = DDPG.load("./source_model_trained")
-# Check that the prediction is the same after loading (for the same observation)
-print("loaded", target_model.predict(obs, deterministic=True))
+num_sampling_episodes = 10
+reward_shaper = create_td3_reward_shaper(source_model, num_sampling_episodes)
+target_model = RewardShapedTD3(policy_name, target_env, verbose=2, reward_shaper=reward_shaper)
 
 # as the environment is not serializable, we need to set a new instance of the environment
 target_model.set_env(target_env)
@@ -44,19 +41,10 @@ target_model.learn(step_number_small)
 print(">>[Target] Evaluate trained agent using source model:")
 evaluate(target_model, 100)
 
-#### Train target model without transfer
-target_model_wo_TL = DDPG(policy_name, source_env, verbose=2)
-target_model_wo_TL.learn(total_timesteps=step_number_small)
-print(">>[Target] Evaluate trained agent without TL:")
-evaluate(target_model_wo_TL, 100)
+scratch_target_model = TD3(policy_name, target_env, verbose=2)
+print(">>[Source] Evaluate un-trained agent:")
+evaluate(scratch_target_model, 100)
 
-# ##### Render
-# obs = env.reset()
-# for i in range(1000):
-#     action, _states = model.predict(obs, deterministic=True)
-#     obs, reward, done, info = env.step(action)
-#     env.render()
-#     if done:
-#       obs = env.reset()
-#
-# env.close()
+scratch_target_model.learn(total_timesteps=step_number_small)
+print(">>[Source] Evaluate trained agent:")
+evaluate(scratch_target_model, 100)

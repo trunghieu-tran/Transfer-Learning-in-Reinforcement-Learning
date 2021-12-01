@@ -35,8 +35,8 @@ class RewardShaper:
 
         # Store embeddings, their associated q-vals, the learning rate gamma, 
         # and the SB3 model.
-        self.embeddings = embeddings
-        self.associated_q_vals = associated_q_vals
+        self.embeddings = embeddings.to(model.device)
+        self.associated_q_vals = associated_q_vals.to(model.device)
         self.gamma = gamma
         self.model = model
 
@@ -103,7 +103,8 @@ class DDPGRewardShaper(RewardShaper):
 
         # Convert the observation and action to tensor for embedding calculation
         tensor_obs, vectorized_env = policy.obs_to_tensor(state)
-        tensor_act = th.tensor(action).to(self.model.device)
+        tensor_obs = tensor_obs.to(self.model.device)
+        tensor_act = th.reshape(th.tensor(action), (1,-1)).to(self.model.device)
 
         # Ensure that the model's policy is not training anymore
         policy.set_training_mode(False)
@@ -139,6 +140,7 @@ class DQNRewardShaper(RewardShaper):
 
         # Convert the observation and action to tensor for embedding calculation
         tensor_obs, vectorized_env = policy.obs_to_tensor(state)
+        tensor_obs = tensor_obs.to(self.model.device)
 
         # Do not keep the gradient computation graph
         with th.no_grad():
