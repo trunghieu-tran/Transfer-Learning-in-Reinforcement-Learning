@@ -26,23 +26,23 @@ def moving_average(values, window):
     return np.convolve(values, weights, 'valid')
 
 
-def plot_results(log_folder, title='Learning Curve', moving_window=1):
+def plot_results(log_folder, title='Learning Curve', moving_window=-1):
     """
     plot the results
 
     :param log_folder: (str) the save location of the results to plot
     :param title: (str) the title of the task to plot
     """
-    x, y = ts2xy(load_results(log_folder), 'timesteps')
+    x, y = ts2xy(load_results(log_folder), 'episodes')
     y = moving_average(y, window=moving_window)
     # Truncate x
     x = x[len(x) - len(y):]
 
     fig = plt.figure(title)
     plt.plot(x, y)
-    plt.xlabel('Number of Timesteps')
+    plt.xlabel('Number of Episodes')
     plt.ylabel('Rewards')
-    plt.title(title + " Smoothed")
+    plt.title(title)
     plt.show()
 
 
