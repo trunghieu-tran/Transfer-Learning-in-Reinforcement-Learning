@@ -1,0 +1,2788 @@
+/Users/harrytran/anaconda3/envs/graph_python/bin/python "/Users/harrytran/OneDrive - The University of Texas at Dallas/Fall 2021/CS 7301/project/Transfer-Learning-in-Reinforcement-Learning/tl/main.py"
+/Users/harrytran/anaconda3/envs/graph_python/lib/python3.8/site-packages/ale_py/roms/__init__.py:84: DeprecationWarning: Automatic importing of atari-py roms won't be supported in future releases of ale-py. Please migrate over to using `ale-import-roms` OR an ALE-supported ROM package. To make this warning disappear you can run `ale-import-roms --import-from-pkg atari_py.atari_roms`.For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
+  __all__ = _resolve_roms()
+>>Executing with algorithm DQN...
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 500      |
+|    ep_rew_mean      | -500     |
+|    exploration rate | 0.81     |
+| time/               |          |
+|    episodes         | 4        |
+|    fps              | 8987     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 2000     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 500      |
+|    ep_rew_mean      | -500     |
+|    exploration rate | 0.62     |
+| time/               |          |
+|    episodes         | 8        |
+|    fps              | 9139     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 4000     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 500      |
+|    ep_rew_mean      | -500     |
+|    exploration rate | 0.43     |
+| time/               |          |
+|    episodes         | 12       |
+|    fps              | 9224     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 6000     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 499      |
+|    ep_rew_mean      | -499     |
+|    exploration rate | 0.242    |
+| time/               |          |
+|    episodes         | 16       |
+|    fps              | 9242     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 7984     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 499      |
+|    ep_rew_mean      | -499     |
+|    exploration rate | 0.0515   |
+| time/               |          |
+|    episodes         | 20       |
+|    fps              | 9247     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 9984     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 499      |
+|    ep_rew_mean      | -499     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 24       |
+|    fps              | 9246     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 11984    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 499      |
+|    ep_rew_mean      | -499     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 28       |
+|    fps              | 9276     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 13966    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 499      |
+|    ep_rew_mean      | -499     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 32       |
+|    fps              | 9284     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 15966    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 499      |
+|    ep_rew_mean      | -499     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 36       |
+|    fps              | 9297     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 17966    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 491      |
+|    ep_rew_mean      | -491     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 40       |
+|    fps              | 9299     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 19657    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 490      |
+|    ep_rew_mean      | -490     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 44       |
+|    fps              | 9283     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 21574    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 490      |
+|    ep_rew_mean      | -490     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 48       |
+|    fps              | 9291     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 23511    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 488      |
+|    ep_rew_mean      | -488     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 52       |
+|    fps              | 9294     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 25396    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 489      |
+|    ep_rew_mean      | -489     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 56       |
+|    fps              | 9308     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 27396    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 490      |
+|    ep_rew_mean      | -489     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 60       |
+|    fps              | 9315     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 29378    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 489      |
+|    ep_rew_mean      | -489     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 64       |
+|    fps              | 9318     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 31322    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 488      |
+|    ep_rew_mean      | -488     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 68       |
+|    fps              | 9330     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 33168    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 488      |
+|    ep_rew_mean      | -488     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 72       |
+|    fps              | 9342     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 35168    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 489      |
+|    ep_rew_mean      | -489     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 76       |
+|    fps              | 9361     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 37168    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 490      |
+|    ep_rew_mean      | -489     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 80       |
+|    fps              | 9372     |
+|    time_elapsed     | 4        |
+|    total timesteps  | 39168    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 490      |
+|    ep_rew_mean      | -490     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 84       |
+|    fps              | 9383     |
+|    time_elapsed     | 4        |
+|    total timesteps  | 41168    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 491      |
+|    ep_rew_mean      | -490     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 88       |
+|    fps              | 9392     |
+|    time_elapsed     | 4        |
+|    total timesteps  | 43168    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 490      |
+|    ep_rew_mean      | -490     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 92       |
+|    fps              | 9400     |
+|    time_elapsed     | 4        |
+|    total timesteps  | 45058    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 490      |
+|    ep_rew_mean      | -490     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 96       |
+|    fps              | 9406     |
+|    time_elapsed     | 5        |
+|    total timesteps  | 47058    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 490      |
+|    ep_rew_mean      | -490     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 100      |
+|    fps              | 9414     |
+|    time_elapsed     | 5        |
+|    total timesteps  | 48980    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 485      |
+|    ep_rew_mean      | -485     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 104      |
+|    fps              | 9142     |
+|    time_elapsed     | 5        |
+|    total timesteps  | 50532    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.165    |
+|    n_updates        | 132      |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 483      |
+|    ep_rew_mean      | -482     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 108      |
+|    fps              | 8403     |
+|    time_elapsed     | 6        |
+|    total timesteps  | 52265    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.02     |
+|    n_updates        | 566      |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 483      |
+|    ep_rew_mean      | -482     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 112      |
+|    fps              | 7735     |
+|    time_elapsed     | 7        |
+|    total timesteps  | 54265    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000905 |
+|    n_updates        | 1066     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 479      |
+|    ep_rew_mean      | -479     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 116      |
+|    fps              | 7295     |
+|    time_elapsed     | 7        |
+|    total timesteps  | 55887    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00103  |
+|    n_updates        | 1471     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 469      |
+|    ep_rew_mean      | -468     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 120      |
+|    fps              | 7068     |
+|    time_elapsed     | 8        |
+|    total timesteps  | 56836    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000779 |
+|    n_updates        | 1708     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 458      |
+|    ep_rew_mean      | -458     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 124      |
+|    fps              | 6826     |
+|    time_elapsed     | 8        |
+|    total timesteps  | 57815    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00419  |
+|    n_updates        | 1953     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 450      |
+|    ep_rew_mean      | -450     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 128      |
+|    fps              | 6578     |
+|    time_elapsed     | 8        |
+|    total timesteps  | 59016    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000249 |
+|    n_updates        | 2253     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 445      |
+|    ep_rew_mean      | -444     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 132      |
+|    fps              | 6317     |
+|    time_elapsed     | 9        |
+|    total timesteps  | 60434    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00826  |
+|    n_updates        | 2608     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 442      |
+|    ep_rew_mean      | -442     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 136      |
+|    fps              | 6050     |
+|    time_elapsed     | 10       |
+|    total timesteps  | 62207    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000915 |
+|    n_updates        | 3051     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 438      |
+|    ep_rew_mean      | -438     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 140      |
+|    fps              | 5840     |
+|    time_elapsed     | 10       |
+|    total timesteps  | 63495    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00287  |
+|    n_updates        | 3373     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 434      |
+|    ep_rew_mean      | -434     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 144      |
+|    fps              | 5650     |
+|    time_elapsed     | 11       |
+|    total timesteps  | 65004    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000781 |
+|    n_updates        | 3750     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 427      |
+|    ep_rew_mean      | -426     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 148      |
+|    fps              | 5524     |
+|    time_elapsed     | 11       |
+|    total timesteps  | 66163    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000308 |
+|    n_updates        | 4040     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 423      |
+|    ep_rew_mean      | -422     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 152      |
+|    fps              | 5378     |
+|    time_elapsed     | 12       |
+|    total timesteps  | 67682    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000449 |
+|    n_updates        | 4420     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 419      |
+|    ep_rew_mean      | -419     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 156      |
+|    fps              | 5198     |
+|    time_elapsed     | 13       |
+|    total timesteps  | 69327    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000721 |
+|    n_updates        | 4831     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 419      |
+|    ep_rew_mean      | -419     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 160      |
+|    fps              | 5025     |
+|    time_elapsed     | 14       |
+|    total timesteps  | 71306    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00238  |
+|    n_updates        | 5326     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 418      |
+|    ep_rew_mean      | -418     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 164      |
+|    fps              | 4898     |
+|    time_elapsed     | 14       |
+|    total timesteps  | 73165    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000791 |
+|    n_updates        | 5791     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 420      |
+|    ep_rew_mean      | -420     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 168      |
+|    fps              | 4772     |
+|    time_elapsed     | 15       |
+|    total timesteps  | 75165    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.0012   |
+|    n_updates        | 6291     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 419      |
+|    ep_rew_mean      | -419     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 172      |
+|    fps              | 4603     |
+|    time_elapsed     | 16       |
+|    total timesteps  | 77082    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000771 |
+|    n_updates        | 6770     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 419      |
+|    ep_rew_mean      | -419     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 176      |
+|    fps              | 4484     |
+|    time_elapsed     | 17       |
+|    total timesteps  | 79082    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.0017   |
+|    n_updates        | 7270     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 419      |
+|    ep_rew_mean      | -419     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 180      |
+|    fps              | 4367     |
+|    time_elapsed     | 18       |
+|    total timesteps  | 81082    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00689  |
+|    n_updates        | 7770     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 419      |
+|    ep_rew_mean      | -419     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 184      |
+|    fps              | 4246     |
+|    time_elapsed     | 19       |
+|    total timesteps  | 83082    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00119  |
+|    n_updates        | 8270     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 419      |
+|    ep_rew_mean      | -419     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 188      |
+|    fps              | 4124     |
+|    time_elapsed     | 20       |
+|    total timesteps  | 85082    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000918 |
+|    n_updates        | 8770     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 420      |
+|    ep_rew_mean      | -420     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 192      |
+|    fps              | 4014     |
+|    time_elapsed     | 21       |
+|    total timesteps  | 87082    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00401  |
+|    n_updates        | 9270     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 420      |
+|    ep_rew_mean      | -420     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 196      |
+|    fps              | 3925     |
+|    time_elapsed     | 22       |
+|    total timesteps  | 89082    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00219  |
+|    n_updates        | 9770     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 421      |
+|    ep_rew_mean      | -421     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 200      |
+|    fps              | 3853     |
+|    time_elapsed     | 23       |
+|    total timesteps  | 91082    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000582 |
+|    n_updates        | 10270    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 426      |
+|    ep_rew_mean      | -425     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 204      |
+|    fps              | 3801     |
+|    time_elapsed     | 24       |
+|    total timesteps  | 93082    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00171  |
+|    n_updates        | 10770    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 428      |
+|    ep_rew_mean      | -428     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 208      |
+|    fps              | 3755     |
+|    time_elapsed     | 25       |
+|    total timesteps  | 95082    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00174  |
+|    n_updates        | 11270    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 428      |
+|    ep_rew_mean      | -428     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 212      |
+|    fps              | 3706     |
+|    time_elapsed     | 26       |
+|    total timesteps  | 97082    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00313  |
+|    n_updates        | 11770    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 432      |
+|    ep_rew_mean      | -432     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 216      |
+|    fps              | 3663     |
+|    time_elapsed     | 27       |
+|    total timesteps  | 99082    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00411  |
+|    n_updates        | 12270    |
+----------------------------------
+pre saved (2, None)
+loaded (2, None)
+Wrapping the env in a DummyVecEnv.
+Num timesteps: 1000
+Best mean reward: -inf - Last mean reward per episode: -500.00
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 2000
+Best mean reward: -500.00 - Last mean reward per episode: -500.00
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 500      |
+|    ep_rew_mean      | -500     |
+|    exploration rate | 0.81     |
+| time/               |          |
+|    episodes         | 4        |
+|    fps              | 8801     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 2000     |
+----------------------------------
+Num timesteps: 3000
+Best mean reward: -500.00 - Last mean reward per episode: -500.00
+Num timesteps: 4000
+Best mean reward: -500.00 - Last mean reward per episode: -500.00
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 500      |
+|    ep_rew_mean      | -500     |
+|    exploration rate | 0.62     |
+| time/               |          |
+|    episodes         | 8        |
+|    fps              | 8814     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 4000     |
+----------------------------------
+Num timesteps: 5000
+Best mean reward: -500.00 - Last mean reward per episode: -500.00
+Num timesteps: 6000
+Best mean reward: -500.00 - Last mean reward per episode: -500.00
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 500      |
+|    ep_rew_mean      | -500     |
+|    exploration rate | 0.43     |
+| time/               |          |
+|    episodes         | 12       |
+|    fps              | 8850     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 6000     |
+----------------------------------
+Num timesteps: 7000
+Best mean reward: -500.00 - Last mean reward per episode: -500.00
+Num timesteps: 8000
+Best mean reward: -500.00 - Last mean reward per episode: -500.00
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 500      |
+|    ep_rew_mean      | -500     |
+|    exploration rate | 0.24     |
+| time/               |          |
+|    episodes         | 16       |
+|    fps              | 8817     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 8000     |
+----------------------------------
+Num timesteps: 9000
+Best mean reward: -500.00 - Last mean reward per episode: -500.00
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 492      |
+|    ep_rew_mean      | -492     |
+|    exploration rate | 0.066    |
+| time/               |          |
+|    episodes         | 20       |
+|    fps              | 8753     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 9832     |
+----------------------------------
+Num timesteps: 10000
+Best mean reward: -500.00 - Last mean reward per episode: -491.55
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 11000
+Best mean reward: -491.55 - Last mean reward per episode: -492.32
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 493      |
+|    ep_rew_mean      | -493     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 24       |
+|    fps              | 8752     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 11832    |
+----------------------------------
+Num timesteps: 12000
+Best mean reward: -491.55 - Last mean reward per episode: -492.96
+Num timesteps: 13000
+Best mean reward: -491.55 - Last mean reward per episode: -493.50
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 494      |
+|    ep_rew_mean      | -494     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 28       |
+|    fps              | 8744     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 13832    |
+----------------------------------
+Num timesteps: 14000
+Best mean reward: -491.55 - Last mean reward per episode: -493.96
+Num timesteps: 15000
+Best mean reward: -491.55 - Last mean reward per episode: -494.37
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 488      |
+|    ep_rew_mean      | -488     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 32       |
+|    fps              | 8728     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 15603    |
+----------------------------------
+Num timesteps: 16000
+Best mean reward: -491.55 - Last mean reward per episode: -487.53
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 17000
+Best mean reward: -487.53 - Last mean reward per episode: -488.26
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 485      |
+|    ep_rew_mean      | -485     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 36       |
+|    fps              | 8742     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 17450    |
+----------------------------------
+Num timesteps: 18000
+Best mean reward: -487.53 - Last mean reward per episode: -485.05
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 19000
+Best mean reward: -485.05 - Last mean reward per episode: -484.59
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 485      |
+|    ep_rew_mean      | -485     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 40       |
+|    fps              | 8734     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 19403    |
+----------------------------------
+Num timesteps: 20000
+Best mean reward: -484.59 - Last mean reward per episode: -485.34
+Num timesteps: 21000
+Best mean reward: -484.59 - Last mean reward per episode: -486.02
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 486      |
+|    ep_rew_mean      | -486     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 44       |
+|    fps              | 8704     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 21403    |
+----------------------------------
+Num timesteps: 22000
+Best mean reward: -484.59 - Last mean reward per episode: -486.64
+Num timesteps: 23000
+Best mean reward: -484.59 - Last mean reward per episode: -487.21
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 488      |
+|    ep_rew_mean      | -487     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 48       |
+|    fps              | 8694     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 23403    |
+----------------------------------
+Num timesteps: 24000
+Best mean reward: -484.59 - Last mean reward per episode: -487.73
+Num timesteps: 25000
+Best mean reward: -484.59 - Last mean reward per episode: -488.22
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 489      |
+|    ep_rew_mean      | -488     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 52       |
+|    fps              | 8700     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 25403    |
+----------------------------------
+Num timesteps: 26000
+Best mean reward: -484.59 - Last mean reward per episode: -487.79
+Num timesteps: 27000
+Best mean reward: -484.59 - Last mean reward per episode: -486.22
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 487      |
+|    ep_rew_mean      | -486     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 56       |
+|    fps              | 8721     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 27248    |
+----------------------------------
+Num timesteps: 28000
+Best mean reward: -484.59 - Last mean reward per episode: -485.79
+Num timesteps: 29000
+Best mean reward: -484.59 - Last mean reward per episode: -486.27
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 487      |
+|    ep_rew_mean      | -486     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 60       |
+|    fps              | 8742     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 29197    |
+----------------------------------
+Num timesteps: 30000
+Best mean reward: -484.59 - Last mean reward per episode: -486.72
+Num timesteps: 31000
+Best mean reward: -484.59 - Last mean reward per episode: -487.14
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 487      |
+|    ep_rew_mean      | -487     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 64       |
+|    fps              | 8707     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 31197    |
+----------------------------------
+Num timesteps: 32000
+Best mean reward: -484.59 - Last mean reward per episode: -487.54
+Num timesteps: 33000
+Best mean reward: -484.59 - Last mean reward per episode: -487.91
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 488      |
+|    ep_rew_mean      | -488     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 68       |
+|    fps              | 8718     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 33197    |
+----------------------------------
+Num timesteps: 34000
+Best mean reward: -484.59 - Last mean reward per episode: -488.26
+Num timesteps: 35000
+Best mean reward: -484.59 - Last mean reward per episode: -487.25
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 488      |
+|    ep_rew_mean      | -487     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 72       |
+|    fps              | 8731     |
+|    time_elapsed     | 4        |
+|    total timesteps  | 35103    |
+----------------------------------
+Num timesteps: 36000
+Best mean reward: -484.59 - Last mean reward per episode: -484.47
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 485      |
+|    ep_rew_mean      | -485     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 76       |
+|    fps              | 8742     |
+|    time_elapsed     | 4        |
+|    total timesteps  | 36860    |
+----------------------------------
+Num timesteps: 37000
+Best mean reward: -484.47 - Last mean reward per episode: -484.88
+Num timesteps: 38000
+Best mean reward: -484.47 - Last mean reward per episode: -484.42
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 485      |
+|    ep_rew_mean      | -485     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 80       |
+|    fps              | 8753     |
+|    time_elapsed     | 4        |
+|    total timesteps  | 38795    |
+----------------------------------
+Num timesteps: 39000
+Best mean reward: -484.42 - Last mean reward per episode: -484.81
+Num timesteps: 40000
+Best mean reward: -484.42 - Last mean reward per episode: -483.09
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 484      |
+|    ep_rew_mean      | -483     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 84       |
+|    fps              | 8763     |
+|    time_elapsed     | 4        |
+|    total timesteps  | 40624    |
+----------------------------------
+Num timesteps: 41000
+Best mean reward: -483.09 - Last mean reward per episode: -483.49
+Num timesteps: 42000
+Best mean reward: -483.09 - Last mean reward per episode: -483.87
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 484      |
+|    ep_rew_mean      | -484     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 88       |
+|    fps              | 8761     |
+|    time_elapsed     | 4        |
+|    total timesteps  | 42624    |
+----------------------------------
+Num timesteps: 43000
+Best mean reward: -483.09 - Last mean reward per episode: -481.81
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 44000
+Best mean reward: -481.81 - Last mean reward per episode: -481.88
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 482      |
+|    ep_rew_mean      | -482     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 92       |
+|    fps              | 8763     |
+|    time_elapsed     | 5        |
+|    total timesteps  | 44364    |
+----------------------------------
+Num timesteps: 45000
+Best mean reward: -481.81 - Last mean reward per episode: -482.27
+Num timesteps: 46000
+Best mean reward: -481.81 - Last mean reward per episode: -482.64
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 483      |
+|    ep_rew_mean      | -483     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 96       |
+|    fps              | 8781     |
+|    time_elapsed     | 5        |
+|    total timesteps  | 46364    |
+----------------------------------
+Num timesteps: 47000
+Best mean reward: -481.81 - Last mean reward per episode: -483.00
+Num timesteps: 48000
+Best mean reward: -481.81 - Last mean reward per episode: -483.34
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 483      |
+|    ep_rew_mean      | -483     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 100      |
+|    fps              | 8794     |
+|    time_elapsed     | 5        |
+|    total timesteps  | 48307    |
+----------------------------------
+Num timesteps: 49000
+Best mean reward: -481.81 - Last mean reward per episode: -482.93
+Num timesteps: 50000
+Best mean reward: -481.81 - Last mean reward per episode: -481.57
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 482      |
+|    ep_rew_mean      | -482     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 104      |
+|    fps              | 8708     |
+|    time_elapsed     | 5        |
+|    total timesteps  | 50172    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.0167   |
+|    n_updates        | 12542    |
+----------------------------------
+Num timesteps: 51000
+Best mean reward: -481.57 - Last mean reward per episode: -481.57
+Num timesteps: 52000
+Best mean reward: -481.57 - Last mean reward per episode: -481.57
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 482      |
+|    ep_rew_mean      | -482     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 108      |
+|    fps              | 7921     |
+|    time_elapsed     | 6        |
+|    total timesteps  | 52172    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000789 |
+|    n_updates        | 13042    |
+----------------------------------
+Num timesteps: 53000
+Best mean reward: -481.57 - Last mean reward per episode: -481.57
+Num timesteps: 54000
+Best mean reward: -481.57 - Last mean reward per episode: -481.57
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 482      |
+|    ep_rew_mean      | -482     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 112      |
+|    fps              | 7240     |
+|    time_elapsed     | 7        |
+|    total timesteps  | 54172    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00141  |
+|    n_updates        | 13542    |
+----------------------------------
+Num timesteps: 55000
+Best mean reward: -481.57 - Last mean reward per episode: -481.57
+Num timesteps: 56000
+Best mean reward: -481.57 - Last mean reward per episode: -481.57
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 482      |
+|    ep_rew_mean      | -482     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 116      |
+|    fps              | 6749     |
+|    time_elapsed     | 8        |
+|    total timesteps  | 56172    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.0041   |
+|    n_updates        | 14042    |
+----------------------------------
+Num timesteps: 57000
+Best mean reward: -481.57 - Last mean reward per episode: -481.57
+Num timesteps: 58000
+Best mean reward: -481.57 - Last mean reward per episode: -481.57
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 483      |
+|    ep_rew_mean      | -483     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 120      |
+|    fps              | 6347     |
+|    time_elapsed     | 9        |
+|    total timesteps  | 58172    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00146  |
+|    n_updates        | 14542    |
+----------------------------------
+Num timesteps: 59000
+Best mean reward: -481.57 - Last mean reward per episode: -483.26
+Num timesteps: 60000
+Best mean reward: -481.57 - Last mean reward per episode: -483.26
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 483      |
+|    ep_rew_mean      | -483     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 124      |
+|    fps              | 6031     |
+|    time_elapsed     | 9        |
+|    total timesteps  | 60172    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.0118   |
+|    n_updates        | 15042    |
+----------------------------------
+Num timesteps: 61000
+Best mean reward: -481.57 - Last mean reward per episode: -483.26
+Num timesteps: 62000
+Best mean reward: -481.57 - Last mean reward per episode: -483.26
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 483      |
+|    ep_rew_mean      | -483     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 128      |
+|    fps              | 5765     |
+|    time_elapsed     | 10       |
+|    total timesteps  | 62172    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000969 |
+|    n_updates        | 15542    |
+----------------------------------
+Num timesteps: 63000
+Best mean reward: -481.57 - Last mean reward per episode: -481.06
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 478      |
+|    ep_rew_mean      | -478     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 132      |
+|    fps              | 5610     |
+|    time_elapsed     | 11       |
+|    total timesteps  | 63431    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00131  |
+|    n_updates        | 15857    |
+----------------------------------
+Num timesteps: 64000
+Best mean reward: -481.06 - Last mean reward per episode: -475.03
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 471      |
+|    ep_rew_mean      | -470     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 136      |
+|    fps              | 5493     |
+|    time_elapsed     | 11       |
+|    total timesteps  | 64509    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000913 |
+|    n_updates        | 16127    |
+----------------------------------
+Num timesteps: 65000
+Best mean reward: -475.03 - Last mean reward per episode: -468.56
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 463      |
+|    ep_rew_mean      | -462     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 140      |
+|    fps              | 5365     |
+|    time_elapsed     | 12       |
+|    total timesteps  | 65661    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00118  |
+|    n_updates        | 16415    |
+----------------------------------
+Num timesteps: 66000
+Best mean reward: -468.56 - Last mean reward per episode: -460.68
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 67000
+Best mean reward: -460.68 - Last mean reward per episode: -459.05
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 459      |
+|    ep_rew_mean      | -459     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 144      |
+|    fps              | 5210     |
+|    time_elapsed     | 12       |
+|    total timesteps  | 67332    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00263  |
+|    n_updates        | 16832    |
+----------------------------------
+Num timesteps: 68000
+Best mean reward: -459.05 - Last mean reward per episode: -459.05
+Num timesteps: 69000
+Best mean reward: -459.05 - Last mean reward per episode: -457.97
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 458      |
+|    ep_rew_mean      | -458     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 148      |
+|    fps              | 5051     |
+|    time_elapsed     | 13       |
+|    total timesteps  | 69225    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00229  |
+|    n_updates        | 17306    |
+----------------------------------
+Num timesteps: 70000
+Best mean reward: -457.97 - Last mean reward per episode: -451.57
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 448      |
+|    ep_rew_mean      | -448     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 152      |
+|    fps              | 4976     |
+|    time_elapsed     | 14       |
+|    total timesteps  | 70204    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.0117   |
+|    n_updates        | 17550    |
+----------------------------------
+Num timesteps: 71000
+Best mean reward: -451.57 - Last mean reward per episode: -438.25
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 439      |
+|    ep_rew_mean      | -438     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 156      |
+|    fps              | 4912     |
+|    time_elapsed     | 14       |
+|    total timesteps  | 71102    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00201  |
+|    n_updates        | 17775    |
+----------------------------------
+Num timesteps: 72000
+Best mean reward: -438.25 - Last mean reward per episode: -438.77
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 437      |
+|    ep_rew_mean      | -436     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 160      |
+|    fps              | 4797     |
+|    time_elapsed     | 15       |
+|    total timesteps  | 72853    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.0023   |
+|    n_updates        | 18213    |
+----------------------------------
+Num timesteps: 73000
+Best mean reward: -438.25 - Last mean reward per episode: -432.28
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 427      |
+|    ep_rew_mean      | -426     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 164      |
+|    fps              | 4716     |
+|    time_elapsed     | 15       |
+|    total timesteps  | 73859    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00252  |
+|    n_updates        | 18464    |
+----------------------------------
+Num timesteps: 74000
+Best mean reward: -432.28 - Last mean reward per episode: -426.28
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 75000
+Best mean reward: -426.28 - Last mean reward per episode: -420.66
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 420      |
+|    ep_rew_mean      | -419     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 168      |
+|    fps              | 4634     |
+|    time_elapsed     | 16       |
+|    total timesteps  | 75162    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00279  |
+|    n_updates        | 18790    |
+----------------------------------
+Num timesteps: 76000
+Best mean reward: -420.66 - Last mean reward per episode: -417.44
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 412      |
+|    ep_rew_mean      | -412     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 172      |
+|    fps              | 4572     |
+|    time_elapsed     | 16       |
+|    total timesteps  | 76304    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00143  |
+|    n_updates        | 19075    |
+----------------------------------
+Num timesteps: 77000
+Best mean reward: -417.44 - Last mean reward per episode: -410.56
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 410      |
+|    ep_rew_mean      | -409     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 176      |
+|    fps              | 4491     |
+|    time_elapsed     | 17       |
+|    total timesteps  | 77851    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00137  |
+|    n_updates        | 19462    |
+----------------------------------
+Num timesteps: 78000
+Best mean reward: -410.56 - Last mean reward per episode: -405.91
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 398      |
+|    ep_rew_mean      | -397     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 180      |
+|    fps              | 4455     |
+|    time_elapsed     | 17       |
+|    total timesteps  | 78582    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000545 |
+|    n_updates        | 19645    |
+----------------------------------
+Num timesteps: 79000
+Best mean reward: -405.91 - Last mean reward per episode: -396.58
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 80000
+Best mean reward: -396.58 - Last mean reward per episode: -395.56
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 395      |
+|    ep_rew_mean      | -395     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 184      |
+|    fps              | 4385     |
+|    time_elapsed     | 18       |
+|    total timesteps  | 80134    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.0174   |
+|    n_updates        | 20033    |
+----------------------------------
+Num timesteps: 81000
+Best mean reward: -395.56 - Last mean reward per episode: -386.98
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 387      |
+|    ep_rew_mean      | -387     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 188      |
+|    fps              | 4333     |
+|    time_elapsed     | 18       |
+|    total timesteps  | 81373    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00381  |
+|    n_updates        | 20343    |
+----------------------------------
+Num timesteps: 82000
+Best mean reward: -386.98 - Last mean reward per episode: -389.30
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 384      |
+|    ep_rew_mean      | -383     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 192      |
+|    fps              | 4279     |
+|    time_elapsed     | 19       |
+|    total timesteps  | 82749    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00173  |
+|    n_updates        | 20687    |
+----------------------------------
+Num timesteps: 83000
+Best mean reward: -386.98 - Last mean reward per episode: -383.33
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 373      |
+|    ep_rew_mean      | -373     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 196      |
+|    fps              | 4244     |
+|    time_elapsed     | 19       |
+|    total timesteps  | 83681    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00188  |
+|    n_updates        | 20920    |
+----------------------------------
+Num timesteps: 84000
+Best mean reward: -383.33 - Last mean reward per episode: -370.42
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 362      |
+|    ep_rew_mean      | -362     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 200      |
+|    fps              | 4212     |
+|    time_elapsed     | 20       |
+|    total timesteps  | 84537    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00319  |
+|    n_updates        | 21134    |
+----------------------------------
+Num timesteps: 85000
+Best mean reward: -370.42 - Last mean reward per episode: -356.06
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 356      |
+|    ep_rew_mean      | -355     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 204      |
+|    fps              | 4171     |
+|    time_elapsed     | 20       |
+|    total timesteps  | 85727    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00182  |
+|    n_updates        | 21431    |
+----------------------------------
+Num timesteps: 86000
+Best mean reward: -356.06 - Last mean reward per episode: -352.49
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 347      |
+|    ep_rew_mean      | -347     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 208      |
+|    fps              | 4132     |
+|    time_elapsed     | 21       |
+|    total timesteps  | 86888    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00393  |
+|    n_updates        | 21721    |
+----------------------------------
+Num timesteps: 87000
+Best mean reward: -352.49 - Last mean reward per episode: -346.51
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 336      |
+|    ep_rew_mean      | -335     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 212      |
+|    fps              | 4097     |
+|    time_elapsed     | 21       |
+|    total timesteps  | 87779    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00152  |
+|    n_updates        | 21944    |
+----------------------------------
+Num timesteps: 88000
+Best mean reward: -346.51 - Last mean reward per episode: -332.01
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 89000
+Best mean reward: -332.01 - Last mean reward per episode: -330.39
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 329      |
+|    ep_rew_mean      | -328     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 216      |
+|    fps              | 4059     |
+|    time_elapsed     | 21       |
+|    total timesteps  | 89027    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00265  |
+|    n_updates        | 22256    |
+----------------------------------
+Num timesteps: 90000
+Best mean reward: -330.39 - Last mean reward per episode: -320.96
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 318      |
+|    ep_rew_mean      | -318     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 220      |
+|    fps              | 4030     |
+|    time_elapsed     | 22       |
+|    total timesteps  | 90006    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.397    |
+|    n_updates        | 22501    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 307      |
+|    ep_rew_mean      | -307     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 224      |
+|    fps              | 4003     |
+|    time_elapsed     | 22       |
+|    total timesteps  | 90915    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00201  |
+|    n_updates        | 22728    |
+----------------------------------
+Num timesteps: 91000
+Best mean reward: -320.96 - Last mean reward per episode: -306.63
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 92000
+Best mean reward: -306.63 - Last mean reward per episode: -300.16
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 300      |
+|    ep_rew_mean      | -299     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 228      |
+|    fps              | 3951     |
+|    time_elapsed     | 23       |
+|    total timesteps  | 92191    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00379  |
+|    n_updates        | 23047    |
+----------------------------------
+Num timesteps: 93000
+Best mean reward: -300.16 - Last mean reward per episode: -293.87
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 297      |
+|    ep_rew_mean      | -296     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 232      |
+|    fps              | 3925     |
+|    time_elapsed     | 23       |
+|    total timesteps  | 93087    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00519  |
+|    n_updates        | 23271    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 293      |
+|    ep_rew_mean      | -292     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 236      |
+|    fps              | 3903     |
+|    time_elapsed     | 24       |
+|    total timesteps  | 93832    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00525  |
+|    n_updates        | 23457    |
+----------------------------------
+Num timesteps: 94000
+Best mean reward: -293.87 - Last mean reward per episode: -290.77
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 291      |
+|    ep_rew_mean      | -290     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 240      |
+|    fps              | 3880     |
+|    time_elapsed     | 24       |
+|    total timesteps  | 94751    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00331  |
+|    n_updates        | 23687    |
+----------------------------------
+Num timesteps: 95000
+Best mean reward: -290.77 - Last mean reward per episode: -290.05
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 96000
+Best mean reward: -290.05 - Last mean reward per episode: -290.22
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 288      |
+|    ep_rew_mean      | -288     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 244      |
+|    fps              | 3840     |
+|    time_elapsed     | 25       |
+|    total timesteps  | 96179    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00293  |
+|    n_updates        | 24044    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 276      |
+|    ep_rew_mean      | -276     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 248      |
+|    fps              | 3825     |
+|    time_elapsed     | 25       |
+|    total timesteps  | 96871    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00331  |
+|    n_updates        | 24217    |
+----------------------------------
+Num timesteps: 97000
+Best mean reward: -290.05 - Last mean reward per episode: -275.57
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 278      |
+|    ep_rew_mean      | -277     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 252      |
+|    fps              | 3801     |
+|    time_elapsed     | 25       |
+|    total timesteps  | 97965    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.002    |
+|    n_updates        | 24491    |
+----------------------------------
+Num timesteps: 98000
+Best mean reward: -275.57 - Last mean reward per episode: -276.71
+Num timesteps: 99000
+Best mean reward: -275.57 - Last mean reward per episode: -282.72
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 281      |
+|    ep_rew_mean      | -280     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 256      |
+|    fps              | 3774     |
+|    time_elapsed     | 26       |
+|    total timesteps  | 99177    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.25     |
+|    n_updates        | 24794    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 271      |
+|    ep_rew_mean      | -270     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 260      |
+|    fps              | 3757     |
+|    time_elapsed     | 26       |
+|    total timesteps  | 99941    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00332  |
+|    n_updates        | 24985    |
+----------------------------------
+Num timesteps: 100000
+Best mean reward: -275.57 - Last mean reward per episode: -269.95
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Using cpu device
+Wrapping the env in a DummyVecEnv.
+Num timesteps: 1000
+Best mean reward: -inf - Last mean reward per episode: -500.00
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 422      |
+|    ep_rew_mean      | -422     |
+|    exploration rate | 0.84     |
+| time/               |          |
+|    episodes         | 4        |
+|    fps              | 9262     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 1688     |
+----------------------------------
+Num timesteps: 2000
+Best mean reward: -500.00 - Last mean reward per episode: -421.50
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 3000
+Best mean reward: -421.50 - Last mean reward per episode: -433.33
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 450      |
+|    ep_rew_mean      | -450     |
+|    exploration rate | 0.658    |
+| time/               |          |
+|    episodes         | 8        |
+|    fps              | 9209     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 3603     |
+----------------------------------
+Num timesteps: 4000
+Best mean reward: -421.50 - Last mean reward per episode: -450.00
+Num timesteps: 5000
+Best mean reward: -421.50 - Last mean reward per episode: -460.00
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 467      |
+|    ep_rew_mean      | -467     |
+|    exploration rate | 0.468    |
+| time/               |          |
+|    episodes         | 12       |
+|    fps              | 9221     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 5603     |
+----------------------------------
+Num timesteps: 6000
+Best mean reward: -421.50 - Last mean reward per episode: -466.67
+Num timesteps: 7000
+Best mean reward: -421.50 - Last mean reward per episode: -471.43
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 475      |
+|    ep_rew_mean      | -475     |
+|    exploration rate | 0.278    |
+| time/               |          |
+|    episodes         | 16       |
+|    fps              | 9236     |
+|    time_elapsed     | 0        |
+|    total timesteps  | 7603     |
+----------------------------------
+Num timesteps: 8000
+Best mean reward: -421.50 - Last mean reward per episode: -475.00
+Num timesteps: 9000
+Best mean reward: -421.50 - Last mean reward per episode: -477.78
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 480      |
+|    ep_rew_mean      | -480     |
+|    exploration rate | 0.0877   |
+| time/               |          |
+|    episodes         | 20       |
+|    fps              | 9243     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 9603     |
+----------------------------------
+Num timesteps: 10000
+Best mean reward: -421.50 - Last mean reward per episode: -480.00
+Num timesteps: 11000
+Best mean reward: -421.50 - Last mean reward per episode: -476.48
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 476      |
+|    ep_rew_mean      | -476     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 24       |
+|    fps              | 9254     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 11435    |
+----------------------------------
+Num timesteps: 12000
+Best mean reward: -421.50 - Last mean reward per episode: -477.16
+Num timesteps: 13000
+Best mean reward: -421.50 - Last mean reward per episode: -469.67
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 469      |
+|    ep_rew_mean      | -469     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 28       |
+|    fps              | 9259     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 13128    |
+----------------------------------
+Num timesteps: 14000
+Best mean reward: -421.50 - Last mean reward per episode: -469.66
+Num timesteps: 15000
+Best mean reward: -421.50 - Last mean reward per episode: -469.48
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 471      |
+|    ep_rew_mean      | -470     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 32       |
+|    fps              | 9262     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 15063    |
+----------------------------------
+Num timesteps: 16000
+Best mean reward: -421.50 - Last mean reward per episode: -471.33
+Num timesteps: 17000
+Best mean reward: -421.50 - Last mean reward per episode: -472.97
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 474      |
+|    ep_rew_mean      | -474     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 36       |
+|    fps              | 9209     |
+|    time_elapsed     | 1        |
+|    total timesteps  | 17063    |
+----------------------------------
+Num timesteps: 18000
+Best mean reward: -421.50 - Last mean reward per episode: -474.43
+Num timesteps: 19000
+Best mean reward: -421.50 - Last mean reward per episode: -475.74
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 477      |
+|    ep_rew_mean      | -476     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 40       |
+|    fps              | 9199     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 19063    |
+----------------------------------
+Num timesteps: 20000
+Best mean reward: -421.50 - Last mean reward per episode: -472.98
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 474      |
+|    ep_rew_mean      | -474     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 44       |
+|    fps              | 9213     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 20875    |
+----------------------------------
+Num timesteps: 21000
+Best mean reward: -421.50 - Last mean reward per episode: -474.20
+Num timesteps: 22000
+Best mean reward: -421.50 - Last mean reward per episode: -472.30
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 474      |
+|    ep_rew_mean      | -473     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 48       |
+|    fps              | 9186     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 22737    |
+----------------------------------
+Num timesteps: 23000
+Best mean reward: -421.50 - Last mean reward per episode: -473.46
+Num timesteps: 24000
+Best mean reward: -421.50 - Last mean reward per episode: -474.52
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 476      |
+|    ep_rew_mean      | -476     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 52       |
+|    fps              | 9176     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 24737    |
+----------------------------------
+Num timesteps: 25000
+Best mean reward: -421.50 - Last mean reward per episode: -475.50
+Num timesteps: 26000
+Best mean reward: -421.50 - Last mean reward per episode: -476.41
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 477      |
+|    ep_rew_mean      | -477     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 56       |
+|    fps              | 9175     |
+|    time_elapsed     | 2        |
+|    total timesteps  | 26737    |
+----------------------------------
+Num timesteps: 27000
+Best mean reward: -421.50 - Last mean reward per episode: -477.25
+Num timesteps: 28000
+Best mean reward: -421.50 - Last mean reward per episode: -477.26
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 478      |
+|    ep_rew_mean      | -478     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 60       |
+|    fps              | 9174     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 28693    |
+----------------------------------
+Num timesteps: 29000
+Best mean reward: -421.50 - Last mean reward per episode: -478.02
+Num timesteps: 30000
+Best mean reward: -421.50 - Last mean reward per episode: -478.15
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 475      |
+|    ep_rew_mean      | -475     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 64       |
+|    fps              | 9159     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 30405    |
+----------------------------------
+Num timesteps: 31000
+Best mean reward: -421.50 - Last mean reward per episode: -475.23
+Num timesteps: 32000
+Best mean reward: -421.50 - Last mean reward per episode: -475.97
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 477      |
+|    ep_rew_mean      | -476     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 68       |
+|    fps              | 9126     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 32405    |
+----------------------------------
+Num timesteps: 33000
+Best mean reward: -421.50 - Last mean reward per episode: -476.67
+Num timesteps: 34000
+Best mean reward: -421.50 - Last mean reward per episode: -477.32
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 478      |
+|    ep_rew_mean      | -478     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 72       |
+|    fps              | 9131     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 34405    |
+----------------------------------
+Num timesteps: 35000
+Best mean reward: -421.50 - Last mean reward per episode: -477.95
+Num timesteps: 36000
+Best mean reward: -421.50 - Last mean reward per episode: -478.53
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 479      |
+|    ep_rew_mean      | -479     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 76       |
+|    fps              | 9118     |
+|    time_elapsed     | 3        |
+|    total timesteps  | 36397    |
+----------------------------------
+Num timesteps: 37000
+Best mean reward: -421.50 - Last mean reward per episode: -478.97
+Num timesteps: 38000
+Best mean reward: -421.50 - Last mean reward per episode: -479.51
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 480      |
+|    ep_rew_mean      | -479     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 80       |
+|    fps              | 9084     |
+|    time_elapsed     | 4        |
+|    total timesteps  | 38368    |
+----------------------------------
+Num timesteps: 39000
+Best mean reward: -421.50 - Last mean reward per episode: -479.64
+Num timesteps: 40000
+Best mean reward: -421.50 - Last mean reward per episode: -477.93
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 478      |
+|    ep_rew_mean      | -478     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 84       |
+|    fps              | 9072     |
+|    time_elapsed     | 4        |
+|    total timesteps  | 40186    |
+----------------------------------
+Num timesteps: 41000
+Best mean reward: -421.50 - Last mean reward per episode: -478.14
+Num timesteps: 42000
+Best mean reward: -421.50 - Last mean reward per episode: -478.64
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 479      |
+|    ep_rew_mean      | -479     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 88       |
+|    fps              | 9067     |
+|    time_elapsed     | 4        |
+|    total timesteps  | 42161    |
+----------------------------------
+Num timesteps: 43000
+Best mean reward: -421.50 - Last mean reward per episode: -479.12
+Num timesteps: 44000
+Best mean reward: -421.50 - Last mean reward per episode: -479.58
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 480      |
+|    ep_rew_mean      | -480     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 92       |
+|    fps              | 9051     |
+|    time_elapsed     | 4        |
+|    total timesteps  | 44161    |
+----------------------------------
+Num timesteps: 45000
+Best mean reward: -421.50 - Last mean reward per episode: -480.02
+Num timesteps: 46000
+Best mean reward: -421.50 - Last mean reward per episode: -479.23
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 480      |
+|    ep_rew_mean      | -479     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 96       |
+|    fps              | 9049     |
+|    time_elapsed     | 5        |
+|    total timesteps  | 46047    |
+----------------------------------
+Num timesteps: 47000
+Best mean reward: -421.50 - Last mean reward per episode: -479.66
+Num timesteps: 48000
+Best mean reward: -421.50 - Last mean reward per episode: -480.07
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 480      |
+|    ep_rew_mean      | -480     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 100      |
+|    fps              | 9051     |
+|    time_elapsed     | 5        |
+|    total timesteps  | 48047    |
+----------------------------------
+Num timesteps: 49000
+Best mean reward: -421.50 - Last mean reward per episode: -478.56
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 482      |
+|    ep_rew_mean      | -482     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 104      |
+|    fps              | 9053     |
+|    time_elapsed     | 5        |
+|    total timesteps  | 49877    |
+----------------------------------
+Num timesteps: 50000
+Best mean reward: -421.50 - Last mean reward per episode: -481.70
+Num timesteps: 51000
+Best mean reward: -421.50 - Last mean reward per episode: -482.56
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 483      |
+|    ep_rew_mean      | -483     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 108      |
+|    fps              | 8199     |
+|    time_elapsed     | 6        |
+|    total timesteps  | 51877    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.0343   |
+|    n_updates        | 469      |
+----------------------------------
+Num timesteps: 52000
+Best mean reward: -421.50 - Last mean reward per episode: -482.56
+Num timesteps: 53000
+Best mean reward: -421.50 - Last mean reward per episode: -479.58
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 477      |
+|    ep_rew_mean      | -476     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 112      |
+|    fps              | 7682     |
+|    time_elapsed     | 6        |
+|    total timesteps  | 53261    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00288  |
+|    n_updates        | 815      |
+----------------------------------
+Num timesteps: 54000
+Best mean reward: -421.50 - Last mean reward per episode: -471.37
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 468      |
+|    ep_rew_mean      | -468     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 116      |
+|    fps              | 7330     |
+|    time_elapsed     | 7        |
+|    total timesteps  | 54406    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00214  |
+|    n_updates        | 1101     |
+----------------------------------
+Num timesteps: 55000
+Best mean reward: -421.50 - Last mean reward per episode: -464.54
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 459      |
+|    ep_rew_mean      | -459     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 120      |
+|    fps              | 7018     |
+|    time_elapsed     | 7        |
+|    total timesteps  | 55539    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00254  |
+|    n_updates        | 1384     |
+----------------------------------
+Num timesteps: 56000
+Best mean reward: -421.50 - Last mean reward per episode: -456.51
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 452      |
+|    ep_rew_mean      | -451     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 124      |
+|    fps              | 6775     |
+|    time_elapsed     | 8        |
+|    total timesteps  | 56609    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00233  |
+|    n_updates        | 1652     |
+----------------------------------
+Num timesteps: 57000
+Best mean reward: -421.50 - Last mean reward per episode: -449.89
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 447      |
+|    ep_rew_mean      | -446     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 128      |
+|    fps              | 6491     |
+|    time_elapsed     | 8        |
+|    total timesteps  | 57783    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000761 |
+|    n_updates        | 1945     |
+----------------------------------
+Num timesteps: 58000
+Best mean reward: -421.50 - Last mean reward per episode: -442.93
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 436      |
+|    ep_rew_mean      | -436     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 132      |
+|    fps              | 6332     |
+|    time_elapsed     | 9        |
+|    total timesteps  | 58706    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000665 |
+|    n_updates        | 2176     |
+----------------------------------
+Num timesteps: 59000
+Best mean reward: -421.50 - Last mean reward per episode: -432.78
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 427      |
+|    ep_rew_mean      | -426     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 136      |
+|    fps              | 6170     |
+|    time_elapsed     | 9        |
+|    total timesteps  | 59729    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000418 |
+|    n_updates        | 2432     |
+----------------------------------
+Num timesteps: 60000
+Best mean reward: -421.50 - Last mean reward per episode: -423.57
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 414      |
+|    ep_rew_mean      | -414     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 140      |
+|    fps              | 6057     |
+|    time_elapsed     | 9        |
+|    total timesteps  | 60493    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.0139   |
+|    n_updates        | 2623     |
+----------------------------------
+Num timesteps: 61000
+Best mean reward: -421.50 - Last mean reward per episode: -415.77
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 409      |
+|    ep_rew_mean      | -409     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 144      |
+|    fps              | 5876     |
+|    time_elapsed     | 10       |
+|    total timesteps  | 61823    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00152  |
+|    n_updates        | 2955     |
+----------------------------------
+Num timesteps: 62000
+Best mean reward: -415.77 - Last mean reward per episode: -409.04
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 63000
+Best mean reward: -409.04 - Last mean reward per episode: -408.32
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 408      |
+|    ep_rew_mean      | -407     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 148      |
+|    fps              | 5666     |
+|    time_elapsed     | 11       |
+|    total timesteps  | 63529    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00173  |
+|    n_updates        | 3382     |
+----------------------------------
+Num timesteps: 64000
+Best mean reward: -408.32 - Last mean reward per episode: -406.26
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 400      |
+|    ep_rew_mean      | -399     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 152      |
+|    fps              | 5534     |
+|    time_elapsed     | 11       |
+|    total timesteps  | 64688    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000938 |
+|    n_updates        | 3671     |
+----------------------------------
+Num timesteps: 65000
+Best mean reward: -406.26 - Last mean reward per episode: -399.02
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 66000
+Best mean reward: -399.02 - Last mean reward per episode: -399.02
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 399      |
+|    ep_rew_mean      | -398     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 156      |
+|    fps              | 5330     |
+|    time_elapsed     | 12       |
+|    total timesteps  | 66621    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00078  |
+|    n_updates        | 4155     |
+----------------------------------
+Num timesteps: 67000
+Best mean reward: -399.02 - Last mean reward per episode: -398.34
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 68000
+Best mean reward: -398.34 - Last mean reward per episode: -393.82
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 394      |
+|    ep_rew_mean      | -394     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 160      |
+|    fps              | 5174     |
+|    time_elapsed     | 13       |
+|    total timesteps  | 68126    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000239 |
+|    n_updates        | 4531     |
+----------------------------------
+Num timesteps: 69000
+Best mean reward: -393.82 - Last mean reward per episode: -392.25
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 395      |
+|    ep_rew_mean      | -395     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 164      |
+|    fps              | 5020     |
+|    time_elapsed     | 13       |
+|    total timesteps  | 69934    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00171  |
+|    n_updates        | 4983     |
+----------------------------------
+Num timesteps: 70000
+Best mean reward: -392.25 - Last mean reward per episode: -394.80
+Num timesteps: 71000
+Best mean reward: -392.25 - Last mean reward per episode: -394.80
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 395      |
+|    ep_rew_mean      | -395     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 168      |
+|    fps              | 4858     |
+|    time_elapsed     | 14       |
+|    total timesteps  | 71934    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00163  |
+|    n_updates        | 5483     |
+----------------------------------
+Num timesteps: 72000
+Best mean reward: -392.25 - Last mean reward per episode: -394.80
+Num timesteps: 73000
+Best mean reward: -392.25 - Last mean reward per episode: -394.80
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 395      |
+|    ep_rew_mean      | -395     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 172      |
+|    fps              | 4709     |
+|    time_elapsed     | 15       |
+|    total timesteps  | 73934    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000993 |
+|    n_updates        | 5983     |
+----------------------------------
+Num timesteps: 74000
+Best mean reward: -392.25 - Last mean reward per episode: -394.80
+Num timesteps: 75000
+Best mean reward: -392.25 - Last mean reward per episode: -392.74
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 393      |
+|    ep_rew_mean      | -393     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 176      |
+|    fps              | 4609     |
+|    time_elapsed     | 16       |
+|    total timesteps  | 75729    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.0012   |
+|    n_updates        | 6432     |
+----------------------------------
+Num timesteps: 76000
+Best mean reward: -392.25 - Last mean reward per episode: -392.83
+Num timesteps: 77000
+Best mean reward: -392.25 - Last mean reward per episode: -392.35
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 393      |
+|    ep_rew_mean      | -393     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 180      |
+|    fps              | 4486     |
+|    time_elapsed     | 17       |
+|    total timesteps  | 77682    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.064    |
+|    n_updates        | 6920     |
+----------------------------------
+Num timesteps: 78000
+Best mean reward: -392.25 - Last mean reward per episode: -392.65
+Num timesteps: 79000
+Best mean reward: -392.25 - Last mean reward per episode: -394.48
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 395      |
+|    ep_rew_mean      | -394     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 184      |
+|    fps              | 4380     |
+|    time_elapsed     | 18       |
+|    total timesteps  | 79682    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000253 |
+|    n_updates        | 7420     |
+----------------------------------
+Num timesteps: 80000
+Best mean reward: -392.25 - Last mean reward per episode: -394.48
+Num timesteps: 81000
+Best mean reward: -392.25 - Last mean reward per episode: -394.74
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 395      |
+|    ep_rew_mean      | -395     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 188      |
+|    fps              | 4287     |
+|    time_elapsed     | 19       |
+|    total timesteps  | 81682    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.0883   |
+|    n_updates        | 7920     |
+----------------------------------
+Num timesteps: 82000
+Best mean reward: -392.25 - Last mean reward per episode: -394.74
+Num timesteps: 83000
+Best mean reward: -392.25 - Last mean reward per episode: -394.74
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 395      |
+|    ep_rew_mean      | -395     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 192      |
+|    fps              | 4212     |
+|    time_elapsed     | 19       |
+|    total timesteps  | 83682    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00061  |
+|    n_updates        | 8420     |
+----------------------------------
+Num timesteps: 84000
+Best mean reward: -392.25 - Last mean reward per episode: -394.74
+Num timesteps: 85000
+Best mean reward: -392.25 - Last mean reward per episode: -394.74
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 396      |
+|    ep_rew_mean      | -396     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 196      |
+|    fps              | 4129     |
+|    time_elapsed     | 20       |
+|    total timesteps  | 85682    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00169  |
+|    n_updates        | 8920     |
+----------------------------------
+Num timesteps: 86000
+Best mean reward: -392.25 - Last mean reward per episode: -395.89
+Num timesteps: 87000
+Best mean reward: -392.25 - Last mean reward per episode: -395.89
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 396      |
+|    ep_rew_mean      | -396     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 200      |
+|    fps              | 4054     |
+|    time_elapsed     | 21       |
+|    total timesteps  | 87682    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000405 |
+|    n_updates        | 9420     |
+----------------------------------
+Num timesteps: 88000
+Best mean reward: -392.25 - Last mean reward per episode: -395.89
+Num timesteps: 89000
+Best mean reward: -392.25 - Last mean reward per episode: -397.60
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 398      |
+|    ep_rew_mean      | -398     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 204      |
+|    fps              | 3979     |
+|    time_elapsed     | 22       |
+|    total timesteps  | 89682    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000565 |
+|    n_updates        | 9920     |
+----------------------------------
+Num timesteps: 90000
+Best mean reward: -392.25 - Last mean reward per episode: -397.60
+Num timesteps: 91000
+Best mean reward: -392.25 - Last mean reward per episode: -397.60
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 398      |
+|    ep_rew_mean      | -398     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 208      |
+|    fps              | 3923     |
+|    time_elapsed     | 23       |
+|    total timesteps  | 91682    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00181  |
+|    n_updates        | 10420    |
+----------------------------------
+Num timesteps: 92000
+Best mean reward: -392.25 - Last mean reward per episode: -397.60
+Num timesteps: 93000
+Best mean reward: -392.25 - Last mean reward per episode: -400.58
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 404      |
+|    ep_rew_mean      | -404     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 212      |
+|    fps              | 3874     |
+|    time_elapsed     | 24       |
+|    total timesteps  | 93682    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00105  |
+|    n_updates        | 10920    |
+----------------------------------
+Num timesteps: 94000
+Best mean reward: -392.25 - Last mean reward per episode: -403.79
+Num timesteps: 95000
+Best mean reward: -392.25 - Last mean reward per episode: -408.79
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 413      |
+|    ep_rew_mean      | -412     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 216      |
+|    fps              | 3821     |
+|    time_elapsed     | 25       |
+|    total timesteps  | 95682    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000528 |
+|    n_updates        | 11420    |
+----------------------------------
+Num timesteps: 96000
+Best mean reward: -392.25 - Last mean reward per episode: -412.38
+Num timesteps: 97000
+Best mean reward: -392.25 - Last mean reward per episode: -415.62
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 421      |
+|    ep_rew_mean      | -421     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 220      |
+|    fps              | 3774     |
+|    time_elapsed     | 25       |
+|    total timesteps  | 97682    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.000988 |
+|    n_updates        | 11920    |
+----------------------------------
+Num timesteps: 98000
+Best mean reward: -392.25 - Last mean reward per episode: -421.08
+Num timesteps: 99000
+Best mean reward: -392.25 - Last mean reward per episode: -425.55
+----------------------------------
+| rollout/            |          |
+|    ep_len_mean      | 431      |
+|    ep_rew_mean      | -430     |
+|    exploration rate | 0.05     |
+| time/               |          |
+|    episodes         | 224      |
+|    fps              | 3733     |
+|    time_elapsed     | 26       |
+|    total timesteps  | 99682    |
+| train/              |          |
+|    learning_rate    | 0.0001   |
+|    loss             | 0.00144  |
+|    n_updates        | 12420    |
+----------------------------------
+Num timesteps: 100000
+Best mean reward: -392.25 - Last mean reward per episode: -430.42
+--- 81.2664008140564 seconds ---
+
+Process finished with exit code 0
