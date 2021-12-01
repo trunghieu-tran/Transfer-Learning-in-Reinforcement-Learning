@@ -26,6 +26,7 @@ Using pip:
 
 ```
 pip install gym
+pip install Box2D
 ```
 
 Or Building from Source
@@ -83,6 +84,37 @@ For example:
 ```
 python -m atari_py.import_roms "/Users/harrytran/OneDrive - The University of Texas at Dallas/Fall 2021/CS 7301/project"
 ```
+
+## Implemented Algorithms in Stable-Baseline3 
+
+| **Name**         | **Recurrent**      | `Box`          | `Discrete`     | `MultiDiscrete` | `MultiBinary`  | **Multi Processing**              |
+| ------------------- | ------------------ | ------------------ | ------------------ | ------------------- | ------------------ | --------------------------------- |
+| A2C   | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:                |
+| DDPG  | :x: | :heavy_check_mark: | :x:                | :x:                 | :x:                | :x:                               |
+| DQN   | :x: | :x: | :heavy_check_mark: | :x:                 | :x:                | :x:                               |
+| HER   | :x: | :heavy_check_mark: | :heavy_check_mark: | :x:                 | :x:                | :x:                               |
+| PPO   | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark:                |
+| SAC   | :x: | :heavy_check_mark: | :x:                | :x:                 | :x:                | :x:                               |
+| TD3   | :x: | :heavy_check_mark: | :x:                | :x:                 | :x:                | :x:                               |
+| QR-DQN<sup>[1](#f1)</sup>  | :x: | :x: | :heavy_check_mark: | :x:                 | :x:                | :x:                               |
+| TQC<sup>[1](#f1)</sup>   | :x: | :heavy_check_mark: | :x:                | :x:                 | :x:                | :x:                               |
+| Maskable PPO<sup>[1](#f1)</sup>   | :x: | :x: | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark:  |
+
+<b id="f1">1</b>: Implemented in [SB3 Contrib](https://github.com/Stable-Baselines-Team/stable-baselines3-contrib) GitHub repository.
+
+Actions `gym.spaces`:
+ * `Box`: A N-dimensional box that containes every point in the action space.
+ * `Discrete`: A list of possible actions, where each timestep only one of the actions can be used.
+ * `MultiDiscrete`: A list of possible actions, where each timestep only one action of each discrete set can be used.
+ * `MultiBinary`: A list of possible actions, where each timestep any of the actions can be used in any combination.
+
+
+## How to run?
+
+1. Open `main.py`
+2. Modify `env_name` and `algorithm` that you want to run
+3. Modify parameters in `transfer_execute` function if needed
+4. Log will be printed out to the terminal and the plotting result will be shown on the new windows.
 
 
 ## Refercences

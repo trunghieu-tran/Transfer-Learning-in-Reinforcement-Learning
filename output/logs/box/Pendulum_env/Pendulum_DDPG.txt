@@ -1,0 +1,664 @@
+/Users/harrytran/anaconda3/envs/graph_python/bin/python "/Users/harrytran/OneDrive - The University of Texas at Dallas/Fall 2021/CS 7301/project/Transfer-Learning-in-Reinforcement-Learning/tl/main.py"
+/Users/harrytran/anaconda3/envs/graph_python/lib/python3.8/site-packages/ale_py/roms/__init__.py:84: DeprecationWarning: Automatic importing of atari-py roms won't be supported in future releases of ale-py. Please migrate over to using `ale-import-roms` OR an ALE-supported ROM package. To make this warning disappear you can run `ale-import-roms --import-from-pkg atari_py.atari_roms`.For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
+  __all__ = _resolve_roms()
+>>Executing with algorithm DDPG...
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.53e+03 |
+| time/              |           |
+|    episodes        | 4         |
+|    fps             | 113       |
+|    time_elapsed    | 7         |
+|    total timesteps | 800       |
+| train/             |           |
+|    actor_loss      | 20.4      |
+|    critic_loss     | 0.0731    |
+|    learning_rate   | 0.001     |
+|    n_updates       | 600       |
+----------------------------------
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.44e+03 |
+| time/              |           |
+|    episodes        | 8         |
+|    fps             | 99        |
+|    time_elapsed    | 16        |
+|    total timesteps | 1600      |
+| train/             |           |
+|    actor_loss      | 44.7      |
+|    critic_loss     | 0.0802    |
+|    learning_rate   | 0.001     |
+|    n_updates       | 1400      |
+----------------------------------
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.31e+03 |
+| time/              |           |
+|    episodes        | 12        |
+|    fps             | 96        |
+|    time_elapsed    | 24        |
+|    total timesteps | 2400      |
+| train/             |           |
+|    actor_loss      | 64.5      |
+|    critic_loss     | 0.144     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 2200      |
+----------------------------------
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.24e+03 |
+| time/              |           |
+|    episodes        | 16        |
+|    fps             | 94        |
+|    time_elapsed    | 33        |
+|    total timesteps | 3200      |
+| train/             |           |
+|    actor_loss      | 77.3      |
+|    critic_loss     | 1.02      |
+|    learning_rate   | 0.001     |
+|    n_updates       | 3000      |
+----------------------------------
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.13e+03 |
+| time/              |           |
+|    episodes        | 20        |
+|    fps             | 93        |
+|    time_elapsed    | 42        |
+|    total timesteps | 4000      |
+| train/             |           |
+|    actor_loss      | 87.1      |
+|    critic_loss     | 0.693     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 3800      |
+----------------------------------
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.03e+03 |
+| time/              |           |
+|    episodes        | 24        |
+|    fps             | 93        |
+|    time_elapsed    | 51        |
+|    total timesteps | 4800      |
+| train/             |           |
+|    actor_loss      | 93.2      |
+|    critic_loss     | 0.748     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 4600      |
+----------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -918     |
+| time/              |          |
+|    episodes        | 28       |
+|    fps             | 92       |
+|    time_elapsed    | 60       |
+|    total timesteps | 5600     |
+| train/             |          |
+|    actor_loss      | 95.2     |
+|    critic_loss     | 0.863    |
+|    learning_rate   | 0.001    |
+|    n_updates       | 5400     |
+---------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -819     |
+| time/              |          |
+|    episodes        | 32       |
+|    fps             | 92       |
+|    time_elapsed    | 69       |
+|    total timesteps | 6400     |
+| train/             |          |
+|    actor_loss      | 94.6     |
+|    critic_loss     | 1.03     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 6200     |
+---------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -746     |
+| time/              |          |
+|    episodes        | 36       |
+|    fps             | 92       |
+|    time_elapsed    | 77       |
+|    total timesteps | 7200     |
+| train/             |          |
+|    actor_loss      | 91.8     |
+|    critic_loss     | 1.29     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 7000     |
+---------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -693     |
+| time/              |          |
+|    episodes        | 40       |
+|    fps             | 92       |
+|    time_elapsed    | 86       |
+|    total timesteps | 8000     |
+| train/             |          |
+|    actor_loss      | 90.8     |
+|    critic_loss     | 1.19     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 7800     |
+---------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -646     |
+| time/              |          |
+|    episodes        | 44       |
+|    fps             | 92       |
+|    time_elapsed    | 95       |
+|    total timesteps | 8800     |
+| train/             |          |
+|    actor_loss      | 86.6     |
+|    critic_loss     | 1.02     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 8600     |
+---------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -601     |
+| time/              |          |
+|    episodes        | 48       |
+|    fps             | 91       |
+|    time_elapsed    | 104      |
+|    total timesteps | 9600     |
+| train/             |          |
+|    actor_loss      | 84.1     |
+|    critic_loss     | 1.24     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 9400     |
+---------------------------------
+pre saved (array([-1.9982784], dtype=float32), None)
+loaded (array([-1.9982784], dtype=float32), None)
+Wrapping the env in a DummyVecEnv.
+Num timesteps: 500
+Best mean reward: -inf - Last mean reward per episode: -632.82
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -965     |
+| time/              |          |
+|    episodes        | 4        |
+|    fps             | 119      |
+|    time_elapsed    | 6        |
+|    total timesteps | 800      |
+| train/             |          |
+|    actor_loss      | 94.8     |
+|    critic_loss     | 2.87     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 10600    |
+---------------------------------
+Num timesteps: 1000
+Best mean reward: -632.82 - Last mean reward per episode: -842.75
+Num timesteps: 1500
+Best mean reward: -632.82 - Last mean reward per episode: -706.10
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -649     |
+| time/              |          |
+|    episodes        | 8        |
+|    fps             | 103      |
+|    time_elapsed    | 15       |
+|    total timesteps | 1600     |
+| train/             |          |
+|    actor_loss      | 85       |
+|    critic_loss     | 1.14     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 11400    |
+---------------------------------
+Num timesteps: 2000
+Best mean reward: -632.82 - Last mean reward per episode: -568.31
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -571     |
+| time/              |          |
+|    episodes        | 12       |
+|    fps             | 98       |
+|    time_elapsed    | 24       |
+|    total timesteps | 2400     |
+| train/             |          |
+|    actor_loss      | 69.8     |
+|    critic_loss     | 1.32     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 12200    |
+---------------------------------
+Num timesteps: 2500
+Best mean reward: -568.31 - Last mean reward per episode: -571.24
+Num timesteps: 3000
+Best mean reward: -568.31 - Last mean reward per episode: -506.06
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -533     |
+| time/              |          |
+|    episodes        | 16       |
+|    fps             | 96       |
+|    time_elapsed    | 33       |
+|    total timesteps | 3200     |
+| train/             |          |
+|    actor_loss      | 68.9     |
+|    critic_loss     | 1.66     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 13000    |
+---------------------------------
+Num timesteps: 3500
+Best mean reward: -506.06 - Last mean reward per episode: -516.18
+Num timesteps: 4000
+Best mean reward: -506.06 - Last mean reward per episode: -470.56
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -471     |
+| time/              |          |
+|    episodes        | 20       |
+|    fps             | 95       |
+|    time_elapsed    | 42       |
+|    total timesteps | 4000     |
+| train/             |          |
+|    actor_loss      | 67.7     |
+|    critic_loss     | 2.07     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 13800    |
+---------------------------------
+Num timesteps: 4500
+Best mean reward: -470.56 - Last mean reward per episode: -455.07
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -437     |
+| time/              |          |
+|    episodes        | 24       |
+|    fps             | 94       |
+|    time_elapsed    | 50       |
+|    total timesteps | 4800     |
+| train/             |          |
+|    actor_loss      | 66.3     |
+|    critic_loss     | 3.84     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 14600    |
+---------------------------------
+Num timesteps: 5000
+Best mean reward: -455.07 - Last mean reward per episode: -434.17
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 5500
+Best mean reward: -434.17 - Last mean reward per episode: -411.07
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -409     |
+| time/              |          |
+|    episodes        | 28       |
+|    fps             | 93       |
+|    time_elapsed    | 59       |
+|    total timesteps | 5600     |
+| train/             |          |
+|    actor_loss      | 60.2     |
+|    critic_loss     | 3.44     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 15400    |
+---------------------------------
+Num timesteps: 6000
+Best mean reward: -411.07 - Last mean reward per episode: -406.35
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -402     |
+| time/              |          |
+|    episodes        | 32       |
+|    fps             | 93       |
+|    time_elapsed    | 68       |
+|    total timesteps | 6400     |
+| train/             |          |
+|    actor_loss      | 57.1     |
+|    critic_loss     | 4.29     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 16200    |
+---------------------------------
+Num timesteps: 6500
+Best mean reward: -406.35 - Last mean reward per episode: -402.13
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 7000
+Best mean reward: -402.13 - Last mean reward per episode: -398.70
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -391     |
+| time/              |          |
+|    episodes        | 36       |
+|    fps             | 92       |
+|    time_elapsed    | 77       |
+|    total timesteps | 7200     |
+| train/             |          |
+|    actor_loss      | 55.3     |
+|    critic_loss     | 3.34     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 17000    |
+---------------------------------
+Num timesteps: 7500
+Best mean reward: -398.70 - Last mean reward per episode: -390.40
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 8000
+Best mean reward: -390.40 - Last mean reward per episode: -397.22
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -397     |
+| time/              |          |
+|    episodes        | 40       |
+|    fps             | 92       |
+|    time_elapsed    | 86       |
+|    total timesteps | 8000     |
+| train/             |          |
+|    actor_loss      | 53.2     |
+|    critic_loss     | 4.26     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 17800    |
+---------------------------------
+Num timesteps: 8500
+Best mean reward: -390.40 - Last mean reward per episode: -387.36
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -378     |
+| time/              |          |
+|    episodes        | 44       |
+|    fps             | 92       |
+|    time_elapsed    | 95       |
+|    total timesteps | 8800     |
+| train/             |          |
+|    actor_loss      | 48       |
+|    critic_loss     | 4.21     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 18600    |
+---------------------------------
+Num timesteps: 9000
+Best mean reward: -387.36 - Last mean reward per episode: -373.08
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 9500
+Best mean reward: -373.08 - Last mean reward per episode: -367.61
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -363     |
+| time/              |          |
+|    episodes        | 48       |
+|    fps             | 92       |
+|    time_elapsed    | 103      |
+|    total timesteps | 9600     |
+| train/             |          |
+|    actor_loss      | 44.1     |
+|    critic_loss     | 4.83     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 19400    |
+---------------------------------
+Num timesteps: 10000
+Best mean reward: -367.61 - Last mean reward per episode: -353.40
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Using cpu device
+Wrapping the env in a DummyVecEnv.
+Num timesteps: 500
+Best mean reward: -inf - Last mean reward per episode: -1362.09
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.55e+03 |
+| time/              |           |
+|    episodes        | 4         |
+|    fps             | 119       |
+|    time_elapsed    | 6         |
+|    total timesteps | 800       |
+| train/             |           |
+|    actor_loss      | 19.1      |
+|    critic_loss     | 0.107     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 600       |
+----------------------------------
+Num timesteps: 1000
+Best mean reward: -1362.09 - Last mean reward per episode: -1631.62
+Num timesteps: 1500
+Best mean reward: -1362.09 - Last mean reward per episode: -1575.03
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.57e+03 |
+| time/              |           |
+|    episodes        | 8         |
+|    fps             | 103       |
+|    time_elapsed    | 15        |
+|    total timesteps | 1600      |
+| train/             |           |
+|    actor_loss      | 46.6      |
+|    critic_loss     | 0.0812    |
+|    learning_rate   | 0.001     |
+|    n_updates       | 1400      |
+----------------------------------
+Num timesteps: 2000
+Best mean reward: -1362.09 - Last mean reward per episode: -1532.71
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.49e+03 |
+| time/              |           |
+|    episodes        | 12        |
+|    fps             | 98        |
+|    time_elapsed    | 24        |
+|    total timesteps | 2400      |
+| train/             |           |
+|    actor_loss      | 71.5      |
+|    critic_loss     | 0.125     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 2200      |
+----------------------------------
+Num timesteps: 2500
+Best mean reward: -1362.09 - Last mean reward per episode: -1491.32
+Num timesteps: 3000
+Best mean reward: -1362.09 - Last mean reward per episode: -1416.65
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -1.4e+03 |
+| time/              |          |
+|    episodes        | 16       |
+|    fps             | 96       |
+|    time_elapsed    | 33       |
+|    total timesteps | 3200     |
+| train/             |          |
+|    actor_loss      | 90.2     |
+|    critic_loss     | 0.238    |
+|    learning_rate   | 0.001    |
+|    n_updates       | 3000     |
+---------------------------------
+Num timesteps: 3500
+Best mean reward: -1362.09 - Last mean reward per episode: -1387.20
+Num timesteps: 4000
+Best mean reward: -1362.09 - Last mean reward per episode: -1322.39
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.32e+03 |
+| time/              |           |
+|    episodes        | 20        |
+|    fps             | 94        |
+|    time_elapsed    | 42        |
+|    total timesteps | 4000      |
+| train/             |           |
+|    actor_loss      | 107       |
+|    critic_loss     | 0.293     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 3800      |
+----------------------------------
+Num timesteps: 4500
+Best mean reward: -1322.39 - Last mean reward per episode: -1277.95
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.24e+03 |
+| time/              |           |
+|    episodes        | 24        |
+|    fps             | 93        |
+|    time_elapsed    | 51        |
+|    total timesteps | 4800      |
+| train/             |           |
+|    actor_loss      | 118       |
+|    critic_loss     | 0.425     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 4600      |
+----------------------------------
+Num timesteps: 5000
+Best mean reward: -1277.95 - Last mean reward per episode: -1209.08
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 5500
+Best mean reward: -1209.08 - Last mean reward per episode: -1157.38
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.13e+03 |
+| time/              |           |
+|    episodes        | 28        |
+|    fps             | 93        |
+|    time_elapsed    | 60        |
+|    total timesteps | 5600      |
+| train/             |           |
+|    actor_loss      | 124       |
+|    critic_loss     | 0.785     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 5400      |
+----------------------------------
+Num timesteps: 6000
+Best mean reward: -1157.38 - Last mean reward per episode: -1109.69
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.09e+03 |
+| time/              |           |
+|    episodes        | 32        |
+|    fps             | 92        |
+|    time_elapsed    | 68        |
+|    total timesteps | 6400      |
+| train/             |           |
+|    actor_loss      | 131       |
+|    critic_loss     | 1.33      |
+|    learning_rate   | 0.001     |
+|    n_updates       | 6200      |
+----------------------------------
+Num timesteps: 6500
+Best mean reward: -1109.69 - Last mean reward per episode: -1091.14
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 7000
+Best mean reward: -1091.14 - Last mean reward per episode: -1040.22
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.02e+03 |
+| time/              |           |
+|    episodes        | 36        |
+|    fps             | 92        |
+|    time_elapsed    | 77        |
+|    total timesteps | 7200      |
+| train/             |           |
+|    actor_loss      | 135       |
+|    critic_loss     | 2.08      |
+|    learning_rate   | 0.001     |
+|    n_updates       | 7000      |
+----------------------------------
+Num timesteps: 7500
+Best mean reward: -1040.22 - Last mean reward per episode: -1000.66
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 8000
+Best mean reward: -1000.66 - Last mean reward per episode: -964.17
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -964     |
+| time/              |          |
+|    episodes        | 40       |
+|    fps             | 92       |
+|    time_elapsed    | 86       |
+|    total timesteps | 8000     |
+| train/             |          |
+|    actor_loss      | 134      |
+|    critic_loss     | 3.03     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 7800     |
+---------------------------------
+Num timesteps: 8500
+Best mean reward: -964.17 - Last mean reward per episode: -939.53
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -906     |
+| time/              |          |
+|    episodes        | 44       |
+|    fps             | 91       |
+|    time_elapsed    | 95       |
+|    total timesteps | 8800     |
+| train/             |          |
+|    actor_loss      | 137      |
+|    critic_loss     | 3.59     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 8600     |
+---------------------------------
+Num timesteps: 9000
+Best mean reward: -939.53 - Last mean reward per episode: -891.01
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 9500
+Best mean reward: -891.01 - Last mean reward per episode: -861.10
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -854     |
+| time/              |          |
+|    episodes        | 48       |
+|    fps             | 91       |
+|    time_elapsed    | 104      |
+|    total timesteps | 9600     |
+| train/             |          |
+|    actor_loss      | 133      |
+|    critic_loss     | 4.28     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 9400     |
+---------------------------------
+Num timesteps: 10000
+Best mean reward: -861.10 - Last mean reward per episode: -824.65
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+--- 333.41643810272217 seconds ---
+
+Process finished with exit code 0
