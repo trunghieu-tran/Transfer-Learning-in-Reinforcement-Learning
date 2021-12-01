@@ -9,8 +9,8 @@ start_time = time.time()
 # env = ['Pendulum-v1', 'CarRacing-v0', 'Acrobot-v1']
 env_name = 'Pendulum-v1'
 # for each selected algorithm, please choose algorithm supporting its action space
-# We currently focus on TD3, DDPG, DQN
-algorithm = 'TD3'
+# We currently focus on TD3,DDPG (for Pendulum) and DQN (for Acrobot)
+algorithm = 'DDPG'
 #### <<<<<<<
 
 moving_window = -1
@@ -27,7 +27,7 @@ transfer_execute(source_env=source_env,
                  policy_name='MlpPolicy',
                  step_number=10000,
                  step_number_small=10000,
-                 callback_check_freq=500,
+                 callback_check_freq=20,
                  evaluation_step=20,
                  log_dir_w_TL=log_dir_w_TL,
                  log_dir_wo_TL=log_dir_wo_TL,
