@@ -10,7 +10,7 @@ start_time = time.time()
 env_name = 'Pendulum-v1'
 # for each selected algorithm, please choose algorithm supporting its action space
 # We currently focus on TD3,DDPG (for Pendulum) and DQN (for Acrobot)
-algorithm = 'TD3'
+algorithm = 'DDPG'
 #### <<<<<<<
 
 moving_window = -1

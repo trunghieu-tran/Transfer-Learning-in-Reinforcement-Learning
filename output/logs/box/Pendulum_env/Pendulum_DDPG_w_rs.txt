@@ -1,0 +1,3806 @@
+/Users/harrytran/anaconda3/envs/graph_python/bin/python "/Users/harrytran/OneDrive - The University of Texas at Dallas/Fall 2021/CS 7301/project/Transfer-Learning-in-Reinforcement-Learning/tl/main.py"
+/Users/harrytran/anaconda3/envs/graph_python/lib/python3.8/site-packages/ale_py/roms/__init__.py:84: DeprecationWarning: Automatic importing of atari-py roms won't be supported in future releases of ale-py. Please migrate over to using `ale-import-roms` OR an ALE-supported ROM package. To make this warning disappear you can run `ale-import-roms --import-from-pkg atari_py.atari_roms`.For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
+  __all__ = _resolve_roms()
+>>Executing with algorithm DDPG...
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.31e+03 |
+| time/              |           |
+|    episodes        | 4         |
+|    fps             | 118       |
+|    time_elapsed    | 6         |
+|    total timesteps | 800       |
+| train/             |           |
+|    actor_loss      | 15.1      |
+|    critic_loss     | 0.0743    |
+|    learning_rate   | 0.001     |
+|    n_updates       | 600       |
+----------------------------------
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.44e+03 |
+| time/              |           |
+|    episodes        | 8         |
+|    fps             | 103       |
+|    time_elapsed    | 15        |
+|    total timesteps | 1600      |
+| train/             |           |
+|    actor_loss      | 39.4      |
+|    critic_loss     | 0.0468    |
+|    learning_rate   | 0.001     |
+|    n_updates       | 1400      |
+----------------------------------
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.39e+03 |
+| time/              |           |
+|    episodes        | 12        |
+|    fps             | 97        |
+|    time_elapsed    | 24        |
+|    total timesteps | 2400      |
+| train/             |           |
+|    actor_loss      | 61.1      |
+|    critic_loss     | 0.166     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 2200      |
+----------------------------------
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.31e+03 |
+| time/              |           |
+|    episodes        | 16        |
+|    fps             | 94        |
+|    time_elapsed    | 33        |
+|    total timesteps | 3200      |
+| train/             |           |
+|    actor_loss      | 78.9      |
+|    critic_loss     | 0.217     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 3000      |
+----------------------------------
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.13e+03 |
+| time/              |           |
+|    episodes        | 20        |
+|    fps             | 93        |
+|    time_elapsed    | 42        |
+|    total timesteps | 4000      |
+| train/             |           |
+|    actor_loss      | 84.3      |
+|    critic_loss     | 0.681     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 3800      |
+----------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -985     |
+| time/              |          |
+|    episodes        | 24       |
+|    fps             | 93       |
+|    time_elapsed    | 51       |
+|    total timesteps | 4800     |
+| train/             |          |
+|    actor_loss      | 86.5     |
+|    critic_loss     | 0.874    |
+|    learning_rate   | 0.001    |
+|    n_updates       | 4600     |
+---------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -863     |
+| time/              |          |
+|    episodes        | 28       |
+|    fps             | 93       |
+|    time_elapsed    | 60       |
+|    total timesteps | 5600     |
+| train/             |          |
+|    actor_loss      | 81.6     |
+|    critic_loss     | 0.968    |
+|    learning_rate   | 0.001    |
+|    n_updates       | 5400     |
+---------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -779     |
+| time/              |          |
+|    episodes        | 32       |
+|    fps             | 92       |
+|    time_elapsed    | 68       |
+|    total timesteps | 6400     |
+| train/             |          |
+|    actor_loss      | 77.6     |
+|    critic_loss     | 1.08     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 6200     |
+---------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -717     |
+| time/              |          |
+|    episodes        | 36       |
+|    fps             | 92       |
+|    time_elapsed    | 77       |
+|    total timesteps | 7200     |
+| train/             |          |
+|    actor_loss      | 73.4     |
+|    critic_loss     | 1.13     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 7000     |
+---------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -660     |
+| time/              |          |
+|    episodes        | 40       |
+|    fps             | 92       |
+|    time_elapsed    | 86       |
+|    total timesteps | 8000     |
+| train/             |          |
+|    actor_loss      | 70.6     |
+|    critic_loss     | 1.26     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 7800     |
+---------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -617     |
+| time/              |          |
+|    episodes        | 44       |
+|    fps             | 92       |
+|    time_elapsed    | 94       |
+|    total timesteps | 8800     |
+| train/             |          |
+|    actor_loss      | 66.5     |
+|    critic_loss     | 1.35     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 8600     |
+---------------------------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -576     |
+| time/              |          |
+|    episodes        | 48       |
+|    fps             | 92       |
+|    time_elapsed    | 103      |
+|    total timesteps | 9600     |
+| train/             |          |
+|    actor_loss      | 62.3     |
+|    critic_loss     | 1.68     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 9400     |
+---------------------------------
+pre saved (array([2.], dtype=float32), None)
+loaded (array([2.], dtype=float32), None)
+Wrapping the env in a DummyVecEnv.
+Num timesteps: 200
+Best mean reward: -inf - Last mean reward per episode: -1040.79
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 220
+Best mean reward: -1040.79 - Last mean reward per episode: -1040.79
+Num timesteps: 240
+Best mean reward: -1040.79 - Last mean reward per episode: -1040.79
+Num timesteps: 260
+Best mean reward: -1040.79 - Last mean reward per episode: -1040.79
+Num timesteps: 280
+Best mean reward: -1040.79 - Last mean reward per episode: -1040.79
+Num timesteps: 300
+Best mean reward: -1040.79 - Last mean reward per episode: -1040.79
+Num timesteps: 320
+Best mean reward: -1040.79 - Last mean reward per episode: -1040.79
+Num timesteps: 340
+Best mean reward: -1040.79 - Last mean reward per episode: -1040.79
+Num timesteps: 360
+Best mean reward: -1040.79 - Last mean reward per episode: -1040.79
+Num timesteps: 380
+Best mean reward: -1040.79 - Last mean reward per episode: -1040.79
+Num timesteps: 400
+Best mean reward: -1040.79 - Last mean reward per episode: -1117.88
+Num timesteps: 420
+Best mean reward: -1040.79 - Last mean reward per episode: -1117.88
+Num timesteps: 440
+Best mean reward: -1040.79 - Last mean reward per episode: -1117.88
+Num timesteps: 460
+Best mean reward: -1040.79 - Last mean reward per episode: -1117.88
+Num timesteps: 480
+Best mean reward: -1040.79 - Last mean reward per episode: -1117.88
+Num timesteps: 500
+Best mean reward: -1040.79 - Last mean reward per episode: -1117.88
+Num timesteps: 520
+Best mean reward: -1040.79 - Last mean reward per episode: -1117.88
+Num timesteps: 540
+Best mean reward: -1040.79 - Last mean reward per episode: -1117.88
+Num timesteps: 560
+Best mean reward: -1040.79 - Last mean reward per episode: -1117.88
+Num timesteps: 580
+Best mean reward: -1040.79 - Last mean reward per episode: -1117.88
+Num timesteps: 600
+Best mean reward: -1040.79 - Last mean reward per episode: -1108.66
+Num timesteps: 620
+Best mean reward: -1040.79 - Last mean reward per episode: -1108.66
+Num timesteps: 640
+Best mean reward: -1040.79 - Last mean reward per episode: -1108.66
+Num timesteps: 660
+Best mean reward: -1040.79 - Last mean reward per episode: -1108.66
+Num timesteps: 680
+Best mean reward: -1040.79 - Last mean reward per episode: -1108.66
+Num timesteps: 700
+Best mean reward: -1040.79 - Last mean reward per episode: -1108.66
+Num timesteps: 720
+Best mean reward: -1040.79 - Last mean reward per episode: -1108.66
+Num timesteps: 740
+Best mean reward: -1040.79 - Last mean reward per episode: -1108.66
+Num timesteps: 760
+Best mean reward: -1040.79 - Last mean reward per episode: -1108.66
+Num timesteps: 780
+Best mean reward: -1040.79 - Last mean reward per episode: -1108.66
+Num timesteps: 800
+Best mean reward: -1040.79 - Last mean reward per episode: -1088.81
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.09e+03 |
+| time/              |           |
+|    episodes        | 4         |
+|    fps             | 116       |
+|    time_elapsed    | 6         |
+|    total timesteps | 800       |
+| train/             |           |
+|    actor_loss      | 79        |
+|    critic_loss     | 3.98      |
+|    learning_rate   | 0.001     |
+|    n_updates       | 10600     |
+----------------------------------
+Num timesteps: 820
+Best mean reward: -1040.79 - Last mean reward per episode: -1088.81
+Num timesteps: 840
+Best mean reward: -1040.79 - Last mean reward per episode: -1088.81
+Num timesteps: 860
+Best mean reward: -1040.79 - Last mean reward per episode: -1088.81
+Num timesteps: 880
+Best mean reward: -1040.79 - Last mean reward per episode: -1088.81
+Num timesteps: 900
+Best mean reward: -1040.79 - Last mean reward per episode: -1088.81
+Num timesteps: 920
+Best mean reward: -1040.79 - Last mean reward per episode: -1088.81
+Num timesteps: 940
+Best mean reward: -1040.79 - Last mean reward per episode: -1088.81
+Num timesteps: 960
+Best mean reward: -1040.79 - Last mean reward per episode: -1088.81
+Num timesteps: 980
+Best mean reward: -1040.79 - Last mean reward per episode: -1088.81
+Num timesteps: 1000
+Best mean reward: -1040.79 - Last mean reward per episode: -1078.86
+Num timesteps: 1020
+Best mean reward: -1040.79 - Last mean reward per episode: -1078.86
+Num timesteps: 1040
+Best mean reward: -1040.79 - Last mean reward per episode: -1078.86
+Num timesteps: 1060
+Best mean reward: -1040.79 - Last mean reward per episode: -1078.86
+Num timesteps: 1080
+Best mean reward: -1040.79 - Last mean reward per episode: -1078.86
+Num timesteps: 1100
+Best mean reward: -1040.79 - Last mean reward per episode: -1078.86
+Num timesteps: 1120
+Best mean reward: -1040.79 - Last mean reward per episode: -1078.86
+Num timesteps: 1140
+Best mean reward: -1040.79 - Last mean reward per episode: -1078.86
+Num timesteps: 1160
+Best mean reward: -1040.79 - Last mean reward per episode: -1078.86
+Num timesteps: 1180
+Best mean reward: -1040.79 - Last mean reward per episode: -1078.86
+Num timesteps: 1200
+Best mean reward: -1040.79 - Last mean reward per episode: -959.59
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 1220
+Best mean reward: -959.59 - Last mean reward per episode: -959.59
+Num timesteps: 1240
+Best mean reward: -959.59 - Last mean reward per episode: -959.59
+Num timesteps: 1260
+Best mean reward: -959.59 - Last mean reward per episode: -959.59
+Num timesteps: 1280
+Best mean reward: -959.59 - Last mean reward per episode: -959.59
+Num timesteps: 1300
+Best mean reward: -959.59 - Last mean reward per episode: -959.59
+Num timesteps: 1320
+Best mean reward: -959.59 - Last mean reward per episode: -959.59
+Num timesteps: 1340
+Best mean reward: -959.59 - Last mean reward per episode: -959.59
+Num timesteps: 1360
+Best mean reward: -959.59 - Last mean reward per episode: -959.59
+Num timesteps: 1380
+Best mean reward: -959.59 - Last mean reward per episode: -959.59
+Num timesteps: 1400
+Best mean reward: -959.59 - Last mean reward per episode: -968.00
+Num timesteps: 1420
+Best mean reward: -959.59 - Last mean reward per episode: -968.00
+Num timesteps: 1440
+Best mean reward: -959.59 - Last mean reward per episode: -968.00
+Num timesteps: 1460
+Best mean reward: -959.59 - Last mean reward per episode: -968.00
+Num timesteps: 1480
+Best mean reward: -959.59 - Last mean reward per episode: -968.00
+Num timesteps: 1500
+Best mean reward: -959.59 - Last mean reward per episode: -968.00
+Num timesteps: 1520
+Best mean reward: -959.59 - Last mean reward per episode: -968.00
+Num timesteps: 1540
+Best mean reward: -959.59 - Last mean reward per episode: -968.00
+Num timesteps: 1560
+Best mean reward: -959.59 - Last mean reward per episode: -968.00
+Num timesteps: 1580
+Best mean reward: -959.59 - Last mean reward per episode: -968.00
+Num timesteps: 1600
+Best mean reward: -959.59 - Last mean reward per episode: -982.58
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -983     |
+| time/              |          |
+|    episodes        | 8        |
+|    fps             | 102      |
+|    time_elapsed    | 15       |
+|    total timesteps | 1600     |
+| train/             |          |
+|    actor_loss      | 84.1     |
+|    critic_loss     | 5.39     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 11400    |
+---------------------------------
+Num timesteps: 1620
+Best mean reward: -959.59 - Last mean reward per episode: -982.58
+Num timesteps: 1640
+Best mean reward: -959.59 - Last mean reward per episode: -982.58
+Num timesteps: 1660
+Best mean reward: -959.59 - Last mean reward per episode: -982.58
+Num timesteps: 1680
+Best mean reward: -959.59 - Last mean reward per episode: -982.58
+Num timesteps: 1700
+Best mean reward: -959.59 - Last mean reward per episode: -982.58
+Num timesteps: 1720
+Best mean reward: -959.59 - Last mean reward per episode: -982.58
+Num timesteps: 1740
+Best mean reward: -959.59 - Last mean reward per episode: -982.58
+Num timesteps: 1760
+Best mean reward: -959.59 - Last mean reward per episode: -982.58
+Num timesteps: 1780
+Best mean reward: -959.59 - Last mean reward per episode: -982.58
+Num timesteps: 1800
+Best mean reward: -959.59 - Last mean reward per episode: -914.77
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 1820
+Best mean reward: -914.77 - Last mean reward per episode: -914.77
+Num timesteps: 1840
+Best mean reward: -914.77 - Last mean reward per episode: -914.77
+Num timesteps: 1860
+Best mean reward: -914.77 - Last mean reward per episode: -914.77
+Num timesteps: 1880
+Best mean reward: -914.77 - Last mean reward per episode: -914.77
+Num timesteps: 1900
+Best mean reward: -914.77 - Last mean reward per episode: -914.77
+Num timesteps: 1920
+Best mean reward: -914.77 - Last mean reward per episode: -914.77
+Num timesteps: 1940
+Best mean reward: -914.77 - Last mean reward per episode: -914.77
+Num timesteps: 1960
+Best mean reward: -914.77 - Last mean reward per episode: -914.77
+Num timesteps: 1980
+Best mean reward: -914.77 - Last mean reward per episode: -914.77
+Num timesteps: 2000
+Best mean reward: -914.77 - Last mean reward per episode: -823.55
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 2020
+Best mean reward: -823.55 - Last mean reward per episode: -823.55
+Num timesteps: 2040
+Best mean reward: -823.55 - Last mean reward per episode: -823.55
+Num timesteps: 2060
+Best mean reward: -823.55 - Last mean reward per episode: -823.55
+Num timesteps: 2080
+Best mean reward: -823.55 - Last mean reward per episode: -823.55
+Num timesteps: 2100
+Best mean reward: -823.55 - Last mean reward per episode: -823.55
+Num timesteps: 2120
+Best mean reward: -823.55 - Last mean reward per episode: -823.55
+Num timesteps: 2140
+Best mean reward: -823.55 - Last mean reward per episode: -823.55
+Num timesteps: 2160
+Best mean reward: -823.55 - Last mean reward per episode: -823.55
+Num timesteps: 2180
+Best mean reward: -823.55 - Last mean reward per episode: -823.55
+Num timesteps: 2200
+Best mean reward: -823.55 - Last mean reward per episode: -793.18
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 2220
+Best mean reward: -793.18 - Last mean reward per episode: -793.18
+Num timesteps: 2240
+Best mean reward: -793.18 - Last mean reward per episode: -793.18
+Num timesteps: 2260
+Best mean reward: -793.18 - Last mean reward per episode: -793.18
+Num timesteps: 2280
+Best mean reward: -793.18 - Last mean reward per episode: -793.18
+Num timesteps: 2300
+Best mean reward: -793.18 - Last mean reward per episode: -793.18
+Num timesteps: 2320
+Best mean reward: -793.18 - Last mean reward per episode: -793.18
+Num timesteps: 2340
+Best mean reward: -793.18 - Last mean reward per episode: -793.18
+Num timesteps: 2360
+Best mean reward: -793.18 - Last mean reward per episode: -793.18
+Num timesteps: 2380
+Best mean reward: -793.18 - Last mean reward per episode: -793.18
+Num timesteps: 2400
+Best mean reward: -793.18 - Last mean reward per episode: -756.68
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -757     |
+| time/              |          |
+|    episodes        | 12       |
+|    fps             | 98       |
+|    time_elapsed    | 24       |
+|    total timesteps | 2400     |
+| train/             |          |
+|    actor_loss      | 73.1     |
+|    critic_loss     | 4.18     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 12200    |
+---------------------------------
+Num timesteps: 2420
+Best mean reward: -756.68 - Last mean reward per episode: -756.68
+Num timesteps: 2440
+Best mean reward: -756.68 - Last mean reward per episode: -756.68
+Num timesteps: 2460
+Best mean reward: -756.68 - Last mean reward per episode: -756.68
+Num timesteps: 2480
+Best mean reward: -756.68 - Last mean reward per episode: -756.68
+Num timesteps: 2500
+Best mean reward: -756.68 - Last mean reward per episode: -756.68
+Num timesteps: 2520
+Best mean reward: -756.68 - Last mean reward per episode: -756.68
+Num timesteps: 2540
+Best mean reward: -756.68 - Last mean reward per episode: -756.68
+Num timesteps: 2560
+Best mean reward: -756.68 - Last mean reward per episode: -756.68
+Num timesteps: 2580
+Best mean reward: -756.68 - Last mean reward per episode: -756.68
+Num timesteps: 2600
+Best mean reward: -756.68 - Last mean reward per episode: -773.44
+Num timesteps: 2620
+Best mean reward: -756.68 - Last mean reward per episode: -773.44
+Num timesteps: 2640
+Best mean reward: -756.68 - Last mean reward per episode: -773.44
+Num timesteps: 2660
+Best mean reward: -756.68 - Last mean reward per episode: -773.44
+Num timesteps: 2680
+Best mean reward: -756.68 - Last mean reward per episode: -773.44
+Num timesteps: 2700
+Best mean reward: -756.68 - Last mean reward per episode: -773.44
+Num timesteps: 2720
+Best mean reward: -756.68 - Last mean reward per episode: -773.44
+Num timesteps: 2740
+Best mean reward: -756.68 - Last mean reward per episode: -773.44
+Num timesteps: 2760
+Best mean reward: -756.68 - Last mean reward per episode: -773.44
+Num timesteps: 2780
+Best mean reward: -756.68 - Last mean reward per episode: -773.44
+Num timesteps: 2800
+Best mean reward: -756.68 - Last mean reward per episode: -781.67
+Num timesteps: 2820
+Best mean reward: -756.68 - Last mean reward per episode: -781.67
+Num timesteps: 2840
+Best mean reward: -756.68 - Last mean reward per episode: -781.67
+Num timesteps: 2860
+Best mean reward: -756.68 - Last mean reward per episode: -781.67
+Num timesteps: 2880
+Best mean reward: -756.68 - Last mean reward per episode: -781.67
+Num timesteps: 2900
+Best mean reward: -756.68 - Last mean reward per episode: -781.67
+Num timesteps: 2920
+Best mean reward: -756.68 - Last mean reward per episode: -781.67
+Num timesteps: 2940
+Best mean reward: -756.68 - Last mean reward per episode: -781.67
+Num timesteps: 2960
+Best mean reward: -756.68 - Last mean reward per episode: -781.67
+Num timesteps: 2980
+Best mean reward: -756.68 - Last mean reward per episode: -781.67
+Num timesteps: 3000
+Best mean reward: -756.68 - Last mean reward per episode: -754.95
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 3020
+Best mean reward: -754.95 - Last mean reward per episode: -754.95
+Num timesteps: 3040
+Best mean reward: -754.95 - Last mean reward per episode: -754.95
+Num timesteps: 3060
+Best mean reward: -754.95 - Last mean reward per episode: -754.95
+Num timesteps: 3080
+Best mean reward: -754.95 - Last mean reward per episode: -754.95
+Num timesteps: 3100
+Best mean reward: -754.95 - Last mean reward per episode: -754.95
+Num timesteps: 3120
+Best mean reward: -754.95 - Last mean reward per episode: -754.95
+Num timesteps: 3140
+Best mean reward: -754.95 - Last mean reward per episode: -754.95
+Num timesteps: 3160
+Best mean reward: -754.95 - Last mean reward per episode: -754.95
+Num timesteps: 3180
+Best mean reward: -754.95 - Last mean reward per episode: -754.95
+Num timesteps: 3200
+Best mean reward: -754.95 - Last mean reward per episode: -715.47
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -715     |
+| time/              |          |
+|    episodes        | 16       |
+|    fps             | 96       |
+|    time_elapsed    | 33       |
+|    total timesteps | 3200     |
+| train/             |          |
+|    actor_loss      | 76.1     |
+|    critic_loss     | 4.01     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 13000    |
+---------------------------------
+Num timesteps: 3220
+Best mean reward: -715.47 - Last mean reward per episode: -715.47
+Num timesteps: 3240
+Best mean reward: -715.47 - Last mean reward per episode: -715.47
+Num timesteps: 3260
+Best mean reward: -715.47 - Last mean reward per episode: -715.47
+Num timesteps: 3280
+Best mean reward: -715.47 - Last mean reward per episode: -715.47
+Num timesteps: 3300
+Best mean reward: -715.47 - Last mean reward per episode: -715.47
+Num timesteps: 3320
+Best mean reward: -715.47 - Last mean reward per episode: -715.47
+Num timesteps: 3340
+Best mean reward: -715.47 - Last mean reward per episode: -715.47
+Num timesteps: 3360
+Best mean reward: -715.47 - Last mean reward per episode: -715.47
+Num timesteps: 3380
+Best mean reward: -715.47 - Last mean reward per episode: -715.47
+Num timesteps: 3400
+Best mean reward: -715.47 - Last mean reward per episode: -687.72
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 3420
+Best mean reward: -687.72 - Last mean reward per episode: -687.72
+Num timesteps: 3440
+Best mean reward: -687.72 - Last mean reward per episode: -687.72
+Num timesteps: 3460
+Best mean reward: -687.72 - Last mean reward per episode: -687.72
+Num timesteps: 3480
+Best mean reward: -687.72 - Last mean reward per episode: -687.72
+Num timesteps: 3500
+Best mean reward: -687.72 - Last mean reward per episode: -687.72
+Num timesteps: 3520
+Best mean reward: -687.72 - Last mean reward per episode: -687.72
+Num timesteps: 3540
+Best mean reward: -687.72 - Last mean reward per episode: -687.72
+Num timesteps: 3560
+Best mean reward: -687.72 - Last mean reward per episode: -687.72
+Num timesteps: 3580
+Best mean reward: -687.72 - Last mean reward per episode: -687.72
+Num timesteps: 3600
+Best mean reward: -687.72 - Last mean reward per episode: -656.70
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 3620
+Best mean reward: -656.70 - Last mean reward per episode: -656.70
+Num timesteps: 3640
+Best mean reward: -656.70 - Last mean reward per episode: -656.70
+Num timesteps: 3660
+Best mean reward: -656.70 - Last mean reward per episode: -656.70
+Num timesteps: 3680
+Best mean reward: -656.70 - Last mean reward per episode: -656.70
+Num timesteps: 3700
+Best mean reward: -656.70 - Last mean reward per episode: -656.70
+Num timesteps: 3720
+Best mean reward: -656.70 - Last mean reward per episode: -656.70
+Num timesteps: 3740
+Best mean reward: -656.70 - Last mean reward per episode: -656.70
+Num timesteps: 3760
+Best mean reward: -656.70 - Last mean reward per episode: -656.70
+Num timesteps: 3780
+Best mean reward: -656.70 - Last mean reward per episode: -656.70
+Num timesteps: 3800
+Best mean reward: -656.70 - Last mean reward per episode: -628.86
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 3820
+Best mean reward: -628.86 - Last mean reward per episode: -628.86
+Num timesteps: 3840
+Best mean reward: -628.86 - Last mean reward per episode: -628.86
+Num timesteps: 3860
+Best mean reward: -628.86 - Last mean reward per episode: -628.86
+Num timesteps: 3880
+Best mean reward: -628.86 - Last mean reward per episode: -628.86
+Num timesteps: 3900
+Best mean reward: -628.86 - Last mean reward per episode: -628.86
+Num timesteps: 3920
+Best mean reward: -628.86 - Last mean reward per episode: -628.86
+Num timesteps: 3940
+Best mean reward: -628.86 - Last mean reward per episode: -628.86
+Num timesteps: 3960
+Best mean reward: -628.86 - Last mean reward per episode: -628.86
+Num timesteps: 3980
+Best mean reward: -628.86 - Last mean reward per episode: -628.86
+Num timesteps: 4000
+Best mean reward: -628.86 - Last mean reward per episode: -615.81
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -616     |
+| time/              |          |
+|    episodes        | 20       |
+|    fps             | 95       |
+|    time_elapsed    | 42       |
+|    total timesteps | 4000     |
+| train/             |          |
+|    actor_loss      | 66.4     |
+|    critic_loss     | 4.47     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 13800    |
+---------------------------------
+Num timesteps: 4020
+Best mean reward: -615.81 - Last mean reward per episode: -615.81
+Num timesteps: 4040
+Best mean reward: -615.81 - Last mean reward per episode: -615.81
+Num timesteps: 4060
+Best mean reward: -615.81 - Last mean reward per episode: -615.81
+Num timesteps: 4080
+Best mean reward: -615.81 - Last mean reward per episode: -615.81
+Num timesteps: 4100
+Best mean reward: -615.81 - Last mean reward per episode: -615.81
+Num timesteps: 4120
+Best mean reward: -615.81 - Last mean reward per episode: -615.81
+Num timesteps: 4140
+Best mean reward: -615.81 - Last mean reward per episode: -615.81
+Num timesteps: 4160
+Best mean reward: -615.81 - Last mean reward per episode: -615.81
+Num timesteps: 4180
+Best mean reward: -615.81 - Last mean reward per episode: -615.81
+Num timesteps: 4200
+Best mean reward: -615.81 - Last mean reward per episode: -598.25
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 4220
+Best mean reward: -598.25 - Last mean reward per episode: -598.25
+Num timesteps: 4240
+Best mean reward: -598.25 - Last mean reward per episode: -598.25
+Num timesteps: 4260
+Best mean reward: -598.25 - Last mean reward per episode: -598.25
+Num timesteps: 4280
+Best mean reward: -598.25 - Last mean reward per episode: -598.25
+Num timesteps: 4300
+Best mean reward: -598.25 - Last mean reward per episode: -598.25
+Num timesteps: 4320
+Best mean reward: -598.25 - Last mean reward per episode: -598.25
+Num timesteps: 4340
+Best mean reward: -598.25 - Last mean reward per episode: -598.25
+Num timesteps: 4360
+Best mean reward: -598.25 - Last mean reward per episode: -598.25
+Num timesteps: 4380
+Best mean reward: -598.25 - Last mean reward per episode: -598.25
+Num timesteps: 4400
+Best mean reward: -598.25 - Last mean reward per episode: -576.83
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 4420
+Best mean reward: -576.83 - Last mean reward per episode: -576.83
+Num timesteps: 4440
+Best mean reward: -576.83 - Last mean reward per episode: -576.83
+Num timesteps: 4460
+Best mean reward: -576.83 - Last mean reward per episode: -576.83
+Num timesteps: 4480
+Best mean reward: -576.83 - Last mean reward per episode: -576.83
+Num timesteps: 4500
+Best mean reward: -576.83 - Last mean reward per episode: -576.83
+Num timesteps: 4520
+Best mean reward: -576.83 - Last mean reward per episode: -576.83
+Num timesteps: 4540
+Best mean reward: -576.83 - Last mean reward per episode: -576.83
+Num timesteps: 4560
+Best mean reward: -576.83 - Last mean reward per episode: -576.83
+Num timesteps: 4580
+Best mean reward: -576.83 - Last mean reward per episode: -576.83
+Num timesteps: 4600
+Best mean reward: -576.83 - Last mean reward per episode: -577.63
+Num timesteps: 4620
+Best mean reward: -576.83 - Last mean reward per episode: -577.63
+Num timesteps: 4640
+Best mean reward: -576.83 - Last mean reward per episode: -577.63
+Num timesteps: 4660
+Best mean reward: -576.83 - Last mean reward per episode: -577.63
+Num timesteps: 4680
+Best mean reward: -576.83 - Last mean reward per episode: -577.63
+Num timesteps: 4700
+Best mean reward: -576.83 - Last mean reward per episode: -577.63
+Num timesteps: 4720
+Best mean reward: -576.83 - Last mean reward per episode: -577.63
+Num timesteps: 4740
+Best mean reward: -576.83 - Last mean reward per episode: -577.63
+Num timesteps: 4760
+Best mean reward: -576.83 - Last mean reward per episode: -577.63
+Num timesteps: 4780
+Best mean reward: -576.83 - Last mean reward per episode: -577.63
+Num timesteps: 4800
+Best mean reward: -576.83 - Last mean reward per episode: -577.85
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -578     |
+| time/              |          |
+|    episodes        | 24       |
+|    fps             | 94       |
+|    time_elapsed    | 50       |
+|    total timesteps | 4800     |
+| train/             |          |
+|    actor_loss      | 64.7     |
+|    critic_loss     | 3.95     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 14600    |
+---------------------------------
+Num timesteps: 4820
+Best mean reward: -576.83 - Last mean reward per episode: -577.85
+Num timesteps: 4840
+Best mean reward: -576.83 - Last mean reward per episode: -577.85
+Num timesteps: 4860
+Best mean reward: -576.83 - Last mean reward per episode: -577.85
+Num timesteps: 4880
+Best mean reward: -576.83 - Last mean reward per episode: -577.85
+Num timesteps: 4900
+Best mean reward: -576.83 - Last mean reward per episode: -577.85
+Num timesteps: 4920
+Best mean reward: -576.83 - Last mean reward per episode: -577.85
+Num timesteps: 4940
+Best mean reward: -576.83 - Last mean reward per episode: -577.85
+Num timesteps: 4960
+Best mean reward: -576.83 - Last mean reward per episode: -577.85
+Num timesteps: 4980
+Best mean reward: -576.83 - Last mean reward per episode: -577.85
+Num timesteps: 5000
+Best mean reward: -576.83 - Last mean reward per episode: -564.54
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 5020
+Best mean reward: -564.54 - Last mean reward per episode: -564.54
+Num timesteps: 5040
+Best mean reward: -564.54 - Last mean reward per episode: -564.54
+Num timesteps: 5060
+Best mean reward: -564.54 - Last mean reward per episode: -564.54
+Num timesteps: 5080
+Best mean reward: -564.54 - Last mean reward per episode: -564.54
+Num timesteps: 5100
+Best mean reward: -564.54 - Last mean reward per episode: -564.54
+Num timesteps: 5120
+Best mean reward: -564.54 - Last mean reward per episode: -564.54
+Num timesteps: 5140
+Best mean reward: -564.54 - Last mean reward per episode: -564.54
+Num timesteps: 5160
+Best mean reward: -564.54 - Last mean reward per episode: -564.54
+Num timesteps: 5180
+Best mean reward: -564.54 - Last mean reward per episode: -564.54
+Num timesteps: 5200
+Best mean reward: -564.54 - Last mean reward per episode: -552.10
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 5220
+Best mean reward: -552.10 - Last mean reward per episode: -552.10
+Num timesteps: 5240
+Best mean reward: -552.10 - Last mean reward per episode: -552.10
+Num timesteps: 5260
+Best mean reward: -552.10 - Last mean reward per episode: -552.10
+Num timesteps: 5280
+Best mean reward: -552.10 - Last mean reward per episode: -552.10
+Num timesteps: 5300
+Best mean reward: -552.10 - Last mean reward per episode: -552.10
+Num timesteps: 5320
+Best mean reward: -552.10 - Last mean reward per episode: -552.10
+Num timesteps: 5340
+Best mean reward: -552.10 - Last mean reward per episode: -552.10
+Num timesteps: 5360
+Best mean reward: -552.10 - Last mean reward per episode: -552.10
+Num timesteps: 5380
+Best mean reward: -552.10 - Last mean reward per episode: -552.10
+Num timesteps: 5400
+Best mean reward: -552.10 - Last mean reward per episode: -564.49
+Num timesteps: 5420
+Best mean reward: -552.10 - Last mean reward per episode: -564.49
+Num timesteps: 5440
+Best mean reward: -552.10 - Last mean reward per episode: -564.49
+Num timesteps: 5460
+Best mean reward: -552.10 - Last mean reward per episode: -564.49
+Num timesteps: 5480
+Best mean reward: -552.10 - Last mean reward per episode: -564.49
+Num timesteps: 5500
+Best mean reward: -552.10 - Last mean reward per episode: -564.49
+Num timesteps: 5520
+Best mean reward: -552.10 - Last mean reward per episode: -564.49
+Num timesteps: 5540
+Best mean reward: -552.10 - Last mean reward per episode: -564.49
+Num timesteps: 5560
+Best mean reward: -552.10 - Last mean reward per episode: -564.49
+Num timesteps: 5580
+Best mean reward: -552.10 - Last mean reward per episode: -564.49
+Num timesteps: 5600
+Best mean reward: -552.10 - Last mean reward per episode: -548.61
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -549     |
+| time/              |          |
+|    episodes        | 28       |
+|    fps             | 93       |
+|    time_elapsed    | 59       |
+|    total timesteps | 5600     |
+| train/             |          |
+|    actor_loss      | 62.6     |
+|    critic_loss     | 5.45     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 15400    |
+---------------------------------
+Num timesteps: 5620
+Best mean reward: -548.61 - Last mean reward per episode: -548.61
+Num timesteps: 5640
+Best mean reward: -548.61 - Last mean reward per episode: -548.61
+Num timesteps: 5660
+Best mean reward: -548.61 - Last mean reward per episode: -548.61
+Num timesteps: 5680
+Best mean reward: -548.61 - Last mean reward per episode: -548.61
+Num timesteps: 5700
+Best mean reward: -548.61 - Last mean reward per episode: -548.61
+Num timesteps: 5720
+Best mean reward: -548.61 - Last mean reward per episode: -548.61
+Num timesteps: 5740
+Best mean reward: -548.61 - Last mean reward per episode: -548.61
+Num timesteps: 5760
+Best mean reward: -548.61 - Last mean reward per episode: -548.61
+Num timesteps: 5780
+Best mean reward: -548.61 - Last mean reward per episode: -548.61
+Num timesteps: 5800
+Best mean reward: -548.61 - Last mean reward per episode: -537.97
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 5820
+Best mean reward: -537.97 - Last mean reward per episode: -537.97
+Num timesteps: 5840
+Best mean reward: -537.97 - Last mean reward per episode: -537.97
+Num timesteps: 5860
+Best mean reward: -537.97 - Last mean reward per episode: -537.97
+Num timesteps: 5880
+Best mean reward: -537.97 - Last mean reward per episode: -537.97
+Num timesteps: 5900
+Best mean reward: -537.97 - Last mean reward per episode: -537.97
+Num timesteps: 5920
+Best mean reward: -537.97 - Last mean reward per episode: -537.97
+Num timesteps: 5940
+Best mean reward: -537.97 - Last mean reward per episode: -537.97
+Num timesteps: 5960
+Best mean reward: -537.97 - Last mean reward per episode: -537.97
+Num timesteps: 5980
+Best mean reward: -537.97 - Last mean reward per episode: -537.97
+Num timesteps: 6000
+Best mean reward: -537.97 - Last mean reward per episode: -536.82
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 6020
+Best mean reward: -536.82 - Last mean reward per episode: -536.82
+Num timesteps: 6040
+Best mean reward: -536.82 - Last mean reward per episode: -536.82
+Num timesteps: 6060
+Best mean reward: -536.82 - Last mean reward per episode: -536.82
+Num timesteps: 6080
+Best mean reward: -536.82 - Last mean reward per episode: -536.82
+Num timesteps: 6100
+Best mean reward: -536.82 - Last mean reward per episode: -536.82
+Num timesteps: 6120
+Best mean reward: -536.82 - Last mean reward per episode: -536.82
+Num timesteps: 6140
+Best mean reward: -536.82 - Last mean reward per episode: -536.82
+Num timesteps: 6160
+Best mean reward: -536.82 - Last mean reward per episode: -536.82
+Num timesteps: 6180
+Best mean reward: -536.82 - Last mean reward per episode: -536.82
+Num timesteps: 6200
+Best mean reward: -536.82 - Last mean reward per episode: -527.40
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 6220
+Best mean reward: -527.40 - Last mean reward per episode: -527.40
+Num timesteps: 6240
+Best mean reward: -527.40 - Last mean reward per episode: -527.40
+Num timesteps: 6260
+Best mean reward: -527.40 - Last mean reward per episode: -527.40
+Num timesteps: 6280
+Best mean reward: -527.40 - Last mean reward per episode: -527.40
+Num timesteps: 6300
+Best mean reward: -527.40 - Last mean reward per episode: -527.40
+Num timesteps: 6320
+Best mean reward: -527.40 - Last mean reward per episode: -527.40
+Num timesteps: 6340
+Best mean reward: -527.40 - Last mean reward per episode: -527.40
+Num timesteps: 6360
+Best mean reward: -527.40 - Last mean reward per episode: -527.40
+Num timesteps: 6380
+Best mean reward: -527.40 - Last mean reward per episode: -527.40
+Num timesteps: 6400
+Best mean reward: -527.40 - Last mean reward per episode: -514.72
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -515     |
+| time/              |          |
+|    episodes        | 32       |
+|    fps             | 93       |
+|    time_elapsed    | 68       |
+|    total timesteps | 6400     |
+| train/             |          |
+|    actor_loss      | 57.7     |
+|    critic_loss     | 5.07     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 16200    |
+---------------------------------
+Num timesteps: 6420
+Best mean reward: -514.72 - Last mean reward per episode: -514.72
+Num timesteps: 6440
+Best mean reward: -514.72 - Last mean reward per episode: -514.72
+Num timesteps: 6460
+Best mean reward: -514.72 - Last mean reward per episode: -514.72
+Num timesteps: 6480
+Best mean reward: -514.72 - Last mean reward per episode: -514.72
+Num timesteps: 6500
+Best mean reward: -514.72 - Last mean reward per episode: -514.72
+Num timesteps: 6520
+Best mean reward: -514.72 - Last mean reward per episode: -514.72
+Num timesteps: 6540
+Best mean reward: -514.72 - Last mean reward per episode: -514.72
+Num timesteps: 6560
+Best mean reward: -514.72 - Last mean reward per episode: -514.72
+Num timesteps: 6580
+Best mean reward: -514.72 - Last mean reward per episode: -514.72
+Num timesteps: 6600
+Best mean reward: -514.72 - Last mean reward per episode: -509.89
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 6620
+Best mean reward: -509.89 - Last mean reward per episode: -509.89
+Num timesteps: 6640
+Best mean reward: -509.89 - Last mean reward per episode: -509.89
+Num timesteps: 6660
+Best mean reward: -509.89 - Last mean reward per episode: -509.89
+Num timesteps: 6680
+Best mean reward: -509.89 - Last mean reward per episode: -509.89
+Num timesteps: 6700
+Best mean reward: -509.89 - Last mean reward per episode: -509.89
+Num timesteps: 6720
+Best mean reward: -509.89 - Last mean reward per episode: -509.89
+Num timesteps: 6740
+Best mean reward: -509.89 - Last mean reward per episode: -509.89
+Num timesteps: 6760
+Best mean reward: -509.89 - Last mean reward per episode: -509.89
+Num timesteps: 6780
+Best mean reward: -509.89 - Last mean reward per episode: -509.89
+Num timesteps: 6800
+Best mean reward: -509.89 - Last mean reward per episode: -498.53
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 6820
+Best mean reward: -498.53 - Last mean reward per episode: -498.53
+Num timesteps: 6840
+Best mean reward: -498.53 - Last mean reward per episode: -498.53
+Num timesteps: 6860
+Best mean reward: -498.53 - Last mean reward per episode: -498.53
+Num timesteps: 6880
+Best mean reward: -498.53 - Last mean reward per episode: -498.53
+Num timesteps: 6900
+Best mean reward: -498.53 - Last mean reward per episode: -498.53
+Num timesteps: 6920
+Best mean reward: -498.53 - Last mean reward per episode: -498.53
+Num timesteps: 6940
+Best mean reward: -498.53 - Last mean reward per episode: -498.53
+Num timesteps: 6960
+Best mean reward: -498.53 - Last mean reward per episode: -498.53
+Num timesteps: 6980
+Best mean reward: -498.53 - Last mean reward per episode: -498.53
+Num timesteps: 7000
+Best mean reward: -498.53 - Last mean reward per episode: -491.10
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 7020
+Best mean reward: -491.10 - Last mean reward per episode: -491.10
+Num timesteps: 7040
+Best mean reward: -491.10 - Last mean reward per episode: -491.10
+Num timesteps: 7060
+Best mean reward: -491.10 - Last mean reward per episode: -491.10
+Num timesteps: 7080
+Best mean reward: -491.10 - Last mean reward per episode: -491.10
+Num timesteps: 7100
+Best mean reward: -491.10 - Last mean reward per episode: -491.10
+Num timesteps: 7120
+Best mean reward: -491.10 - Last mean reward per episode: -491.10
+Num timesteps: 7140
+Best mean reward: -491.10 - Last mean reward per episode: -491.10
+Num timesteps: 7160
+Best mean reward: -491.10 - Last mean reward per episode: -491.10
+Num timesteps: 7180
+Best mean reward: -491.10 - Last mean reward per episode: -491.10
+Num timesteps: 7200
+Best mean reward: -491.10 - Last mean reward per episode: -487.64
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -488     |
+| time/              |          |
+|    episodes        | 36       |
+|    fps             | 92       |
+|    time_elapsed    | 77       |
+|    total timesteps | 7200     |
+| train/             |          |
+|    actor_loss      | 53.4     |
+|    critic_loss     | 5.5      |
+|    learning_rate   | 0.001    |
+|    n_updates       | 17000    |
+---------------------------------
+Num timesteps: 7220
+Best mean reward: -487.64 - Last mean reward per episode: -487.64
+Num timesteps: 7240
+Best mean reward: -487.64 - Last mean reward per episode: -487.64
+Num timesteps: 7260
+Best mean reward: -487.64 - Last mean reward per episode: -487.64
+Num timesteps: 7280
+Best mean reward: -487.64 - Last mean reward per episode: -487.64
+Num timesteps: 7300
+Best mean reward: -487.64 - Last mean reward per episode: -487.64
+Num timesteps: 7320
+Best mean reward: -487.64 - Last mean reward per episode: -487.64
+Num timesteps: 7340
+Best mean reward: -487.64 - Last mean reward per episode: -487.64
+Num timesteps: 7360
+Best mean reward: -487.64 - Last mean reward per episode: -487.64
+Num timesteps: 7380
+Best mean reward: -487.64 - Last mean reward per episode: -487.64
+Num timesteps: 7400
+Best mean reward: -487.64 - Last mean reward per episode: -477.73
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 7420
+Best mean reward: -477.73 - Last mean reward per episode: -477.73
+Num timesteps: 7440
+Best mean reward: -477.73 - Last mean reward per episode: -477.73
+Num timesteps: 7460
+Best mean reward: -477.73 - Last mean reward per episode: -477.73
+Num timesteps: 7480
+Best mean reward: -477.73 - Last mean reward per episode: -477.73
+Num timesteps: 7500
+Best mean reward: -477.73 - Last mean reward per episode: -477.73
+Num timesteps: 7520
+Best mean reward: -477.73 - Last mean reward per episode: -477.73
+Num timesteps: 7540
+Best mean reward: -477.73 - Last mean reward per episode: -477.73
+Num timesteps: 7560
+Best mean reward: -477.73 - Last mean reward per episode: -477.73
+Num timesteps: 7580
+Best mean reward: -477.73 - Last mean reward per episode: -477.73
+Num timesteps: 7600
+Best mean reward: -477.73 - Last mean reward per episode: -471.46
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 7620
+Best mean reward: -471.46 - Last mean reward per episode: -471.46
+Num timesteps: 7640
+Best mean reward: -471.46 - Last mean reward per episode: -471.46
+Num timesteps: 7660
+Best mean reward: -471.46 - Last mean reward per episode: -471.46
+Num timesteps: 7680
+Best mean reward: -471.46 - Last mean reward per episode: -471.46
+Num timesteps: 7700
+Best mean reward: -471.46 - Last mean reward per episode: -471.46
+Num timesteps: 7720
+Best mean reward: -471.46 - Last mean reward per episode: -471.46
+Num timesteps: 7740
+Best mean reward: -471.46 - Last mean reward per episode: -471.46
+Num timesteps: 7760
+Best mean reward: -471.46 - Last mean reward per episode: -471.46
+Num timesteps: 7780
+Best mean reward: -471.46 - Last mean reward per episode: -471.46
+Num timesteps: 7800
+Best mean reward: -471.46 - Last mean reward per episode: -462.60
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 7820
+Best mean reward: -462.60 - Last mean reward per episode: -462.60
+Num timesteps: 7840
+Best mean reward: -462.60 - Last mean reward per episode: -462.60
+Num timesteps: 7860
+Best mean reward: -462.60 - Last mean reward per episode: -462.60
+Num timesteps: 7880
+Best mean reward: -462.60 - Last mean reward per episode: -462.60
+Num timesteps: 7900
+Best mean reward: -462.60 - Last mean reward per episode: -462.60
+Num timesteps: 7920
+Best mean reward: -462.60 - Last mean reward per episode: -462.60
+Num timesteps: 7940
+Best mean reward: -462.60 - Last mean reward per episode: -462.60
+Num timesteps: 7960
+Best mean reward: -462.60 - Last mean reward per episode: -462.60
+Num timesteps: 7980
+Best mean reward: -462.60 - Last mean reward per episode: -462.60
+Num timesteps: 8000
+Best mean reward: -462.60 - Last mean reward per episode: -454.13
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -454     |
+| time/              |          |
+|    episodes        | 40       |
+|    fps             | 92       |
+|    time_elapsed    | 86       |
+|    total timesteps | 8000     |
+| train/             |          |
+|    actor_loss      | 48.4     |
+|    critic_loss     | 4.78     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 17800    |
+---------------------------------
+Num timesteps: 8020
+Best mean reward: -454.13 - Last mean reward per episode: -454.13
+Num timesteps: 8040
+Best mean reward: -454.13 - Last mean reward per episode: -454.13
+Num timesteps: 8060
+Best mean reward: -454.13 - Last mean reward per episode: -454.13
+Num timesteps: 8080
+Best mean reward: -454.13 - Last mean reward per episode: -454.13
+Num timesteps: 8100
+Best mean reward: -454.13 - Last mean reward per episode: -454.13
+Num timesteps: 8120
+Best mean reward: -454.13 - Last mean reward per episode: -454.13
+Num timesteps: 8140
+Best mean reward: -454.13 - Last mean reward per episode: -454.13
+Num timesteps: 8160
+Best mean reward: -454.13 - Last mean reward per episode: -454.13
+Num timesteps: 8180
+Best mean reward: -454.13 - Last mean reward per episode: -454.13
+Num timesteps: 8200
+Best mean reward: -454.13 - Last mean reward per episode: -446.13
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 8220
+Best mean reward: -446.13 - Last mean reward per episode: -446.13
+Num timesteps: 8240
+Best mean reward: -446.13 - Last mean reward per episode: -446.13
+Num timesteps: 8260
+Best mean reward: -446.13 - Last mean reward per episode: -446.13
+Num timesteps: 8280
+Best mean reward: -446.13 - Last mean reward per episode: -446.13
+Num timesteps: 8300
+Best mean reward: -446.13 - Last mean reward per episode: -446.13
+Num timesteps: 8320
+Best mean reward: -446.13 - Last mean reward per episode: -446.13
+Num timesteps: 8340
+Best mean reward: -446.13 - Last mean reward per episode: -446.13
+Num timesteps: 8360
+Best mean reward: -446.13 - Last mean reward per episode: -446.13
+Num timesteps: 8380
+Best mean reward: -446.13 - Last mean reward per episode: -446.13
+Num timesteps: 8400
+Best mean reward: -446.13 - Last mean reward per episode: -441.33
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 8420
+Best mean reward: -441.33 - Last mean reward per episode: -441.33
+Num timesteps: 8440
+Best mean reward: -441.33 - Last mean reward per episode: -441.33
+Num timesteps: 8460
+Best mean reward: -441.33 - Last mean reward per episode: -441.33
+Num timesteps: 8480
+Best mean reward: -441.33 - Last mean reward per episode: -441.33
+Num timesteps: 8500
+Best mean reward: -441.33 - Last mean reward per episode: -441.33
+Num timesteps: 8520
+Best mean reward: -441.33 - Last mean reward per episode: -441.33
+Num timesteps: 8540
+Best mean reward: -441.33 - Last mean reward per episode: -441.33
+Num timesteps: 8560
+Best mean reward: -441.33 - Last mean reward per episode: -441.33
+Num timesteps: 8580
+Best mean reward: -441.33 - Last mean reward per episode: -441.33
+Num timesteps: 8600
+Best mean reward: -441.33 - Last mean reward per episode: -433.94
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 8620
+Best mean reward: -433.94 - Last mean reward per episode: -433.94
+Num timesteps: 8640
+Best mean reward: -433.94 - Last mean reward per episode: -433.94
+Num timesteps: 8660
+Best mean reward: -433.94 - Last mean reward per episode: -433.94
+Num timesteps: 8680
+Best mean reward: -433.94 - Last mean reward per episode: -433.94
+Num timesteps: 8700
+Best mean reward: -433.94 - Last mean reward per episode: -433.94
+Num timesteps: 8720
+Best mean reward: -433.94 - Last mean reward per episode: -433.94
+Num timesteps: 8740
+Best mean reward: -433.94 - Last mean reward per episode: -433.94
+Num timesteps: 8760
+Best mean reward: -433.94 - Last mean reward per episode: -433.94
+Num timesteps: 8780
+Best mean reward: -433.94 - Last mean reward per episode: -433.94
+Num timesteps: 8800
+Best mean reward: -433.94 - Last mean reward per episode: -426.88
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -427     |
+| time/              |          |
+|    episodes        | 44       |
+|    fps             | 92       |
+|    time_elapsed    | 95       |
+|    total timesteps | 8800     |
+| train/             |          |
+|    actor_loss      | 44.4     |
+|    critic_loss     | 5.25     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 18600    |
+---------------------------------
+Num timesteps: 8820
+Best mean reward: -426.88 - Last mean reward per episode: -426.88
+Num timesteps: 8840
+Best mean reward: -426.88 - Last mean reward per episode: -426.88
+Num timesteps: 8860
+Best mean reward: -426.88 - Last mean reward per episode: -426.88
+Num timesteps: 8880
+Best mean reward: -426.88 - Last mean reward per episode: -426.88
+Num timesteps: 8900
+Best mean reward: -426.88 - Last mean reward per episode: -426.88
+Num timesteps: 8920
+Best mean reward: -426.88 - Last mean reward per episode: -426.88
+Num timesteps: 8940
+Best mean reward: -426.88 - Last mean reward per episode: -426.88
+Num timesteps: 8960
+Best mean reward: -426.88 - Last mean reward per episode: -426.88
+Num timesteps: 8980
+Best mean reward: -426.88 - Last mean reward per episode: -426.88
+Num timesteps: 9000
+Best mean reward: -426.88 - Last mean reward per episode: -422.77
+Saving new best model to /tmp/gym/w_tl/best_model.zip
+Num timesteps: 9020
+Best mean reward: -422.77 - Last mean reward per episode: -422.77
+Num timesteps: 9040
+Best mean reward: -422.77 - Last mean reward per episode: -422.77
+Num timesteps: 9060
+Best mean reward: -422.77 - Last mean reward per episode: -422.77
+Num timesteps: 9080
+Best mean reward: -422.77 - Last mean reward per episode: -422.77
+Num timesteps: 9100
+Best mean reward: -422.77 - Last mean reward per episode: -422.77
+Num timesteps: 9120
+Best mean reward: -422.77 - Last mean reward per episode: -422.77
+Num timesteps: 9140
+Best mean reward: -422.77 - Last mean reward per episode: -422.77
+Num timesteps: 9160
+Best mean reward: -422.77 - Last mean reward per episode: -422.77
+Num timesteps: 9180
+Best mean reward: -422.77 - Last mean reward per episode: -422.77
+Num timesteps: 9200
+Best mean reward: -422.77 - Last mean reward per episode: -446.37
+Num timesteps: 9220
+Best mean reward: -422.77 - Last mean reward per episode: -446.37
+Num timesteps: 9240
+Best mean reward: -422.77 - Last mean reward per episode: -446.37
+Num timesteps: 9260
+Best mean reward: -422.77 - Last mean reward per episode: -446.37
+Num timesteps: 9280
+Best mean reward: -422.77 - Last mean reward per episode: -446.37
+Num timesteps: 9300
+Best mean reward: -422.77 - Last mean reward per episode: -446.37
+Num timesteps: 9320
+Best mean reward: -422.77 - Last mean reward per episode: -446.37
+Num timesteps: 9340
+Best mean reward: -422.77 - Last mean reward per episode: -446.37
+Num timesteps: 9360
+Best mean reward: -422.77 - Last mean reward per episode: -446.37
+Num timesteps: 9380
+Best mean reward: -422.77 - Last mean reward per episode: -446.37
+Num timesteps: 9400
+Best mean reward: -422.77 - Last mean reward per episode: -441.99
+Num timesteps: 9420
+Best mean reward: -422.77 - Last mean reward per episode: -441.99
+Num timesteps: 9440
+Best mean reward: -422.77 - Last mean reward per episode: -441.99
+Num timesteps: 9460
+Best mean reward: -422.77 - Last mean reward per episode: -441.99
+Num timesteps: 9480
+Best mean reward: -422.77 - Last mean reward per episode: -441.99
+Num timesteps: 9500
+Best mean reward: -422.77 - Last mean reward per episode: -441.99
+Num timesteps: 9520
+Best mean reward: -422.77 - Last mean reward per episode: -441.99
+Num timesteps: 9540
+Best mean reward: -422.77 - Last mean reward per episode: -441.99
+Num timesteps: 9560
+Best mean reward: -422.77 - Last mean reward per episode: -441.99
+Num timesteps: 9580
+Best mean reward: -422.77 - Last mean reward per episode: -441.99
+Num timesteps: 9600
+Best mean reward: -422.77 - Last mean reward per episode: -442.88
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -443     |
+| time/              |          |
+|    episodes        | 48       |
+|    fps             | 92       |
+|    time_elapsed    | 103      |
+|    total timesteps | 9600     |
+| train/             |          |
+|    actor_loss      | 45.8     |
+|    critic_loss     | 5.39     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 19400    |
+---------------------------------
+Num timesteps: 9620
+Best mean reward: -422.77 - Last mean reward per episode: -442.88
+Num timesteps: 9640
+Best mean reward: -422.77 - Last mean reward per episode: -442.88
+Num timesteps: 9660
+Best mean reward: -422.77 - Last mean reward per episode: -442.88
+Num timesteps: 9680
+Best mean reward: -422.77 - Last mean reward per episode: -442.88
+Num timesteps: 9700
+Best mean reward: -422.77 - Last mean reward per episode: -442.88
+Num timesteps: 9720
+Best mean reward: -422.77 - Last mean reward per episode: -442.88
+Num timesteps: 9740
+Best mean reward: -422.77 - Last mean reward per episode: -442.88
+Num timesteps: 9760
+Best mean reward: -422.77 - Last mean reward per episode: -442.88
+Num timesteps: 9780
+Best mean reward: -422.77 - Last mean reward per episode: -442.88
+Num timesteps: 9800
+Best mean reward: -422.77 - Last mean reward per episode: -434.00
+Num timesteps: 9820
+Best mean reward: -422.77 - Last mean reward per episode: -434.00
+Num timesteps: 9840
+Best mean reward: -422.77 - Last mean reward per episode: -434.00
+Num timesteps: 9860
+Best mean reward: -422.77 - Last mean reward per episode: -434.00
+Num timesteps: 9880
+Best mean reward: -422.77 - Last mean reward per episode: -434.00
+Num timesteps: 9900
+Best mean reward: -422.77 - Last mean reward per episode: -434.00
+Num timesteps: 9920
+Best mean reward: -422.77 - Last mean reward per episode: -434.00
+Num timesteps: 9940
+Best mean reward: -422.77 - Last mean reward per episode: -434.00
+Num timesteps: 9960
+Best mean reward: -422.77 - Last mean reward per episode: -434.00
+Num timesteps: 9980
+Best mean reward: -422.77 - Last mean reward per episode: -434.00
+Num timesteps: 10000
+Best mean reward: -422.77 - Last mean reward per episode: -430.21
+Using cpu device
+Wrapping the env in a DummyVecEnv.
+Num timesteps: 200
+Best mean reward: -inf - Last mean reward per episode: -1490.17
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 220
+Best mean reward: -1490.17 - Last mean reward per episode: -1490.17
+Num timesteps: 240
+Best mean reward: -1490.17 - Last mean reward per episode: -1490.17
+Num timesteps: 260
+Best mean reward: -1490.17 - Last mean reward per episode: -1490.17
+Num timesteps: 280
+Best mean reward: -1490.17 - Last mean reward per episode: -1490.17
+Num timesteps: 300
+Best mean reward: -1490.17 - Last mean reward per episode: -1490.17
+Num timesteps: 320
+Best mean reward: -1490.17 - Last mean reward per episode: -1490.17
+Num timesteps: 340
+Best mean reward: -1490.17 - Last mean reward per episode: -1490.17
+Num timesteps: 360
+Best mean reward: -1490.17 - Last mean reward per episode: -1490.17
+Num timesteps: 380
+Best mean reward: -1490.17 - Last mean reward per episode: -1490.17
+Num timesteps: 400
+Best mean reward: -1490.17 - Last mean reward per episode: -1637.56
+Num timesteps: 420
+Best mean reward: -1490.17 - Last mean reward per episode: -1637.56
+Num timesteps: 440
+Best mean reward: -1490.17 - Last mean reward per episode: -1637.56
+Num timesteps: 460
+Best mean reward: -1490.17 - Last mean reward per episode: -1637.56
+Num timesteps: 480
+Best mean reward: -1490.17 - Last mean reward per episode: -1637.56
+Num timesteps: 500
+Best mean reward: -1490.17 - Last mean reward per episode: -1637.56
+Num timesteps: 520
+Best mean reward: -1490.17 - Last mean reward per episode: -1637.56
+Num timesteps: 540
+Best mean reward: -1490.17 - Last mean reward per episode: -1637.56
+Num timesteps: 560
+Best mean reward: -1490.17 - Last mean reward per episode: -1637.56
+Num timesteps: 580
+Best mean reward: -1490.17 - Last mean reward per episode: -1637.56
+Num timesteps: 600
+Best mean reward: -1490.17 - Last mean reward per episode: -1616.01
+Num timesteps: 620
+Best mean reward: -1490.17 - Last mean reward per episode: -1616.01
+Num timesteps: 640
+Best mean reward: -1490.17 - Last mean reward per episode: -1616.01
+Num timesteps: 660
+Best mean reward: -1490.17 - Last mean reward per episode: -1616.01
+Num timesteps: 680
+Best mean reward: -1490.17 - Last mean reward per episode: -1616.01
+Num timesteps: 700
+Best mean reward: -1490.17 - Last mean reward per episode: -1616.01
+Num timesteps: 720
+Best mean reward: -1490.17 - Last mean reward per episode: -1616.01
+Num timesteps: 740
+Best mean reward: -1490.17 - Last mean reward per episode: -1616.01
+Num timesteps: 760
+Best mean reward: -1490.17 - Last mean reward per episode: -1616.01
+Num timesteps: 780
+Best mean reward: -1490.17 - Last mean reward per episode: -1616.01
+Num timesteps: 800
+Best mean reward: -1490.17 - Last mean reward per episode: -1590.85
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.59e+03 |
+| time/              |           |
+|    episodes        | 4         |
+|    fps             | 120       |
+|    time_elapsed    | 6         |
+|    total timesteps | 800       |
+| train/             |           |
+|    actor_loss      | 23.2      |
+|    critic_loss     | 0.073     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 600       |
+----------------------------------
+Num timesteps: 820
+Best mean reward: -1490.17 - Last mean reward per episode: -1590.85
+Num timesteps: 840
+Best mean reward: -1490.17 - Last mean reward per episode: -1590.85
+Num timesteps: 860
+Best mean reward: -1490.17 - Last mean reward per episode: -1590.85
+Num timesteps: 880
+Best mean reward: -1490.17 - Last mean reward per episode: -1590.85
+Num timesteps: 900
+Best mean reward: -1490.17 - Last mean reward per episode: -1590.85
+Num timesteps: 920
+Best mean reward: -1490.17 - Last mean reward per episode: -1590.85
+Num timesteps: 940
+Best mean reward: -1490.17 - Last mean reward per episode: -1590.85
+Num timesteps: 960
+Best mean reward: -1490.17 - Last mean reward per episode: -1590.85
+Num timesteps: 980
+Best mean reward: -1490.17 - Last mean reward per episode: -1590.85
+Num timesteps: 1000
+Best mean reward: -1490.17 - Last mean reward per episode: -1560.92
+Num timesteps: 1020
+Best mean reward: -1490.17 - Last mean reward per episode: -1560.92
+Num timesteps: 1040
+Best mean reward: -1490.17 - Last mean reward per episode: -1560.92
+Num timesteps: 1060
+Best mean reward: -1490.17 - Last mean reward per episode: -1560.92
+Num timesteps: 1080
+Best mean reward: -1490.17 - Last mean reward per episode: -1560.92
+Num timesteps: 1100
+Best mean reward: -1490.17 - Last mean reward per episode: -1560.92
+Num timesteps: 1120
+Best mean reward: -1490.17 - Last mean reward per episode: -1560.92
+Num timesteps: 1140
+Best mean reward: -1490.17 - Last mean reward per episode: -1560.92
+Num timesteps: 1160
+Best mean reward: -1490.17 - Last mean reward per episode: -1560.92
+Num timesteps: 1180
+Best mean reward: -1490.17 - Last mean reward per episode: -1560.92
+Num timesteps: 1200
+Best mean reward: -1490.17 - Last mean reward per episode: -1567.67
+Num timesteps: 1220
+Best mean reward: -1490.17 - Last mean reward per episode: -1567.67
+Num timesteps: 1240
+Best mean reward: -1490.17 - Last mean reward per episode: -1567.67
+Num timesteps: 1260
+Best mean reward: -1490.17 - Last mean reward per episode: -1567.67
+Num timesteps: 1280
+Best mean reward: -1490.17 - Last mean reward per episode: -1567.67
+Num timesteps: 1300
+Best mean reward: -1490.17 - Last mean reward per episode: -1567.67
+Num timesteps: 1320
+Best mean reward: -1490.17 - Last mean reward per episode: -1567.67
+Num timesteps: 1340
+Best mean reward: -1490.17 - Last mean reward per episode: -1567.67
+Num timesteps: 1360
+Best mean reward: -1490.17 - Last mean reward per episode: -1567.67
+Num timesteps: 1380
+Best mean reward: -1490.17 - Last mean reward per episode: -1567.67
+Num timesteps: 1400
+Best mean reward: -1490.17 - Last mean reward per episode: -1493.27
+Num timesteps: 1420
+Best mean reward: -1490.17 - Last mean reward per episode: -1493.27
+Num timesteps: 1440
+Best mean reward: -1490.17 - Last mean reward per episode: -1493.27
+Num timesteps: 1460
+Best mean reward: -1490.17 - Last mean reward per episode: -1493.27
+Num timesteps: 1480
+Best mean reward: -1490.17 - Last mean reward per episode: -1493.27
+Num timesteps: 1500
+Best mean reward: -1490.17 - Last mean reward per episode: -1493.27
+Num timesteps: 1520
+Best mean reward: -1490.17 - Last mean reward per episode: -1493.27
+Num timesteps: 1540
+Best mean reward: -1490.17 - Last mean reward per episode: -1493.27
+Num timesteps: 1560
+Best mean reward: -1490.17 - Last mean reward per episode: -1493.27
+Num timesteps: 1580
+Best mean reward: -1490.17 - Last mean reward per episode: -1493.27
+Num timesteps: 1600
+Best mean reward: -1490.17 - Last mean reward per episode: -1396.86
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -1.4e+03 |
+| time/              |          |
+|    episodes        | 8        |
+|    fps             | 104      |
+|    time_elapsed    | 15       |
+|    total timesteps | 1600     |
+| train/             |          |
+|    actor_loss      | 47.3     |
+|    critic_loss     | 0.219    |
+|    learning_rate   | 0.001    |
+|    n_updates       | 1400     |
+---------------------------------
+Num timesteps: 1620
+Best mean reward: -1396.86 - Last mean reward per episode: -1396.86
+Num timesteps: 1640
+Best mean reward: -1396.86 - Last mean reward per episode: -1396.86
+Num timesteps: 1660
+Best mean reward: -1396.86 - Last mean reward per episode: -1396.86
+Num timesteps: 1680
+Best mean reward: -1396.86 - Last mean reward per episode: -1396.86
+Num timesteps: 1700
+Best mean reward: -1396.86 - Last mean reward per episode: -1396.86
+Num timesteps: 1720
+Best mean reward: -1396.86 - Last mean reward per episode: -1396.86
+Num timesteps: 1740
+Best mean reward: -1396.86 - Last mean reward per episode: -1396.86
+Num timesteps: 1760
+Best mean reward: -1396.86 - Last mean reward per episode: -1396.86
+Num timesteps: 1780
+Best mean reward: -1396.86 - Last mean reward per episode: -1396.86
+Num timesteps: 1800
+Best mean reward: -1396.86 - Last mean reward per episode: -1376.16
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 1820
+Best mean reward: -1376.16 - Last mean reward per episode: -1376.16
+Num timesteps: 1840
+Best mean reward: -1376.16 - Last mean reward per episode: -1376.16
+Num timesteps: 1860
+Best mean reward: -1376.16 - Last mean reward per episode: -1376.16
+Num timesteps: 1880
+Best mean reward: -1376.16 - Last mean reward per episode: -1376.16
+Num timesteps: 1900
+Best mean reward: -1376.16 - Last mean reward per episode: -1376.16
+Num timesteps: 1920
+Best mean reward: -1376.16 - Last mean reward per episode: -1376.16
+Num timesteps: 1940
+Best mean reward: -1376.16 - Last mean reward per episode: -1376.16
+Num timesteps: 1960
+Best mean reward: -1376.16 - Last mean reward per episode: -1376.16
+Num timesteps: 1980
+Best mean reward: -1376.16 - Last mean reward per episode: -1376.16
+Num timesteps: 2000
+Best mean reward: -1376.16 - Last mean reward per episode: -1338.51
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 2020
+Best mean reward: -1338.51 - Last mean reward per episode: -1338.51
+Num timesteps: 2040
+Best mean reward: -1338.51 - Last mean reward per episode: -1338.51
+Num timesteps: 2060
+Best mean reward: -1338.51 - Last mean reward per episode: -1338.51
+Num timesteps: 2080
+Best mean reward: -1338.51 - Last mean reward per episode: -1338.51
+Num timesteps: 2100
+Best mean reward: -1338.51 - Last mean reward per episode: -1338.51
+Num timesteps: 2120
+Best mean reward: -1338.51 - Last mean reward per episode: -1338.51
+Num timesteps: 2140
+Best mean reward: -1338.51 - Last mean reward per episode: -1338.51
+Num timesteps: 2160
+Best mean reward: -1338.51 - Last mean reward per episode: -1338.51
+Num timesteps: 2180
+Best mean reward: -1338.51 - Last mean reward per episode: -1338.51
+Num timesteps: 2200
+Best mean reward: -1338.51 - Last mean reward per episode: -1317.13
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 2220
+Best mean reward: -1317.13 - Last mean reward per episode: -1317.13
+Num timesteps: 2240
+Best mean reward: -1317.13 - Last mean reward per episode: -1317.13
+Num timesteps: 2260
+Best mean reward: -1317.13 - Last mean reward per episode: -1317.13
+Num timesteps: 2280
+Best mean reward: -1317.13 - Last mean reward per episode: -1317.13
+Num timesteps: 2300
+Best mean reward: -1317.13 - Last mean reward per episode: -1317.13
+Num timesteps: 2320
+Best mean reward: -1317.13 - Last mean reward per episode: -1317.13
+Num timesteps: 2340
+Best mean reward: -1317.13 - Last mean reward per episode: -1317.13
+Num timesteps: 2360
+Best mean reward: -1317.13 - Last mean reward per episode: -1317.13
+Num timesteps: 2380
+Best mean reward: -1317.13 - Last mean reward per episode: -1317.13
+Num timesteps: 2400
+Best mean reward: -1317.13 - Last mean reward per episode: -1294.74
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.29e+03 |
+| time/              |           |
+|    episodes        | 12        |
+|    fps             | 99        |
+|    time_elapsed    | 24        |
+|    total timesteps | 2400      |
+| train/             |           |
+|    actor_loss      | 64.2      |
+|    critic_loss     | 0.304     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 2200      |
+----------------------------------
+Num timesteps: 2420
+Best mean reward: -1294.74 - Last mean reward per episode: -1294.74
+Num timesteps: 2440
+Best mean reward: -1294.74 - Last mean reward per episode: -1294.74
+Num timesteps: 2460
+Best mean reward: -1294.74 - Last mean reward per episode: -1294.74
+Num timesteps: 2480
+Best mean reward: -1294.74 - Last mean reward per episode: -1294.74
+Num timesteps: 2500
+Best mean reward: -1294.74 - Last mean reward per episode: -1294.74
+Num timesteps: 2520
+Best mean reward: -1294.74 - Last mean reward per episode: -1294.74
+Num timesteps: 2540
+Best mean reward: -1294.74 - Last mean reward per episode: -1294.74
+Num timesteps: 2560
+Best mean reward: -1294.74 - Last mean reward per episode: -1294.74
+Num timesteps: 2580
+Best mean reward: -1294.74 - Last mean reward per episode: -1294.74
+Num timesteps: 2600
+Best mean reward: -1294.74 - Last mean reward per episode: -1281.89
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 2620
+Best mean reward: -1281.89 - Last mean reward per episode: -1281.89
+Num timesteps: 2640
+Best mean reward: -1281.89 - Last mean reward per episode: -1281.89
+Num timesteps: 2660
+Best mean reward: -1281.89 - Last mean reward per episode: -1281.89
+Num timesteps: 2680
+Best mean reward: -1281.89 - Last mean reward per episode: -1281.89
+Num timesteps: 2700
+Best mean reward: -1281.89 - Last mean reward per episode: -1281.89
+Num timesteps: 2720
+Best mean reward: -1281.89 - Last mean reward per episode: -1281.89
+Num timesteps: 2740
+Best mean reward: -1281.89 - Last mean reward per episode: -1281.89
+Num timesteps: 2760
+Best mean reward: -1281.89 - Last mean reward per episode: -1281.89
+Num timesteps: 2780
+Best mean reward: -1281.89 - Last mean reward per episode: -1281.89
+Num timesteps: 2800
+Best mean reward: -1281.89 - Last mean reward per episode: -1268.85
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 2820
+Best mean reward: -1268.85 - Last mean reward per episode: -1268.85
+Num timesteps: 2840
+Best mean reward: -1268.85 - Last mean reward per episode: -1268.85
+Num timesteps: 2860
+Best mean reward: -1268.85 - Last mean reward per episode: -1268.85
+Num timesteps: 2880
+Best mean reward: -1268.85 - Last mean reward per episode: -1268.85
+Num timesteps: 2900
+Best mean reward: -1268.85 - Last mean reward per episode: -1268.85
+Num timesteps: 2920
+Best mean reward: -1268.85 - Last mean reward per episode: -1268.85
+Num timesteps: 2940
+Best mean reward: -1268.85 - Last mean reward per episode: -1268.85
+Num timesteps: 2960
+Best mean reward: -1268.85 - Last mean reward per episode: -1268.85
+Num timesteps: 2980
+Best mean reward: -1268.85 - Last mean reward per episode: -1268.85
+Num timesteps: 3000
+Best mean reward: -1268.85 - Last mean reward per episode: -1248.91
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 3020
+Best mean reward: -1248.91 - Last mean reward per episode: -1248.91
+Num timesteps: 3040
+Best mean reward: -1248.91 - Last mean reward per episode: -1248.91
+Num timesteps: 3060
+Best mean reward: -1248.91 - Last mean reward per episode: -1248.91
+Num timesteps: 3080
+Best mean reward: -1248.91 - Last mean reward per episode: -1248.91
+Num timesteps: 3100
+Best mean reward: -1248.91 - Last mean reward per episode: -1248.91
+Num timesteps: 3120
+Best mean reward: -1248.91 - Last mean reward per episode: -1248.91
+Num timesteps: 3140
+Best mean reward: -1248.91 - Last mean reward per episode: -1248.91
+Num timesteps: 3160
+Best mean reward: -1248.91 - Last mean reward per episode: -1248.91
+Num timesteps: 3180
+Best mean reward: -1248.91 - Last mean reward per episode: -1248.91
+Num timesteps: 3200
+Best mean reward: -1248.91 - Last mean reward per episode: -1231.73
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.23e+03 |
+| time/              |           |
+|    episodes        | 16        |
+|    fps             | 96        |
+|    time_elapsed    | 33        |
+|    total timesteps | 3200      |
+| train/             |           |
+|    actor_loss      | 80.6      |
+|    critic_loss     | 0.377     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 3000      |
+----------------------------------
+Num timesteps: 3220
+Best mean reward: -1231.73 - Last mean reward per episode: -1231.73
+Num timesteps: 3240
+Best mean reward: -1231.73 - Last mean reward per episode: -1231.73
+Num timesteps: 3260
+Best mean reward: -1231.73 - Last mean reward per episode: -1231.73
+Num timesteps: 3280
+Best mean reward: -1231.73 - Last mean reward per episode: -1231.73
+Num timesteps: 3300
+Best mean reward: -1231.73 - Last mean reward per episode: -1231.73
+Num timesteps: 3320
+Best mean reward: -1231.73 - Last mean reward per episode: -1231.73
+Num timesteps: 3340
+Best mean reward: -1231.73 - Last mean reward per episode: -1231.73
+Num timesteps: 3360
+Best mean reward: -1231.73 - Last mean reward per episode: -1231.73
+Num timesteps: 3380
+Best mean reward: -1231.73 - Last mean reward per episode: -1231.73
+Num timesteps: 3400
+Best mean reward: -1231.73 - Last mean reward per episode: -1216.46
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 3420
+Best mean reward: -1216.46 - Last mean reward per episode: -1216.46
+Num timesteps: 3440
+Best mean reward: -1216.46 - Last mean reward per episode: -1216.46
+Num timesteps: 3460
+Best mean reward: -1216.46 - Last mean reward per episode: -1216.46
+Num timesteps: 3480
+Best mean reward: -1216.46 - Last mean reward per episode: -1216.46
+Num timesteps: 3500
+Best mean reward: -1216.46 - Last mean reward per episode: -1216.46
+Num timesteps: 3520
+Best mean reward: -1216.46 - Last mean reward per episode: -1216.46
+Num timesteps: 3540
+Best mean reward: -1216.46 - Last mean reward per episode: -1216.46
+Num timesteps: 3560
+Best mean reward: -1216.46 - Last mean reward per episode: -1216.46
+Num timesteps: 3580
+Best mean reward: -1216.46 - Last mean reward per episode: -1216.46
+Num timesteps: 3600
+Best mean reward: -1216.46 - Last mean reward per episode: -1198.31
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 3620
+Best mean reward: -1198.31 - Last mean reward per episode: -1198.31
+Num timesteps: 3640
+Best mean reward: -1198.31 - Last mean reward per episode: -1198.31
+Num timesteps: 3660
+Best mean reward: -1198.31 - Last mean reward per episode: -1198.31
+Num timesteps: 3680
+Best mean reward: -1198.31 - Last mean reward per episode: -1198.31
+Num timesteps: 3700
+Best mean reward: -1198.31 - Last mean reward per episode: -1198.31
+Num timesteps: 3720
+Best mean reward: -1198.31 - Last mean reward per episode: -1198.31
+Num timesteps: 3740
+Best mean reward: -1198.31 - Last mean reward per episode: -1198.31
+Num timesteps: 3760
+Best mean reward: -1198.31 - Last mean reward per episode: -1198.31
+Num timesteps: 3780
+Best mean reward: -1198.31 - Last mean reward per episode: -1198.31
+Num timesteps: 3800
+Best mean reward: -1198.31 - Last mean reward per episode: -1182.41
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 3820
+Best mean reward: -1182.41 - Last mean reward per episode: -1182.41
+Num timesteps: 3840
+Best mean reward: -1182.41 - Last mean reward per episode: -1182.41
+Num timesteps: 3860
+Best mean reward: -1182.41 - Last mean reward per episode: -1182.41
+Num timesteps: 3880
+Best mean reward: -1182.41 - Last mean reward per episode: -1182.41
+Num timesteps: 3900
+Best mean reward: -1182.41 - Last mean reward per episode: -1182.41
+Num timesteps: 3920
+Best mean reward: -1182.41 - Last mean reward per episode: -1182.41
+Num timesteps: 3940
+Best mean reward: -1182.41 - Last mean reward per episode: -1182.41
+Num timesteps: 3960
+Best mean reward: -1182.41 - Last mean reward per episode: -1182.41
+Num timesteps: 3980
+Best mean reward: -1182.41 - Last mean reward per episode: -1182.41
+Num timesteps: 4000
+Best mean reward: -1182.41 - Last mean reward per episode: -1168.38
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.17e+03 |
+| time/              |           |
+|    episodes        | 20        |
+|    fps             | 94        |
+|    time_elapsed    | 42        |
+|    total timesteps | 4000      |
+| train/             |           |
+|    actor_loss      | 92.8      |
+|    critic_loss     | 0.573     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 3800      |
+----------------------------------
+Num timesteps: 4020
+Best mean reward: -1168.38 - Last mean reward per episode: -1168.38
+Num timesteps: 4040
+Best mean reward: -1168.38 - Last mean reward per episode: -1168.38
+Num timesteps: 4060
+Best mean reward: -1168.38 - Last mean reward per episode: -1168.38
+Num timesteps: 4080
+Best mean reward: -1168.38 - Last mean reward per episode: -1168.38
+Num timesteps: 4100
+Best mean reward: -1168.38 - Last mean reward per episode: -1168.38
+Num timesteps: 4120
+Best mean reward: -1168.38 - Last mean reward per episode: -1168.38
+Num timesteps: 4140
+Best mean reward: -1168.38 - Last mean reward per episode: -1168.38
+Num timesteps: 4160
+Best mean reward: -1168.38 - Last mean reward per episode: -1168.38
+Num timesteps: 4180
+Best mean reward: -1168.38 - Last mean reward per episode: -1168.38
+Num timesteps: 4200
+Best mean reward: -1168.38 - Last mean reward per episode: -1160.33
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 4220
+Best mean reward: -1160.33 - Last mean reward per episode: -1160.33
+Num timesteps: 4240
+Best mean reward: -1160.33 - Last mean reward per episode: -1160.33
+Num timesteps: 4260
+Best mean reward: -1160.33 - Last mean reward per episode: -1160.33
+Num timesteps: 4280
+Best mean reward: -1160.33 - Last mean reward per episode: -1160.33
+Num timesteps: 4300
+Best mean reward: -1160.33 - Last mean reward per episode: -1160.33
+Num timesteps: 4320
+Best mean reward: -1160.33 - Last mean reward per episode: -1160.33
+Num timesteps: 4340
+Best mean reward: -1160.33 - Last mean reward per episode: -1160.33
+Num timesteps: 4360
+Best mean reward: -1160.33 - Last mean reward per episode: -1160.33
+Num timesteps: 4380
+Best mean reward: -1160.33 - Last mean reward per episode: -1160.33
+Num timesteps: 4400
+Best mean reward: -1160.33 - Last mean reward per episode: -1151.47
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 4420
+Best mean reward: -1151.47 - Last mean reward per episode: -1151.47
+Num timesteps: 4440
+Best mean reward: -1151.47 - Last mean reward per episode: -1151.47
+Num timesteps: 4460
+Best mean reward: -1151.47 - Last mean reward per episode: -1151.47
+Num timesteps: 4480
+Best mean reward: -1151.47 - Last mean reward per episode: -1151.47
+Num timesteps: 4500
+Best mean reward: -1151.47 - Last mean reward per episode: -1151.47
+Num timesteps: 4520
+Best mean reward: -1151.47 - Last mean reward per episode: -1151.47
+Num timesteps: 4540
+Best mean reward: -1151.47 - Last mean reward per episode: -1151.47
+Num timesteps: 4560
+Best mean reward: -1151.47 - Last mean reward per episode: -1151.47
+Num timesteps: 4580
+Best mean reward: -1151.47 - Last mean reward per episode: -1151.47
+Num timesteps: 4600
+Best mean reward: -1151.47 - Last mean reward per episode: -1140.56
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 4620
+Best mean reward: -1140.56 - Last mean reward per episode: -1140.56
+Num timesteps: 4640
+Best mean reward: -1140.56 - Last mean reward per episode: -1140.56
+Num timesteps: 4660
+Best mean reward: -1140.56 - Last mean reward per episode: -1140.56
+Num timesteps: 4680
+Best mean reward: -1140.56 - Last mean reward per episode: -1140.56
+Num timesteps: 4700
+Best mean reward: -1140.56 - Last mean reward per episode: -1140.56
+Num timesteps: 4720
+Best mean reward: -1140.56 - Last mean reward per episode: -1140.56
+Num timesteps: 4740
+Best mean reward: -1140.56 - Last mean reward per episode: -1140.56
+Num timesteps: 4760
+Best mean reward: -1140.56 - Last mean reward per episode: -1140.56
+Num timesteps: 4780
+Best mean reward: -1140.56 - Last mean reward per episode: -1140.56
+Num timesteps: 4800
+Best mean reward: -1140.56 - Last mean reward per episode: -1130.61
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.13e+03 |
+| time/              |           |
+|    episodes        | 24        |
+|    fps             | 93        |
+|    time_elapsed    | 51        |
+|    total timesteps | 4800      |
+| train/             |           |
+|    actor_loss      | 105       |
+|    critic_loss     | 1.24      |
+|    learning_rate   | 0.001     |
+|    n_updates       | 4600      |
+----------------------------------
+Num timesteps: 4820
+Best mean reward: -1130.61 - Last mean reward per episode: -1130.61
+Num timesteps: 4840
+Best mean reward: -1130.61 - Last mean reward per episode: -1130.61
+Num timesteps: 4860
+Best mean reward: -1130.61 - Last mean reward per episode: -1130.61
+Num timesteps: 4880
+Best mean reward: -1130.61 - Last mean reward per episode: -1130.61
+Num timesteps: 4900
+Best mean reward: -1130.61 - Last mean reward per episode: -1130.61
+Num timesteps: 4920
+Best mean reward: -1130.61 - Last mean reward per episode: -1130.61
+Num timesteps: 4940
+Best mean reward: -1130.61 - Last mean reward per episode: -1130.61
+Num timesteps: 4960
+Best mean reward: -1130.61 - Last mean reward per episode: -1130.61
+Num timesteps: 4980
+Best mean reward: -1130.61 - Last mean reward per episode: -1130.61
+Num timesteps: 5000
+Best mean reward: -1130.61 - Last mean reward per episode: -1126.00
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 5020
+Best mean reward: -1126.00 - Last mean reward per episode: -1126.00
+Num timesteps: 5040
+Best mean reward: -1126.00 - Last mean reward per episode: -1126.00
+Num timesteps: 5060
+Best mean reward: -1126.00 - Last mean reward per episode: -1126.00
+Num timesteps: 5080
+Best mean reward: -1126.00 - Last mean reward per episode: -1126.00
+Num timesteps: 5100
+Best mean reward: -1126.00 - Last mean reward per episode: -1126.00
+Num timesteps: 5120
+Best mean reward: -1126.00 - Last mean reward per episode: -1126.00
+Num timesteps: 5140
+Best mean reward: -1126.00 - Last mean reward per episode: -1126.00
+Num timesteps: 5160
+Best mean reward: -1126.00 - Last mean reward per episode: -1126.00
+Num timesteps: 5180
+Best mean reward: -1126.00 - Last mean reward per episode: -1126.00
+Num timesteps: 5200
+Best mean reward: -1126.00 - Last mean reward per episode: -1117.25
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 5220
+Best mean reward: -1117.25 - Last mean reward per episode: -1117.25
+Num timesteps: 5240
+Best mean reward: -1117.25 - Last mean reward per episode: -1117.25
+Num timesteps: 5260
+Best mean reward: -1117.25 - Last mean reward per episode: -1117.25
+Num timesteps: 5280
+Best mean reward: -1117.25 - Last mean reward per episode: -1117.25
+Num timesteps: 5300
+Best mean reward: -1117.25 - Last mean reward per episode: -1117.25
+Num timesteps: 5320
+Best mean reward: -1117.25 - Last mean reward per episode: -1117.25
+Num timesteps: 5340
+Best mean reward: -1117.25 - Last mean reward per episode: -1117.25
+Num timesteps: 5360
+Best mean reward: -1117.25 - Last mean reward per episode: -1117.25
+Num timesteps: 5380
+Best mean reward: -1117.25 - Last mean reward per episode: -1117.25
+Num timesteps: 5400
+Best mean reward: -1117.25 - Last mean reward per episode: -1108.32
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 5420
+Best mean reward: -1108.32 - Last mean reward per episode: -1108.32
+Num timesteps: 5440
+Best mean reward: -1108.32 - Last mean reward per episode: -1108.32
+Num timesteps: 5460
+Best mean reward: -1108.32 - Last mean reward per episode: -1108.32
+Num timesteps: 5480
+Best mean reward: -1108.32 - Last mean reward per episode: -1108.32
+Num timesteps: 5500
+Best mean reward: -1108.32 - Last mean reward per episode: -1108.32
+Num timesteps: 5520
+Best mean reward: -1108.32 - Last mean reward per episode: -1108.32
+Num timesteps: 5540
+Best mean reward: -1108.32 - Last mean reward per episode: -1108.32
+Num timesteps: 5560
+Best mean reward: -1108.32 - Last mean reward per episode: -1108.32
+Num timesteps: 5580
+Best mean reward: -1108.32 - Last mean reward per episode: -1108.32
+Num timesteps: 5600
+Best mean reward: -1108.32 - Last mean reward per episode: -1100.72
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -1.1e+03 |
+| time/              |          |
+|    episodes        | 28       |
+|    fps             | 92       |
+|    time_elapsed    | 60       |
+|    total timesteps | 5600     |
+| train/             |          |
+|    actor_loss      | 117      |
+|    critic_loss     | 1.5      |
+|    learning_rate   | 0.001    |
+|    n_updates       | 5400     |
+---------------------------------
+Num timesteps: 5620
+Best mean reward: -1100.72 - Last mean reward per episode: -1100.72
+Num timesteps: 5640
+Best mean reward: -1100.72 - Last mean reward per episode: -1100.72
+Num timesteps: 5660
+Best mean reward: -1100.72 - Last mean reward per episode: -1100.72
+Num timesteps: 5680
+Best mean reward: -1100.72 - Last mean reward per episode: -1100.72
+Num timesteps: 5700
+Best mean reward: -1100.72 - Last mean reward per episode: -1100.72
+Num timesteps: 5720
+Best mean reward: -1100.72 - Last mean reward per episode: -1100.72
+Num timesteps: 5740
+Best mean reward: -1100.72 - Last mean reward per episode: -1100.72
+Num timesteps: 5760
+Best mean reward: -1100.72 - Last mean reward per episode: -1100.72
+Num timesteps: 5780
+Best mean reward: -1100.72 - Last mean reward per episode: -1100.72
+Num timesteps: 5800
+Best mean reward: -1100.72 - Last mean reward per episode: -1097.75
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 5820
+Best mean reward: -1097.75 - Last mean reward per episode: -1097.75
+Num timesteps: 5840
+Best mean reward: -1097.75 - Last mean reward per episode: -1097.75
+Num timesteps: 5860
+Best mean reward: -1097.75 - Last mean reward per episode: -1097.75
+Num timesteps: 5880
+Best mean reward: -1097.75 - Last mean reward per episode: -1097.75
+Num timesteps: 5900
+Best mean reward: -1097.75 - Last mean reward per episode: -1097.75
+Num timesteps: 5920
+Best mean reward: -1097.75 - Last mean reward per episode: -1097.75
+Num timesteps: 5940
+Best mean reward: -1097.75 - Last mean reward per episode: -1097.75
+Num timesteps: 5960
+Best mean reward: -1097.75 - Last mean reward per episode: -1097.75
+Num timesteps: 5980
+Best mean reward: -1097.75 - Last mean reward per episode: -1097.75
+Num timesteps: 6000
+Best mean reward: -1097.75 - Last mean reward per episode: -1089.77
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 6020
+Best mean reward: -1089.77 - Last mean reward per episode: -1089.77
+Num timesteps: 6040
+Best mean reward: -1089.77 - Last mean reward per episode: -1089.77
+Num timesteps: 6060
+Best mean reward: -1089.77 - Last mean reward per episode: -1089.77
+Num timesteps: 6080
+Best mean reward: -1089.77 - Last mean reward per episode: -1089.77
+Num timesteps: 6100
+Best mean reward: -1089.77 - Last mean reward per episode: -1089.77
+Num timesteps: 6120
+Best mean reward: -1089.77 - Last mean reward per episode: -1089.77
+Num timesteps: 6140
+Best mean reward: -1089.77 - Last mean reward per episode: -1089.77
+Num timesteps: 6160
+Best mean reward: -1089.77 - Last mean reward per episode: -1089.77
+Num timesteps: 6180
+Best mean reward: -1089.77 - Last mean reward per episode: -1089.77
+Num timesteps: 6200
+Best mean reward: -1089.77 - Last mean reward per episode: -1082.77
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 6220
+Best mean reward: -1082.77 - Last mean reward per episode: -1082.77
+Num timesteps: 6240
+Best mean reward: -1082.77 - Last mean reward per episode: -1082.77
+Num timesteps: 6260
+Best mean reward: -1082.77 - Last mean reward per episode: -1082.77
+Num timesteps: 6280
+Best mean reward: -1082.77 - Last mean reward per episode: -1082.77
+Num timesteps: 6300
+Best mean reward: -1082.77 - Last mean reward per episode: -1082.77
+Num timesteps: 6320
+Best mean reward: -1082.77 - Last mean reward per episode: -1082.77
+Num timesteps: 6340
+Best mean reward: -1082.77 - Last mean reward per episode: -1082.77
+Num timesteps: 6360
+Best mean reward: -1082.77 - Last mean reward per episode: -1082.77
+Num timesteps: 6380
+Best mean reward: -1082.77 - Last mean reward per episode: -1082.77
+Num timesteps: 6400
+Best mean reward: -1082.77 - Last mean reward per episode: -1075.67
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.08e+03 |
+| time/              |           |
+|    episodes        | 32        |
+|    fps             | 92        |
+|    time_elapsed    | 69        |
+|    total timesteps | 6400      |
+| train/             |           |
+|    actor_loss      | 128       |
+|    critic_loss     | 1.68      |
+|    learning_rate   | 0.001     |
+|    n_updates       | 6200      |
+----------------------------------
+Num timesteps: 6420
+Best mean reward: -1075.67 - Last mean reward per episode: -1075.67
+Num timesteps: 6440
+Best mean reward: -1075.67 - Last mean reward per episode: -1075.67
+Num timesteps: 6460
+Best mean reward: -1075.67 - Last mean reward per episode: -1075.67
+Num timesteps: 6480
+Best mean reward: -1075.67 - Last mean reward per episode: -1075.67
+Num timesteps: 6500
+Best mean reward: -1075.67 - Last mean reward per episode: -1075.67
+Num timesteps: 6520
+Best mean reward: -1075.67 - Last mean reward per episode: -1075.67
+Num timesteps: 6540
+Best mean reward: -1075.67 - Last mean reward per episode: -1075.67
+Num timesteps: 6560
+Best mean reward: -1075.67 - Last mean reward per episode: -1075.67
+Num timesteps: 6580
+Best mean reward: -1075.67 - Last mean reward per episode: -1075.67
+Num timesteps: 6600
+Best mean reward: -1075.67 - Last mean reward per episode: -1066.46
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 6620
+Best mean reward: -1066.46 - Last mean reward per episode: -1066.46
+Num timesteps: 6640
+Best mean reward: -1066.46 - Last mean reward per episode: -1066.46
+Num timesteps: 6660
+Best mean reward: -1066.46 - Last mean reward per episode: -1066.46
+Num timesteps: 6680
+Best mean reward: -1066.46 - Last mean reward per episode: -1066.46
+Num timesteps: 6700
+Best mean reward: -1066.46 - Last mean reward per episode: -1066.46
+Num timesteps: 6720
+Best mean reward: -1066.46 - Last mean reward per episode: -1066.46
+Num timesteps: 6740
+Best mean reward: -1066.46 - Last mean reward per episode: -1066.46
+Num timesteps: 6760
+Best mean reward: -1066.46 - Last mean reward per episode: -1066.46
+Num timesteps: 6780
+Best mean reward: -1066.46 - Last mean reward per episode: -1066.46
+Num timesteps: 6800
+Best mean reward: -1066.46 - Last mean reward per episode: -1060.26
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 6820
+Best mean reward: -1060.26 - Last mean reward per episode: -1060.26
+Num timesteps: 6840
+Best mean reward: -1060.26 - Last mean reward per episode: -1060.26
+Num timesteps: 6860
+Best mean reward: -1060.26 - Last mean reward per episode: -1060.26
+Num timesteps: 6880
+Best mean reward: -1060.26 - Last mean reward per episode: -1060.26
+Num timesteps: 6900
+Best mean reward: -1060.26 - Last mean reward per episode: -1060.26
+Num timesteps: 6920
+Best mean reward: -1060.26 - Last mean reward per episode: -1060.26
+Num timesteps: 6940
+Best mean reward: -1060.26 - Last mean reward per episode: -1060.26
+Num timesteps: 6960
+Best mean reward: -1060.26 - Last mean reward per episode: -1060.26
+Num timesteps: 6980
+Best mean reward: -1060.26 - Last mean reward per episode: -1060.26
+Num timesteps: 7000
+Best mean reward: -1060.26 - Last mean reward per episode: -1056.36
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 7020
+Best mean reward: -1056.36 - Last mean reward per episode: -1056.36
+Num timesteps: 7040
+Best mean reward: -1056.36 - Last mean reward per episode: -1056.36
+Num timesteps: 7060
+Best mean reward: -1056.36 - Last mean reward per episode: -1056.36
+Num timesteps: 7080
+Best mean reward: -1056.36 - Last mean reward per episode: -1056.36
+Num timesteps: 7100
+Best mean reward: -1056.36 - Last mean reward per episode: -1056.36
+Num timesteps: 7120
+Best mean reward: -1056.36 - Last mean reward per episode: -1056.36
+Num timesteps: 7140
+Best mean reward: -1056.36 - Last mean reward per episode: -1056.36
+Num timesteps: 7160
+Best mean reward: -1056.36 - Last mean reward per episode: -1056.36
+Num timesteps: 7180
+Best mean reward: -1056.36 - Last mean reward per episode: -1056.36
+Num timesteps: 7200
+Best mean reward: -1056.36 - Last mean reward per episode: -1050.88
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.05e+03 |
+| time/              |           |
+|    episodes        | 36        |
+|    fps             | 91        |
+|    time_elapsed    | 78        |
+|    total timesteps | 7200      |
+| train/             |           |
+|    actor_loss      | 138       |
+|    critic_loss     | 2.15      |
+|    learning_rate   | 0.001     |
+|    n_updates       | 7000      |
+----------------------------------
+Num timesteps: 7220
+Best mean reward: -1050.88 - Last mean reward per episode: -1050.88
+Num timesteps: 7240
+Best mean reward: -1050.88 - Last mean reward per episode: -1050.88
+Num timesteps: 7260
+Best mean reward: -1050.88 - Last mean reward per episode: -1050.88
+Num timesteps: 7280
+Best mean reward: -1050.88 - Last mean reward per episode: -1050.88
+Num timesteps: 7300
+Best mean reward: -1050.88 - Last mean reward per episode: -1050.88
+Num timesteps: 7320
+Best mean reward: -1050.88 - Last mean reward per episode: -1050.88
+Num timesteps: 7340
+Best mean reward: -1050.88 - Last mean reward per episode: -1050.88
+Num timesteps: 7360
+Best mean reward: -1050.88 - Last mean reward per episode: -1050.88
+Num timesteps: 7380
+Best mean reward: -1050.88 - Last mean reward per episode: -1050.88
+Num timesteps: 7400
+Best mean reward: -1050.88 - Last mean reward per episode: -1045.61
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 7420
+Best mean reward: -1045.61 - Last mean reward per episode: -1045.61
+Num timesteps: 7440
+Best mean reward: -1045.61 - Last mean reward per episode: -1045.61
+Num timesteps: 7460
+Best mean reward: -1045.61 - Last mean reward per episode: -1045.61
+Num timesteps: 7480
+Best mean reward: -1045.61 - Last mean reward per episode: -1045.61
+Num timesteps: 7500
+Best mean reward: -1045.61 - Last mean reward per episode: -1045.61
+Num timesteps: 7520
+Best mean reward: -1045.61 - Last mean reward per episode: -1045.61
+Num timesteps: 7540
+Best mean reward: -1045.61 - Last mean reward per episode: -1045.61
+Num timesteps: 7560
+Best mean reward: -1045.61 - Last mean reward per episode: -1045.61
+Num timesteps: 7580
+Best mean reward: -1045.61 - Last mean reward per episode: -1045.61
+Num timesteps: 7600
+Best mean reward: -1045.61 - Last mean reward per episode: -1049.01
+Num timesteps: 7620
+Best mean reward: -1045.61 - Last mean reward per episode: -1049.01
+Num timesteps: 7640
+Best mean reward: -1045.61 - Last mean reward per episode: -1049.01
+Num timesteps: 7660
+Best mean reward: -1045.61 - Last mean reward per episode: -1049.01
+Num timesteps: 7680
+Best mean reward: -1045.61 - Last mean reward per episode: -1049.01
+Num timesteps: 7700
+Best mean reward: -1045.61 - Last mean reward per episode: -1049.01
+Num timesteps: 7720
+Best mean reward: -1045.61 - Last mean reward per episode: -1049.01
+Num timesteps: 7740
+Best mean reward: -1045.61 - Last mean reward per episode: -1049.01
+Num timesteps: 7760
+Best mean reward: -1045.61 - Last mean reward per episode: -1049.01
+Num timesteps: 7780
+Best mean reward: -1045.61 - Last mean reward per episode: -1049.01
+Num timesteps: 7800
+Best mean reward: -1045.61 - Last mean reward per episode: -1047.21
+Num timesteps: 7820
+Best mean reward: -1045.61 - Last mean reward per episode: -1047.21
+Num timesteps: 7840
+Best mean reward: -1045.61 - Last mean reward per episode: -1047.21
+Num timesteps: 7860
+Best mean reward: -1045.61 - Last mean reward per episode: -1047.21
+Num timesteps: 7880
+Best mean reward: -1045.61 - Last mean reward per episode: -1047.21
+Num timesteps: 7900
+Best mean reward: -1045.61 - Last mean reward per episode: -1047.21
+Num timesteps: 7920
+Best mean reward: -1045.61 - Last mean reward per episode: -1047.21
+Num timesteps: 7940
+Best mean reward: -1045.61 - Last mean reward per episode: -1047.21
+Num timesteps: 7960
+Best mean reward: -1045.61 - Last mean reward per episode: -1047.21
+Num timesteps: 7980
+Best mean reward: -1045.61 - Last mean reward per episode: -1047.21
+Num timesteps: 8000
+Best mean reward: -1045.61 - Last mean reward per episode: -1044.41
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.04e+03 |
+| time/              |           |
+|    episodes        | 40        |
+|    fps             | 91        |
+|    time_elapsed    | 87        |
+|    total timesteps | 8000      |
+| train/             |           |
+|    actor_loss      | 148       |
+|    critic_loss     | 2.52      |
+|    learning_rate   | 0.001     |
+|    n_updates       | 7800      |
+----------------------------------
+Num timesteps: 8020
+Best mean reward: -1044.41 - Last mean reward per episode: -1044.41
+Num timesteps: 8040
+Best mean reward: -1044.41 - Last mean reward per episode: -1044.41
+Num timesteps: 8060
+Best mean reward: -1044.41 - Last mean reward per episode: -1044.41
+Num timesteps: 8080
+Best mean reward: -1044.41 - Last mean reward per episode: -1044.41
+Num timesteps: 8100
+Best mean reward: -1044.41 - Last mean reward per episode: -1044.41
+Num timesteps: 8120
+Best mean reward: -1044.41 - Last mean reward per episode: -1044.41
+Num timesteps: 8140
+Best mean reward: -1044.41 - Last mean reward per episode: -1044.41
+Num timesteps: 8160
+Best mean reward: -1044.41 - Last mean reward per episode: -1044.41
+Num timesteps: 8180
+Best mean reward: -1044.41 - Last mean reward per episode: -1044.41
+Num timesteps: 8200
+Best mean reward: -1044.41 - Last mean reward per episode: -1030.78
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 8220
+Best mean reward: -1030.78 - Last mean reward per episode: -1030.78
+Num timesteps: 8240
+Best mean reward: -1030.78 - Last mean reward per episode: -1030.78
+Num timesteps: 8260
+Best mean reward: -1030.78 - Last mean reward per episode: -1030.78
+Num timesteps: 8280
+Best mean reward: -1030.78 - Last mean reward per episode: -1030.78
+Num timesteps: 8300
+Best mean reward: -1030.78 - Last mean reward per episode: -1030.78
+Num timesteps: 8320
+Best mean reward: -1030.78 - Last mean reward per episode: -1030.78
+Num timesteps: 8340
+Best mean reward: -1030.78 - Last mean reward per episode: -1030.78
+Num timesteps: 8360
+Best mean reward: -1030.78 - Last mean reward per episode: -1030.78
+Num timesteps: 8380
+Best mean reward: -1030.78 - Last mean reward per episode: -1030.78
+Num timesteps: 8400
+Best mean reward: -1030.78 - Last mean reward per episode: -1009.49
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 8420
+Best mean reward: -1009.49 - Last mean reward per episode: -1009.49
+Num timesteps: 8440
+Best mean reward: -1009.49 - Last mean reward per episode: -1009.49
+Num timesteps: 8460
+Best mean reward: -1009.49 - Last mean reward per episode: -1009.49
+Num timesteps: 8480
+Best mean reward: -1009.49 - Last mean reward per episode: -1009.49
+Num timesteps: 8500
+Best mean reward: -1009.49 - Last mean reward per episode: -1009.49
+Num timesteps: 8520
+Best mean reward: -1009.49 - Last mean reward per episode: -1009.49
+Num timesteps: 8540
+Best mean reward: -1009.49 - Last mean reward per episode: -1009.49
+Num timesteps: 8560
+Best mean reward: -1009.49 - Last mean reward per episode: -1009.49
+Num timesteps: 8580
+Best mean reward: -1009.49 - Last mean reward per episode: -1009.49
+Num timesteps: 8600
+Best mean reward: -1009.49 - Last mean reward per episode: -1006.91
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 8620
+Best mean reward: -1006.91 - Last mean reward per episode: -1006.91
+Num timesteps: 8640
+Best mean reward: -1006.91 - Last mean reward per episode: -1006.91
+Num timesteps: 8660
+Best mean reward: -1006.91 - Last mean reward per episode: -1006.91
+Num timesteps: 8680
+Best mean reward: -1006.91 - Last mean reward per episode: -1006.91
+Num timesteps: 8700
+Best mean reward: -1006.91 - Last mean reward per episode: -1006.91
+Num timesteps: 8720
+Best mean reward: -1006.91 - Last mean reward per episode: -1006.91
+Num timesteps: 8740
+Best mean reward: -1006.91 - Last mean reward per episode: -1006.91
+Num timesteps: 8760
+Best mean reward: -1006.91 - Last mean reward per episode: -1006.91
+Num timesteps: 8780
+Best mean reward: -1006.91 - Last mean reward per episode: -1006.91
+Num timesteps: 8800
+Best mean reward: -1006.91 - Last mean reward per episode: -986.89
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -987     |
+| time/              |          |
+|    episodes        | 44       |
+|    fps             | 91       |
+|    time_elapsed    | 96       |
+|    total timesteps | 8800     |
+| train/             |          |
+|    actor_loss      | 155      |
+|    critic_loss     | 2.32     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 8600     |
+---------------------------------
+Num timesteps: 8820
+Best mean reward: -986.89 - Last mean reward per episode: -986.89
+Num timesteps: 8840
+Best mean reward: -986.89 - Last mean reward per episode: -986.89
+Num timesteps: 8860
+Best mean reward: -986.89 - Last mean reward per episode: -986.89
+Num timesteps: 8880
+Best mean reward: -986.89 - Last mean reward per episode: -986.89
+Num timesteps: 8900
+Best mean reward: -986.89 - Last mean reward per episode: -986.89
+Num timesteps: 8920
+Best mean reward: -986.89 - Last mean reward per episode: -986.89
+Num timesteps: 8940
+Best mean reward: -986.89 - Last mean reward per episode: -986.89
+Num timesteps: 8960
+Best mean reward: -986.89 - Last mean reward per episode: -986.89
+Num timesteps: 8980
+Best mean reward: -986.89 - Last mean reward per episode: -986.89
+Num timesteps: 9000
+Best mean reward: -986.89 - Last mean reward per episode: -984.86
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 9020
+Best mean reward: -984.86 - Last mean reward per episode: -984.86
+Num timesteps: 9040
+Best mean reward: -984.86 - Last mean reward per episode: -984.86
+Num timesteps: 9060
+Best mean reward: -984.86 - Last mean reward per episode: -984.86
+Num timesteps: 9080
+Best mean reward: -984.86 - Last mean reward per episode: -984.86
+Num timesteps: 9100
+Best mean reward: -984.86 - Last mean reward per episode: -984.86
+Num timesteps: 9120
+Best mean reward: -984.86 - Last mean reward per episode: -984.86
+Num timesteps: 9140
+Best mean reward: -984.86 - Last mean reward per episode: -984.86
+Num timesteps: 9160
+Best mean reward: -984.86 - Last mean reward per episode: -984.86
+Num timesteps: 9180
+Best mean reward: -984.86 - Last mean reward per episode: -984.86
+Num timesteps: 9200
+Best mean reward: -984.86 - Last mean reward per episode: -983.00
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 9220
+Best mean reward: -983.00 - Last mean reward per episode: -983.00
+Num timesteps: 9240
+Best mean reward: -983.00 - Last mean reward per episode: -983.00
+Num timesteps: 9260
+Best mean reward: -983.00 - Last mean reward per episode: -983.00
+Num timesteps: 9280
+Best mean reward: -983.00 - Last mean reward per episode: -983.00
+Num timesteps: 9300
+Best mean reward: -983.00 - Last mean reward per episode: -983.00
+Num timesteps: 9320
+Best mean reward: -983.00 - Last mean reward per episode: -983.00
+Num timesteps: 9340
+Best mean reward: -983.00 - Last mean reward per episode: -983.00
+Num timesteps: 9360
+Best mean reward: -983.00 - Last mean reward per episode: -983.00
+Num timesteps: 9380
+Best mean reward: -983.00 - Last mean reward per episode: -983.00
+Num timesteps: 9400
+Best mean reward: -983.00 - Last mean reward per episode: -967.24
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 9420
+Best mean reward: -967.24 - Last mean reward per episode: -967.24
+Num timesteps: 9440
+Best mean reward: -967.24 - Last mean reward per episode: -967.24
+Num timesteps: 9460
+Best mean reward: -967.24 - Last mean reward per episode: -967.24
+Num timesteps: 9480
+Best mean reward: -967.24 - Last mean reward per episode: -967.24
+Num timesteps: 9500
+Best mean reward: -967.24 - Last mean reward per episode: -967.24
+Num timesteps: 9520
+Best mean reward: -967.24 - Last mean reward per episode: -967.24
+Num timesteps: 9540
+Best mean reward: -967.24 - Last mean reward per episode: -967.24
+Num timesteps: 9560
+Best mean reward: -967.24 - Last mean reward per episode: -967.24
+Num timesteps: 9580
+Best mean reward: -967.24 - Last mean reward per episode: -967.24
+Num timesteps: 9600
+Best mean reward: -967.24 - Last mean reward per episode: -947.27
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 200      |
+|    ep_rew_mean     | -947     |
+| time/              |          |
+|    episodes        | 48       |
+|    fps             | 91       |
+|    time_elapsed    | 105      |
+|    total timesteps | 9600     |
+| train/             |          |
+|    actor_loss      | 160      |
+|    critic_loss     | 2.49     |
+|    learning_rate   | 0.001    |
+|    n_updates       | 9400     |
+---------------------------------
+Num timesteps: 9620
+Best mean reward: -947.27 - Last mean reward per episode: -947.27
+Num timesteps: 9640
+Best mean reward: -947.27 - Last mean reward per episode: -947.27
+Num timesteps: 9660
+Best mean reward: -947.27 - Last mean reward per episode: -947.27
+Num timesteps: 9680
+Best mean reward: -947.27 - Last mean reward per episode: -947.27
+Num timesteps: 9700
+Best mean reward: -947.27 - Last mean reward per episode: -947.27
+Num timesteps: 9720
+Best mean reward: -947.27 - Last mean reward per episode: -947.27
+Num timesteps: 9740
+Best mean reward: -947.27 - Last mean reward per episode: -947.27
+Num timesteps: 9760
+Best mean reward: -947.27 - Last mean reward per episode: -947.27
+Num timesteps: 9780
+Best mean reward: -947.27 - Last mean reward per episode: -947.27
+Num timesteps: 9800
+Best mean reward: -947.27 - Last mean reward per episode: -930.64
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Num timesteps: 9820
+Best mean reward: -930.64 - Last mean reward per episode: -930.64
+Num timesteps: 9840
+Best mean reward: -930.64 - Last mean reward per episode: -930.64
+Num timesteps: 9860
+Best mean reward: -930.64 - Last mean reward per episode: -930.64
+Num timesteps: 9880
+Best mean reward: -930.64 - Last mean reward per episode: -930.64
+Num timesteps: 9900
+Best mean reward: -930.64 - Last mean reward per episode: -930.64
+Num timesteps: 9920
+Best mean reward: -930.64 - Last mean reward per episode: -930.64
+Num timesteps: 9940
+Best mean reward: -930.64 - Last mean reward per episode: -930.64
+Num timesteps: 9960
+Best mean reward: -930.64 - Last mean reward per episode: -930.64
+Num timesteps: 9980
+Best mean reward: -930.64 - Last mean reward per episode: -930.64
+Num timesteps: 10000
+Best mean reward: -930.64 - Last mean reward per episode: -917.12
+Saving new best model to /tmp/gym/wo_tl/best_model.zip
+Using cpu device
+Wrapping the env in a DummyVecEnv.
+Num timesteps: 200
+Best mean reward: -inf - Last mean reward per episode: -1813.89
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 220
+Best mean reward: -1813.89 - Last mean reward per episode: -1813.89
+Num timesteps: 240
+Best mean reward: -1813.89 - Last mean reward per episode: -1813.89
+Num timesteps: 260
+Best mean reward: -1813.89 - Last mean reward per episode: -1813.89
+Num timesteps: 280
+Best mean reward: -1813.89 - Last mean reward per episode: -1813.89
+Num timesteps: 300
+Best mean reward: -1813.89 - Last mean reward per episode: -1813.89
+Num timesteps: 320
+Best mean reward: -1813.89 - Last mean reward per episode: -1813.89
+Num timesteps: 340
+Best mean reward: -1813.89 - Last mean reward per episode: -1813.89
+Num timesteps: 360
+Best mean reward: -1813.89 - Last mean reward per episode: -1813.89
+Num timesteps: 380
+Best mean reward: -1813.89 - Last mean reward per episode: -1813.89
+Num timesteps: 400
+Best mean reward: -1813.89 - Last mean reward per episode: -1838.10
+Num timesteps: 420
+Best mean reward: -1813.89 - Last mean reward per episode: -1838.10
+Num timesteps: 440
+Best mean reward: -1813.89 - Last mean reward per episode: -1838.10
+Num timesteps: 460
+Best mean reward: -1813.89 - Last mean reward per episode: -1838.10
+Num timesteps: 480
+Best mean reward: -1813.89 - Last mean reward per episode: -1838.10
+Num timesteps: 500
+Best mean reward: -1813.89 - Last mean reward per episode: -1838.10
+Num timesteps: 520
+Best mean reward: -1813.89 - Last mean reward per episode: -1838.10
+Num timesteps: 540
+Best mean reward: -1813.89 - Last mean reward per episode: -1838.10
+Num timesteps: 560
+Best mean reward: -1813.89 - Last mean reward per episode: -1838.10
+Num timesteps: 580
+Best mean reward: -1813.89 - Last mean reward per episode: -1838.10
+Num timesteps: 600
+Best mean reward: -1813.89 - Last mean reward per episode: -1728.74
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 620
+Best mean reward: -1728.74 - Last mean reward per episode: -1728.74
+Num timesteps: 640
+Best mean reward: -1728.74 - Last mean reward per episode: -1728.74
+Num timesteps: 660
+Best mean reward: -1728.74 - Last mean reward per episode: -1728.74
+Num timesteps: 680
+Best mean reward: -1728.74 - Last mean reward per episode: -1728.74
+Num timesteps: 700
+Best mean reward: -1728.74 - Last mean reward per episode: -1728.74
+Num timesteps: 720
+Best mean reward: -1728.74 - Last mean reward per episode: -1728.74
+Num timesteps: 740
+Best mean reward: -1728.74 - Last mean reward per episode: -1728.74
+Num timesteps: 760
+Best mean reward: -1728.74 - Last mean reward per episode: -1728.74
+Num timesteps: 780
+Best mean reward: -1728.74 - Last mean reward per episode: -1728.74
+Num timesteps: 800
+Best mean reward: -1728.74 - Last mean reward per episode: -1670.86
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.67e+03 |
+| time/              |           |
+|    episodes        | 4         |
+|    fps             | 25        |
+|    time_elapsed    | 31        |
+|    total timesteps | 800       |
+| train/             |           |
+|    actor_loss      | 26.1      |
+|    critic_loss     | 0.0359    |
+|    learning_rate   | 0.001     |
+|    n_updates       | 600       |
+----------------------------------
+Num timesteps: 820
+Best mean reward: -1670.86 - Last mean reward per episode: -1670.86
+Num timesteps: 840
+Best mean reward: -1670.86 - Last mean reward per episode: -1670.86
+Num timesteps: 860
+Best mean reward: -1670.86 - Last mean reward per episode: -1670.86
+Num timesteps: 880
+Best mean reward: -1670.86 - Last mean reward per episode: -1670.86
+Num timesteps: 900
+Best mean reward: -1670.86 - Last mean reward per episode: -1670.86
+Num timesteps: 920
+Best mean reward: -1670.86 - Last mean reward per episode: -1670.86
+Num timesteps: 940
+Best mean reward: -1670.86 - Last mean reward per episode: -1670.86
+Num timesteps: 960
+Best mean reward: -1670.86 - Last mean reward per episode: -1670.86
+Num timesteps: 980
+Best mean reward: -1670.86 - Last mean reward per episode: -1670.86
+Num timesteps: 1000
+Best mean reward: -1670.86 - Last mean reward per episode: -1655.75
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 1020
+Best mean reward: -1655.75 - Last mean reward per episode: -1655.75
+Num timesteps: 1040
+Best mean reward: -1655.75 - Last mean reward per episode: -1655.75
+Num timesteps: 1060
+Best mean reward: -1655.75 - Last mean reward per episode: -1655.75
+Num timesteps: 1080
+Best mean reward: -1655.75 - Last mean reward per episode: -1655.75
+Num timesteps: 1100
+Best mean reward: -1655.75 - Last mean reward per episode: -1655.75
+Num timesteps: 1120
+Best mean reward: -1655.75 - Last mean reward per episode: -1655.75
+Num timesteps: 1140
+Best mean reward: -1655.75 - Last mean reward per episode: -1655.75
+Num timesteps: 1160
+Best mean reward: -1655.75 - Last mean reward per episode: -1655.75
+Num timesteps: 1180
+Best mean reward: -1655.75 - Last mean reward per episode: -1655.75
+Num timesteps: 1200
+Best mean reward: -1655.75 - Last mean reward per episode: -1616.31
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 1220
+Best mean reward: -1616.31 - Last mean reward per episode: -1616.31
+Num timesteps: 1240
+Best mean reward: -1616.31 - Last mean reward per episode: -1616.31
+Num timesteps: 1260
+Best mean reward: -1616.31 - Last mean reward per episode: -1616.31
+Num timesteps: 1280
+Best mean reward: -1616.31 - Last mean reward per episode: -1616.31
+Num timesteps: 1300
+Best mean reward: -1616.31 - Last mean reward per episode: -1616.31
+Num timesteps: 1320
+Best mean reward: -1616.31 - Last mean reward per episode: -1616.31
+Num timesteps: 1340
+Best mean reward: -1616.31 - Last mean reward per episode: -1616.31
+Num timesteps: 1360
+Best mean reward: -1616.31 - Last mean reward per episode: -1616.31
+Num timesteps: 1380
+Best mean reward: -1616.31 - Last mean reward per episode: -1616.31
+Num timesteps: 1400
+Best mean reward: -1616.31 - Last mean reward per episode: -1523.79
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 1420
+Best mean reward: -1523.79 - Last mean reward per episode: -1523.79
+Num timesteps: 1440
+Best mean reward: -1523.79 - Last mean reward per episode: -1523.79
+Num timesteps: 1460
+Best mean reward: -1523.79 - Last mean reward per episode: -1523.79
+Num timesteps: 1480
+Best mean reward: -1523.79 - Last mean reward per episode: -1523.79
+Num timesteps: 1500
+Best mean reward: -1523.79 - Last mean reward per episode: -1523.79
+Num timesteps: 1520
+Best mean reward: -1523.79 - Last mean reward per episode: -1523.79
+Num timesteps: 1540
+Best mean reward: -1523.79 - Last mean reward per episode: -1523.79
+Num timesteps: 1560
+Best mean reward: -1523.79 - Last mean reward per episode: -1523.79
+Num timesteps: 1580
+Best mean reward: -1523.79 - Last mean reward per episode: -1523.79
+Num timesteps: 1600
+Best mean reward: -1523.79 - Last mean reward per episode: -1483.71
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.48e+03 |
+| time/              |           |
+|    episodes        | 8         |
+|    fps             | 21        |
+|    time_elapsed    | 73        |
+|    total timesteps | 1600      |
+| train/             |           |
+|    actor_loss      | 53.5      |
+|    critic_loss     | 0.216     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 1400      |
+----------------------------------
+Num timesteps: 1620
+Best mean reward: -1483.71 - Last mean reward per episode: -1483.71
+Num timesteps: 1640
+Best mean reward: -1483.71 - Last mean reward per episode: -1483.71
+Num timesteps: 1660
+Best mean reward: -1483.71 - Last mean reward per episode: -1483.71
+Num timesteps: 1680
+Best mean reward: -1483.71 - Last mean reward per episode: -1483.71
+Num timesteps: 1700
+Best mean reward: -1483.71 - Last mean reward per episode: -1483.71
+Num timesteps: 1720
+Best mean reward: -1483.71 - Last mean reward per episode: -1483.71
+Num timesteps: 1740
+Best mean reward: -1483.71 - Last mean reward per episode: -1483.71
+Num timesteps: 1760
+Best mean reward: -1483.71 - Last mean reward per episode: -1483.71
+Num timesteps: 1780
+Best mean reward: -1483.71 - Last mean reward per episode: -1483.71
+Num timesteps: 1800
+Best mean reward: -1483.71 - Last mean reward per episode: -1477.01
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 1820
+Best mean reward: -1477.01 - Last mean reward per episode: -1477.01
+Num timesteps: 1840
+Best mean reward: -1477.01 - Last mean reward per episode: -1477.01
+Num timesteps: 1860
+Best mean reward: -1477.01 - Last mean reward per episode: -1477.01
+Num timesteps: 1880
+Best mean reward: -1477.01 - Last mean reward per episode: -1477.01
+Num timesteps: 1900
+Best mean reward: -1477.01 - Last mean reward per episode: -1477.01
+Num timesteps: 1920
+Best mean reward: -1477.01 - Last mean reward per episode: -1477.01
+Num timesteps: 1940
+Best mean reward: -1477.01 - Last mean reward per episode: -1477.01
+Num timesteps: 1960
+Best mean reward: -1477.01 - Last mean reward per episode: -1477.01
+Num timesteps: 1980
+Best mean reward: -1477.01 - Last mean reward per episode: -1477.01
+Num timesteps: 2000
+Best mean reward: -1477.01 - Last mean reward per episode: -1471.93
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 2020
+Best mean reward: -1471.93 - Last mean reward per episode: -1471.93
+Num timesteps: 2040
+Best mean reward: -1471.93 - Last mean reward per episode: -1471.93
+Num timesteps: 2060
+Best mean reward: -1471.93 - Last mean reward per episode: -1471.93
+Num timesteps: 2080
+Best mean reward: -1471.93 - Last mean reward per episode: -1471.93
+Num timesteps: 2100
+Best mean reward: -1471.93 - Last mean reward per episode: -1471.93
+Num timesteps: 2120
+Best mean reward: -1471.93 - Last mean reward per episode: -1471.93
+Num timesteps: 2140
+Best mean reward: -1471.93 - Last mean reward per episode: -1471.93
+Num timesteps: 2160
+Best mean reward: -1471.93 - Last mean reward per episode: -1471.93
+Num timesteps: 2180
+Best mean reward: -1471.93 - Last mean reward per episode: -1471.93
+Num timesteps: 2200
+Best mean reward: -1471.93 - Last mean reward per episode: -1459.77
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 2220
+Best mean reward: -1459.77 - Last mean reward per episode: -1459.77
+Num timesteps: 2240
+Best mean reward: -1459.77 - Last mean reward per episode: -1459.77
+Num timesteps: 2260
+Best mean reward: -1459.77 - Last mean reward per episode: -1459.77
+Num timesteps: 2280
+Best mean reward: -1459.77 - Last mean reward per episode: -1459.77
+Num timesteps: 2300
+Best mean reward: -1459.77 - Last mean reward per episode: -1459.77
+Num timesteps: 2320
+Best mean reward: -1459.77 - Last mean reward per episode: -1459.77
+Num timesteps: 2340
+Best mean reward: -1459.77 - Last mean reward per episode: -1459.77
+Num timesteps: 2360
+Best mean reward: -1459.77 - Last mean reward per episode: -1459.77
+Num timesteps: 2380
+Best mean reward: -1459.77 - Last mean reward per episode: -1459.77
+Num timesteps: 2400
+Best mean reward: -1459.77 - Last mean reward per episode: -1431.19
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.43e+03 |
+| time/              |           |
+|    episodes        | 12        |
+|    fps             | 20        |
+|    time_elapsed    | 114       |
+|    total timesteps | 2400      |
+| train/             |           |
+|    actor_loss      | 76.2      |
+|    critic_loss     | 0.223     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 2200      |
+----------------------------------
+Num timesteps: 2420
+Best mean reward: -1431.19 - Last mean reward per episode: -1431.19
+Num timesteps: 2440
+Best mean reward: -1431.19 - Last mean reward per episode: -1431.19
+Num timesteps: 2460
+Best mean reward: -1431.19 - Last mean reward per episode: -1431.19
+Num timesteps: 2480
+Best mean reward: -1431.19 - Last mean reward per episode: -1431.19
+Num timesteps: 2500
+Best mean reward: -1431.19 - Last mean reward per episode: -1431.19
+Num timesteps: 2520
+Best mean reward: -1431.19 - Last mean reward per episode: -1431.19
+Num timesteps: 2540
+Best mean reward: -1431.19 - Last mean reward per episode: -1431.19
+Num timesteps: 2560
+Best mean reward: -1431.19 - Last mean reward per episode: -1431.19
+Num timesteps: 2580
+Best mean reward: -1431.19 - Last mean reward per episode: -1431.19
+Num timesteps: 2600
+Best mean reward: -1431.19 - Last mean reward per episode: -1408.00
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 2620
+Best mean reward: -1408.00 - Last mean reward per episode: -1408.00
+Num timesteps: 2640
+Best mean reward: -1408.00 - Last mean reward per episode: -1408.00
+Num timesteps: 2660
+Best mean reward: -1408.00 - Last mean reward per episode: -1408.00
+Num timesteps: 2680
+Best mean reward: -1408.00 - Last mean reward per episode: -1408.00
+Num timesteps: 2700
+Best mean reward: -1408.00 - Last mean reward per episode: -1408.00
+Num timesteps: 2720
+Best mean reward: -1408.00 - Last mean reward per episode: -1408.00
+Num timesteps: 2740
+Best mean reward: -1408.00 - Last mean reward per episode: -1408.00
+Num timesteps: 2760
+Best mean reward: -1408.00 - Last mean reward per episode: -1408.00
+Num timesteps: 2780
+Best mean reward: -1408.00 - Last mean reward per episode: -1408.00
+Num timesteps: 2800
+Best mean reward: -1408.00 - Last mean reward per episode: -1387.93
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 2820
+Best mean reward: -1387.93 - Last mean reward per episode: -1387.93
+Num timesteps: 2840
+Best mean reward: -1387.93 - Last mean reward per episode: -1387.93
+Num timesteps: 2860
+Best mean reward: -1387.93 - Last mean reward per episode: -1387.93
+Num timesteps: 2880
+Best mean reward: -1387.93 - Last mean reward per episode: -1387.93
+Num timesteps: 2900
+Best mean reward: -1387.93 - Last mean reward per episode: -1387.93
+Num timesteps: 2920
+Best mean reward: -1387.93 - Last mean reward per episode: -1387.93
+Num timesteps: 2940
+Best mean reward: -1387.93 - Last mean reward per episode: -1387.93
+Num timesteps: 2960
+Best mean reward: -1387.93 - Last mean reward per episode: -1387.93
+Num timesteps: 2980
+Best mean reward: -1387.93 - Last mean reward per episode: -1387.93
+Num timesteps: 3000
+Best mean reward: -1387.93 - Last mean reward per episode: -1364.03
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 3020
+Best mean reward: -1364.03 - Last mean reward per episode: -1364.03
+Num timesteps: 3040
+Best mean reward: -1364.03 - Last mean reward per episode: -1364.03
+Num timesteps: 3060
+Best mean reward: -1364.03 - Last mean reward per episode: -1364.03
+Num timesteps: 3080
+Best mean reward: -1364.03 - Last mean reward per episode: -1364.03
+Num timesteps: 3100
+Best mean reward: -1364.03 - Last mean reward per episode: -1364.03
+Num timesteps: 3120
+Best mean reward: -1364.03 - Last mean reward per episode: -1364.03
+Num timesteps: 3140
+Best mean reward: -1364.03 - Last mean reward per episode: -1364.03
+Num timesteps: 3160
+Best mean reward: -1364.03 - Last mean reward per episode: -1364.03
+Num timesteps: 3180
+Best mean reward: -1364.03 - Last mean reward per episode: -1364.03
+Num timesteps: 3200
+Best mean reward: -1364.03 - Last mean reward per episode: -1337.16
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.34e+03 |
+| time/              |           |
+|    episodes        | 16        |
+|    fps             | 20        |
+|    time_elapsed    | 156       |
+|    total timesteps | 3200      |
+| train/             |           |
+|    actor_loss      | 93.6      |
+|    critic_loss     | 0.403     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 3000      |
+----------------------------------
+Num timesteps: 3220
+Best mean reward: -1337.16 - Last mean reward per episode: -1337.16
+Num timesteps: 3240
+Best mean reward: -1337.16 - Last mean reward per episode: -1337.16
+Num timesteps: 3260
+Best mean reward: -1337.16 - Last mean reward per episode: -1337.16
+Num timesteps: 3280
+Best mean reward: -1337.16 - Last mean reward per episode: -1337.16
+Num timesteps: 3300
+Best mean reward: -1337.16 - Last mean reward per episode: -1337.16
+Num timesteps: 3320
+Best mean reward: -1337.16 - Last mean reward per episode: -1337.16
+Num timesteps: 3340
+Best mean reward: -1337.16 - Last mean reward per episode: -1337.16
+Num timesteps: 3360
+Best mean reward: -1337.16 - Last mean reward per episode: -1337.16
+Num timesteps: 3380
+Best mean reward: -1337.16 - Last mean reward per episode: -1337.16
+Num timesteps: 3400
+Best mean reward: -1337.16 - Last mean reward per episode: -1318.42
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 3420
+Best mean reward: -1318.42 - Last mean reward per episode: -1318.42
+Num timesteps: 3440
+Best mean reward: -1318.42 - Last mean reward per episode: -1318.42
+Num timesteps: 3460
+Best mean reward: -1318.42 - Last mean reward per episode: -1318.42
+Num timesteps: 3480
+Best mean reward: -1318.42 - Last mean reward per episode: -1318.42
+Num timesteps: 3500
+Best mean reward: -1318.42 - Last mean reward per episode: -1318.42
+Num timesteps: 3520
+Best mean reward: -1318.42 - Last mean reward per episode: -1318.42
+Num timesteps: 3540
+Best mean reward: -1318.42 - Last mean reward per episode: -1318.42
+Num timesteps: 3560
+Best mean reward: -1318.42 - Last mean reward per episode: -1318.42
+Num timesteps: 3580
+Best mean reward: -1318.42 - Last mean reward per episode: -1318.42
+Num timesteps: 3600
+Best mean reward: -1318.42 - Last mean reward per episode: -1304.23
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 3620
+Best mean reward: -1304.23 - Last mean reward per episode: -1304.23
+Num timesteps: 3640
+Best mean reward: -1304.23 - Last mean reward per episode: -1304.23
+Num timesteps: 3660
+Best mean reward: -1304.23 - Last mean reward per episode: -1304.23
+Num timesteps: 3680
+Best mean reward: -1304.23 - Last mean reward per episode: -1304.23
+Num timesteps: 3700
+Best mean reward: -1304.23 - Last mean reward per episode: -1304.23
+Num timesteps: 3720
+Best mean reward: -1304.23 - Last mean reward per episode: -1304.23
+Num timesteps: 3740
+Best mean reward: -1304.23 - Last mean reward per episode: -1304.23
+Num timesteps: 3760
+Best mean reward: -1304.23 - Last mean reward per episode: -1304.23
+Num timesteps: 3780
+Best mean reward: -1304.23 - Last mean reward per episode: -1304.23
+Num timesteps: 3800
+Best mean reward: -1304.23 - Last mean reward per episode: -1314.40
+Num timesteps: 3820
+Best mean reward: -1304.23 - Last mean reward per episode: -1314.40
+Num timesteps: 3840
+Best mean reward: -1304.23 - Last mean reward per episode: -1314.40
+Num timesteps: 3860
+Best mean reward: -1304.23 - Last mean reward per episode: -1314.40
+Num timesteps: 3880
+Best mean reward: -1304.23 - Last mean reward per episode: -1314.40
+Num timesteps: 3900
+Best mean reward: -1304.23 - Last mean reward per episode: -1314.40
+Num timesteps: 3920
+Best mean reward: -1304.23 - Last mean reward per episode: -1314.40
+Num timesteps: 3940
+Best mean reward: -1304.23 - Last mean reward per episode: -1314.40
+Num timesteps: 3960
+Best mean reward: -1304.23 - Last mean reward per episode: -1314.40
+Num timesteps: 3980
+Best mean reward: -1304.23 - Last mean reward per episode: -1314.40
+Num timesteps: 4000
+Best mean reward: -1304.23 - Last mean reward per episode: -1311.19
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.31e+03 |
+| time/              |           |
+|    episodes        | 20        |
+|    fps             | 20        |
+|    time_elapsed    | 197       |
+|    total timesteps | 4000      |
+| train/             |           |
+|    actor_loss      | 111       |
+|    critic_loss     | 0.592     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 3800      |
+----------------------------------
+Num timesteps: 4020
+Best mean reward: -1304.23 - Last mean reward per episode: -1311.19
+Num timesteps: 4040
+Best mean reward: -1304.23 - Last mean reward per episode: -1311.19
+Num timesteps: 4060
+Best mean reward: -1304.23 - Last mean reward per episode: -1311.19
+Num timesteps: 4080
+Best mean reward: -1304.23 - Last mean reward per episode: -1311.19
+Num timesteps: 4100
+Best mean reward: -1304.23 - Last mean reward per episode: -1311.19
+Num timesteps: 4120
+Best mean reward: -1304.23 - Last mean reward per episode: -1311.19
+Num timesteps: 4140
+Best mean reward: -1304.23 - Last mean reward per episode: -1311.19
+Num timesteps: 4160
+Best mean reward: -1304.23 - Last mean reward per episode: -1311.19
+Num timesteps: 4180
+Best mean reward: -1304.23 - Last mean reward per episode: -1311.19
+Num timesteps: 4200
+Best mean reward: -1304.23 - Last mean reward per episode: -1297.72
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 4220
+Best mean reward: -1297.72 - Last mean reward per episode: -1297.72
+Num timesteps: 4240
+Best mean reward: -1297.72 - Last mean reward per episode: -1297.72
+Num timesteps: 4260
+Best mean reward: -1297.72 - Last mean reward per episode: -1297.72
+Num timesteps: 4280
+Best mean reward: -1297.72 - Last mean reward per episode: -1297.72
+Num timesteps: 4300
+Best mean reward: -1297.72 - Last mean reward per episode: -1297.72
+Num timesteps: 4320
+Best mean reward: -1297.72 - Last mean reward per episode: -1297.72
+Num timesteps: 4340
+Best mean reward: -1297.72 - Last mean reward per episode: -1297.72
+Num timesteps: 4360
+Best mean reward: -1297.72 - Last mean reward per episode: -1297.72
+Num timesteps: 4380
+Best mean reward: -1297.72 - Last mean reward per episode: -1297.72
+Num timesteps: 4400
+Best mean reward: -1297.72 - Last mean reward per episode: -1281.38
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 4420
+Best mean reward: -1281.38 - Last mean reward per episode: -1281.38
+Num timesteps: 4440
+Best mean reward: -1281.38 - Last mean reward per episode: -1281.38
+Num timesteps: 4460
+Best mean reward: -1281.38 - Last mean reward per episode: -1281.38
+Num timesteps: 4480
+Best mean reward: -1281.38 - Last mean reward per episode: -1281.38
+Num timesteps: 4500
+Best mean reward: -1281.38 - Last mean reward per episode: -1281.38
+Num timesteps: 4520
+Best mean reward: -1281.38 - Last mean reward per episode: -1281.38
+Num timesteps: 4540
+Best mean reward: -1281.38 - Last mean reward per episode: -1281.38
+Num timesteps: 4560
+Best mean reward: -1281.38 - Last mean reward per episode: -1281.38
+Num timesteps: 4580
+Best mean reward: -1281.38 - Last mean reward per episode: -1281.38
+Num timesteps: 4600
+Best mean reward: -1281.38 - Last mean reward per episode: -1274.93
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 4620
+Best mean reward: -1274.93 - Last mean reward per episode: -1274.93
+Num timesteps: 4640
+Best mean reward: -1274.93 - Last mean reward per episode: -1274.93
+Num timesteps: 4660
+Best mean reward: -1274.93 - Last mean reward per episode: -1274.93
+Num timesteps: 4680
+Best mean reward: -1274.93 - Last mean reward per episode: -1274.93
+Num timesteps: 4700
+Best mean reward: -1274.93 - Last mean reward per episode: -1274.93
+Num timesteps: 4720
+Best mean reward: -1274.93 - Last mean reward per episode: -1274.93
+Num timesteps: 4740
+Best mean reward: -1274.93 - Last mean reward per episode: -1274.93
+Num timesteps: 4760
+Best mean reward: -1274.93 - Last mean reward per episode: -1274.93
+Num timesteps: 4780
+Best mean reward: -1274.93 - Last mean reward per episode: -1274.93
+Num timesteps: 4800
+Best mean reward: -1274.93 - Last mean reward per episode: -1263.89
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.26e+03 |
+| time/              |           |
+|    episodes        | 24        |
+|    fps             | 19        |
+|    time_elapsed    | 240       |
+|    total timesteps | 4800      |
+| train/             |           |
+|    actor_loss      | 128       |
+|    critic_loss     | 0.705     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 4600      |
+----------------------------------
+Num timesteps: 4820
+Best mean reward: -1263.89 - Last mean reward per episode: -1263.89
+Num timesteps: 4840
+Best mean reward: -1263.89 - Last mean reward per episode: -1263.89
+Num timesteps: 4860
+Best mean reward: -1263.89 - Last mean reward per episode: -1263.89
+Num timesteps: 4880
+Best mean reward: -1263.89 - Last mean reward per episode: -1263.89
+Num timesteps: 4900
+Best mean reward: -1263.89 - Last mean reward per episode: -1263.89
+Num timesteps: 4920
+Best mean reward: -1263.89 - Last mean reward per episode: -1263.89
+Num timesteps: 4940
+Best mean reward: -1263.89 - Last mean reward per episode: -1263.89
+Num timesteps: 4960
+Best mean reward: -1263.89 - Last mean reward per episode: -1263.89
+Num timesteps: 4980
+Best mean reward: -1263.89 - Last mean reward per episode: -1263.89
+Num timesteps: 5000
+Best mean reward: -1263.89 - Last mean reward per episode: -1253.39
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 5020
+Best mean reward: -1253.39 - Last mean reward per episode: -1253.39
+Num timesteps: 5040
+Best mean reward: -1253.39 - Last mean reward per episode: -1253.39
+Num timesteps: 5060
+Best mean reward: -1253.39 - Last mean reward per episode: -1253.39
+Num timesteps: 5080
+Best mean reward: -1253.39 - Last mean reward per episode: -1253.39
+Num timesteps: 5100
+Best mean reward: -1253.39 - Last mean reward per episode: -1253.39
+Num timesteps: 5120
+Best mean reward: -1253.39 - Last mean reward per episode: -1253.39
+Num timesteps: 5140
+Best mean reward: -1253.39 - Last mean reward per episode: -1253.39
+Num timesteps: 5160
+Best mean reward: -1253.39 - Last mean reward per episode: -1253.39
+Num timesteps: 5180
+Best mean reward: -1253.39 - Last mean reward per episode: -1253.39
+Num timesteps: 5200
+Best mean reward: -1253.39 - Last mean reward per episode: -1243.70
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 5220
+Best mean reward: -1243.70 - Last mean reward per episode: -1243.70
+Num timesteps: 5240
+Best mean reward: -1243.70 - Last mean reward per episode: -1243.70
+Num timesteps: 5260
+Best mean reward: -1243.70 - Last mean reward per episode: -1243.70
+Num timesteps: 5280
+Best mean reward: -1243.70 - Last mean reward per episode: -1243.70
+Num timesteps: 5300
+Best mean reward: -1243.70 - Last mean reward per episode: -1243.70
+Num timesteps: 5320
+Best mean reward: -1243.70 - Last mean reward per episode: -1243.70
+Num timesteps: 5340
+Best mean reward: -1243.70 - Last mean reward per episode: -1243.70
+Num timesteps: 5360
+Best mean reward: -1243.70 - Last mean reward per episode: -1243.70
+Num timesteps: 5380
+Best mean reward: -1243.70 - Last mean reward per episode: -1243.70
+Num timesteps: 5400
+Best mean reward: -1243.70 - Last mean reward per episode: -1230.97
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 5420
+Best mean reward: -1230.97 - Last mean reward per episode: -1230.97
+Num timesteps: 5440
+Best mean reward: -1230.97 - Last mean reward per episode: -1230.97
+Num timesteps: 5460
+Best mean reward: -1230.97 - Last mean reward per episode: -1230.97
+Num timesteps: 5480
+Best mean reward: -1230.97 - Last mean reward per episode: -1230.97
+Num timesteps: 5500
+Best mean reward: -1230.97 - Last mean reward per episode: -1230.97
+Num timesteps: 5520
+Best mean reward: -1230.97 - Last mean reward per episode: -1230.97
+Num timesteps: 5540
+Best mean reward: -1230.97 - Last mean reward per episode: -1230.97
+Num timesteps: 5560
+Best mean reward: -1230.97 - Last mean reward per episode: -1230.97
+Num timesteps: 5580
+Best mean reward: -1230.97 - Last mean reward per episode: -1230.97
+Num timesteps: 5600
+Best mean reward: -1230.97 - Last mean reward per episode: -1219.37
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.22e+03 |
+| time/              |           |
+|    episodes        | 28        |
+|    fps             | 19        |
+|    time_elapsed    | 282       |
+|    total timesteps | 5600      |
+| train/             |           |
+|    actor_loss      | 142       |
+|    critic_loss     | 0.967     |
+|    learning_rate   | 0.001     |
+|    n_updates       | 5400      |
+----------------------------------
+Num timesteps: 5620
+Best mean reward: -1219.37 - Last mean reward per episode: -1219.37
+Num timesteps: 5640
+Best mean reward: -1219.37 - Last mean reward per episode: -1219.37
+Num timesteps: 5660
+Best mean reward: -1219.37 - Last mean reward per episode: -1219.37
+Num timesteps: 5680
+Best mean reward: -1219.37 - Last mean reward per episode: -1219.37
+Num timesteps: 5700
+Best mean reward: -1219.37 - Last mean reward per episode: -1219.37
+Num timesteps: 5720
+Best mean reward: -1219.37 - Last mean reward per episode: -1219.37
+Num timesteps: 5740
+Best mean reward: -1219.37 - Last mean reward per episode: -1219.37
+Num timesteps: 5760
+Best mean reward: -1219.37 - Last mean reward per episode: -1219.37
+Num timesteps: 5780
+Best mean reward: -1219.37 - Last mean reward per episode: -1219.37
+Num timesteps: 5800
+Best mean reward: -1219.37 - Last mean reward per episode: -1207.84
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 5820
+Best mean reward: -1207.84 - Last mean reward per episode: -1207.84
+Num timesteps: 5840
+Best mean reward: -1207.84 - Last mean reward per episode: -1207.84
+Num timesteps: 5860
+Best mean reward: -1207.84 - Last mean reward per episode: -1207.84
+Num timesteps: 5880
+Best mean reward: -1207.84 - Last mean reward per episode: -1207.84
+Num timesteps: 5900
+Best mean reward: -1207.84 - Last mean reward per episode: -1207.84
+Num timesteps: 5920
+Best mean reward: -1207.84 - Last mean reward per episode: -1207.84
+Num timesteps: 5940
+Best mean reward: -1207.84 - Last mean reward per episode: -1207.84
+Num timesteps: 5960
+Best mean reward: -1207.84 - Last mean reward per episode: -1207.84
+Num timesteps: 5980
+Best mean reward: -1207.84 - Last mean reward per episode: -1207.84
+Num timesteps: 6000
+Best mean reward: -1207.84 - Last mean reward per episode: -1195.56
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 6020
+Best mean reward: -1195.56 - Last mean reward per episode: -1195.56
+Num timesteps: 6040
+Best mean reward: -1195.56 - Last mean reward per episode: -1195.56
+Num timesteps: 6060
+Best mean reward: -1195.56 - Last mean reward per episode: -1195.56
+Num timesteps: 6080
+Best mean reward: -1195.56 - Last mean reward per episode: -1195.56
+Num timesteps: 6100
+Best mean reward: -1195.56 - Last mean reward per episode: -1195.56
+Num timesteps: 6120
+Best mean reward: -1195.56 - Last mean reward per episode: -1195.56
+Num timesteps: 6140
+Best mean reward: -1195.56 - Last mean reward per episode: -1195.56
+Num timesteps: 6160
+Best mean reward: -1195.56 - Last mean reward per episode: -1195.56
+Num timesteps: 6180
+Best mean reward: -1195.56 - Last mean reward per episode: -1195.56
+Num timesteps: 6200
+Best mean reward: -1195.56 - Last mean reward per episode: -1186.28
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 6220
+Best mean reward: -1186.28 - Last mean reward per episode: -1186.28
+Num timesteps: 6240
+Best mean reward: -1186.28 - Last mean reward per episode: -1186.28
+Num timesteps: 6260
+Best mean reward: -1186.28 - Last mean reward per episode: -1186.28
+Num timesteps: 6280
+Best mean reward: -1186.28 - Last mean reward per episode: -1186.28
+Num timesteps: 6300
+Best mean reward: -1186.28 - Last mean reward per episode: -1186.28
+Num timesteps: 6320
+Best mean reward: -1186.28 - Last mean reward per episode: -1186.28
+Num timesteps: 6340
+Best mean reward: -1186.28 - Last mean reward per episode: -1186.28
+Num timesteps: 6360
+Best mean reward: -1186.28 - Last mean reward per episode: -1186.28
+Num timesteps: 6380
+Best mean reward: -1186.28 - Last mean reward per episode: -1186.28
+Num timesteps: 6400
+Best mean reward: -1186.28 - Last mean reward per episode: -1179.93
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.18e+03 |
+| time/              |           |
+|    episodes        | 32        |
+|    fps             | 19        |
+|    time_elapsed    | 323       |
+|    total timesteps | 6400      |
+| train/             |           |
+|    actor_loss      | 155       |
+|    critic_loss     | 1.58      |
+|    learning_rate   | 0.001     |
+|    n_updates       | 6200      |
+----------------------------------
+Num timesteps: 6420
+Best mean reward: -1179.93 - Last mean reward per episode: -1179.93
+Num timesteps: 6440
+Best mean reward: -1179.93 - Last mean reward per episode: -1179.93
+Num timesteps: 6460
+Best mean reward: -1179.93 - Last mean reward per episode: -1179.93
+Num timesteps: 6480
+Best mean reward: -1179.93 - Last mean reward per episode: -1179.93
+Num timesteps: 6500
+Best mean reward: -1179.93 - Last mean reward per episode: -1179.93
+Num timesteps: 6520
+Best mean reward: -1179.93 - Last mean reward per episode: -1179.93
+Num timesteps: 6540
+Best mean reward: -1179.93 - Last mean reward per episode: -1179.93
+Num timesteps: 6560
+Best mean reward: -1179.93 - Last mean reward per episode: -1179.93
+Num timesteps: 6580
+Best mean reward: -1179.93 - Last mean reward per episode: -1179.93
+Num timesteps: 6600
+Best mean reward: -1179.93 - Last mean reward per episode: -1174.52
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 6620
+Best mean reward: -1174.52 - Last mean reward per episode: -1174.52
+Num timesteps: 6640
+Best mean reward: -1174.52 - Last mean reward per episode: -1174.52
+Num timesteps: 6660
+Best mean reward: -1174.52 - Last mean reward per episode: -1174.52
+Num timesteps: 6680
+Best mean reward: -1174.52 - Last mean reward per episode: -1174.52
+Num timesteps: 6700
+Best mean reward: -1174.52 - Last mean reward per episode: -1174.52
+Num timesteps: 6720
+Best mean reward: -1174.52 - Last mean reward per episode: -1174.52
+Num timesteps: 6740
+Best mean reward: -1174.52 - Last mean reward per episode: -1174.52
+Num timesteps: 6760
+Best mean reward: -1174.52 - Last mean reward per episode: -1174.52
+Num timesteps: 6780
+Best mean reward: -1174.52 - Last mean reward per episode: -1174.52
+Num timesteps: 6800
+Best mean reward: -1174.52 - Last mean reward per episode: -1166.06
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 6820
+Best mean reward: -1166.06 - Last mean reward per episode: -1166.06
+Num timesteps: 6840
+Best mean reward: -1166.06 - Last mean reward per episode: -1166.06
+Num timesteps: 6860
+Best mean reward: -1166.06 - Last mean reward per episode: -1166.06
+Num timesteps: 6880
+Best mean reward: -1166.06 - Last mean reward per episode: -1166.06
+Num timesteps: 6900
+Best mean reward: -1166.06 - Last mean reward per episode: -1166.06
+Num timesteps: 6920
+Best mean reward: -1166.06 - Last mean reward per episode: -1166.06
+Num timesteps: 6940
+Best mean reward: -1166.06 - Last mean reward per episode: -1166.06
+Num timesteps: 6960
+Best mean reward: -1166.06 - Last mean reward per episode: -1166.06
+Num timesteps: 6980
+Best mean reward: -1166.06 - Last mean reward per episode: -1166.06
+Num timesteps: 7000
+Best mean reward: -1166.06 - Last mean reward per episode: -1159.55
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 7020
+Best mean reward: -1159.55 - Last mean reward per episode: -1159.55
+Num timesteps: 7040
+Best mean reward: -1159.55 - Last mean reward per episode: -1159.55
+Num timesteps: 7060
+Best mean reward: -1159.55 - Last mean reward per episode: -1159.55
+Num timesteps: 7080
+Best mean reward: -1159.55 - Last mean reward per episode: -1159.55
+Num timesteps: 7100
+Best mean reward: -1159.55 - Last mean reward per episode: -1159.55
+Num timesteps: 7120
+Best mean reward: -1159.55 - Last mean reward per episode: -1159.55
+Num timesteps: 7140
+Best mean reward: -1159.55 - Last mean reward per episode: -1159.55
+Num timesteps: 7160
+Best mean reward: -1159.55 - Last mean reward per episode: -1159.55
+Num timesteps: 7180
+Best mean reward: -1159.55 - Last mean reward per episode: -1159.55
+Num timesteps: 7200
+Best mean reward: -1159.55 - Last mean reward per episode: -1151.67
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.15e+03 |
+| time/              |           |
+|    episodes        | 36        |
+|    fps             | 19        |
+|    time_elapsed    | 365       |
+|    total timesteps | 7200      |
+| train/             |           |
+|    actor_loss      | 167       |
+|    critic_loss     | 1.64      |
+|    learning_rate   | 0.001     |
+|    n_updates       | 7000      |
+----------------------------------
+Num timesteps: 7220
+Best mean reward: -1151.67 - Last mean reward per episode: -1151.67
+Num timesteps: 7240
+Best mean reward: -1151.67 - Last mean reward per episode: -1151.67
+Num timesteps: 7260
+Best mean reward: -1151.67 - Last mean reward per episode: -1151.67
+Num timesteps: 7280
+Best mean reward: -1151.67 - Last mean reward per episode: -1151.67
+Num timesteps: 7300
+Best mean reward: -1151.67 - Last mean reward per episode: -1151.67
+Num timesteps: 7320
+Best mean reward: -1151.67 - Last mean reward per episode: -1151.67
+Num timesteps: 7340
+Best mean reward: -1151.67 - Last mean reward per episode: -1151.67
+Num timesteps: 7360
+Best mean reward: -1151.67 - Last mean reward per episode: -1151.67
+Num timesteps: 7380
+Best mean reward: -1151.67 - Last mean reward per episode: -1151.67
+Num timesteps: 7400
+Best mean reward: -1151.67 - Last mean reward per episode: -1148.83
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 7420
+Best mean reward: -1148.83 - Last mean reward per episode: -1148.83
+Num timesteps: 7440
+Best mean reward: -1148.83 - Last mean reward per episode: -1148.83
+Num timesteps: 7460
+Best mean reward: -1148.83 - Last mean reward per episode: -1148.83
+Num timesteps: 7480
+Best mean reward: -1148.83 - Last mean reward per episode: -1148.83
+Num timesteps: 7500
+Best mean reward: -1148.83 - Last mean reward per episode: -1148.83
+Num timesteps: 7520
+Best mean reward: -1148.83 - Last mean reward per episode: -1148.83
+Num timesteps: 7540
+Best mean reward: -1148.83 - Last mean reward per episode: -1148.83
+Num timesteps: 7560
+Best mean reward: -1148.83 - Last mean reward per episode: -1148.83
+Num timesteps: 7580
+Best mean reward: -1148.83 - Last mean reward per episode: -1148.83
+Num timesteps: 7600
+Best mean reward: -1148.83 - Last mean reward per episode: -1142.11
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 7620
+Best mean reward: -1142.11 - Last mean reward per episode: -1142.11
+Num timesteps: 7640
+Best mean reward: -1142.11 - Last mean reward per episode: -1142.11
+Num timesteps: 7660
+Best mean reward: -1142.11 - Last mean reward per episode: -1142.11
+Num timesteps: 7680
+Best mean reward: -1142.11 - Last mean reward per episode: -1142.11
+Num timesteps: 7700
+Best mean reward: -1142.11 - Last mean reward per episode: -1142.11
+Num timesteps: 7720
+Best mean reward: -1142.11 - Last mean reward per episode: -1142.11
+Num timesteps: 7740
+Best mean reward: -1142.11 - Last mean reward per episode: -1142.11
+Num timesteps: 7760
+Best mean reward: -1142.11 - Last mean reward per episode: -1142.11
+Num timesteps: 7780
+Best mean reward: -1142.11 - Last mean reward per episode: -1142.11
+Num timesteps: 7800
+Best mean reward: -1142.11 - Last mean reward per episode: -1132.43
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 7820
+Best mean reward: -1132.43 - Last mean reward per episode: -1132.43
+Num timesteps: 7840
+Best mean reward: -1132.43 - Last mean reward per episode: -1132.43
+Num timesteps: 7860
+Best mean reward: -1132.43 - Last mean reward per episode: -1132.43
+Num timesteps: 7880
+Best mean reward: -1132.43 - Last mean reward per episode: -1132.43
+Num timesteps: 7900
+Best mean reward: -1132.43 - Last mean reward per episode: -1132.43
+Num timesteps: 7920
+Best mean reward: -1132.43 - Last mean reward per episode: -1132.43
+Num timesteps: 7940
+Best mean reward: -1132.43 - Last mean reward per episode: -1132.43
+Num timesteps: 7960
+Best mean reward: -1132.43 - Last mean reward per episode: -1132.43
+Num timesteps: 7980
+Best mean reward: -1132.43 - Last mean reward per episode: -1132.43
+Num timesteps: 8000
+Best mean reward: -1132.43 - Last mean reward per episode: -1126.56
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.13e+03 |
+| time/              |           |
+|    episodes        | 40        |
+|    fps             | 19        |
+|    time_elapsed    | 408       |
+|    total timesteps | 8000      |
+| train/             |           |
+|    actor_loss      | 177       |
+|    critic_loss     | 1.64      |
+|    learning_rate   | 0.001     |
+|    n_updates       | 7800      |
+----------------------------------
+Num timesteps: 8020
+Best mean reward: -1126.56 - Last mean reward per episode: -1126.56
+Num timesteps: 8040
+Best mean reward: -1126.56 - Last mean reward per episode: -1126.56
+Num timesteps: 8060
+Best mean reward: -1126.56 - Last mean reward per episode: -1126.56
+Num timesteps: 8080
+Best mean reward: -1126.56 - Last mean reward per episode: -1126.56
+Num timesteps: 8100
+Best mean reward: -1126.56 - Last mean reward per episode: -1126.56
+Num timesteps: 8120
+Best mean reward: -1126.56 - Last mean reward per episode: -1126.56
+Num timesteps: 8140
+Best mean reward: -1126.56 - Last mean reward per episode: -1126.56
+Num timesteps: 8160
+Best mean reward: -1126.56 - Last mean reward per episode: -1126.56
+Num timesteps: 8180
+Best mean reward: -1126.56 - Last mean reward per episode: -1126.56
+Num timesteps: 8200
+Best mean reward: -1126.56 - Last mean reward per episode: -1120.61
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 8220
+Best mean reward: -1120.61 - Last mean reward per episode: -1120.61
+Num timesteps: 8240
+Best mean reward: -1120.61 - Last mean reward per episode: -1120.61
+Num timesteps: 8260
+Best mean reward: -1120.61 - Last mean reward per episode: -1120.61
+Num timesteps: 8280
+Best mean reward: -1120.61 - Last mean reward per episode: -1120.61
+Num timesteps: 8300
+Best mean reward: -1120.61 - Last mean reward per episode: -1120.61
+Num timesteps: 8320
+Best mean reward: -1120.61 - Last mean reward per episode: -1120.61
+Num timesteps: 8340
+Best mean reward: -1120.61 - Last mean reward per episode: -1120.61
+Num timesteps: 8360
+Best mean reward: -1120.61 - Last mean reward per episode: -1120.61
+Num timesteps: 8380
+Best mean reward: -1120.61 - Last mean reward per episode: -1120.61
+Num timesteps: 8400
+Best mean reward: -1120.61 - Last mean reward per episode: -1115.24
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 8420
+Best mean reward: -1115.24 - Last mean reward per episode: -1115.24
+Num timesteps: 8440
+Best mean reward: -1115.24 - Last mean reward per episode: -1115.24
+Num timesteps: 8460
+Best mean reward: -1115.24 - Last mean reward per episode: -1115.24
+Num timesteps: 8480
+Best mean reward: -1115.24 - Last mean reward per episode: -1115.24
+Num timesteps: 8500
+Best mean reward: -1115.24 - Last mean reward per episode: -1115.24
+Num timesteps: 8520
+Best mean reward: -1115.24 - Last mean reward per episode: -1115.24
+Num timesteps: 8540
+Best mean reward: -1115.24 - Last mean reward per episode: -1115.24
+Num timesteps: 8560
+Best mean reward: -1115.24 - Last mean reward per episode: -1115.24
+Num timesteps: 8580
+Best mean reward: -1115.24 - Last mean reward per episode: -1115.24
+Num timesteps: 8600
+Best mean reward: -1115.24 - Last mean reward per episode: -1113.60
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 8620
+Best mean reward: -1113.60 - Last mean reward per episode: -1113.60
+Num timesteps: 8640
+Best mean reward: -1113.60 - Last mean reward per episode: -1113.60
+Num timesteps: 8660
+Best mean reward: -1113.60 - Last mean reward per episode: -1113.60
+Num timesteps: 8680
+Best mean reward: -1113.60 - Last mean reward per episode: -1113.60
+Num timesteps: 8700
+Best mean reward: -1113.60 - Last mean reward per episode: -1113.60
+Num timesteps: 8720
+Best mean reward: -1113.60 - Last mean reward per episode: -1113.60
+Num timesteps: 8740
+Best mean reward: -1113.60 - Last mean reward per episode: -1113.60
+Num timesteps: 8760
+Best mean reward: -1113.60 - Last mean reward per episode: -1113.60
+Num timesteps: 8780
+Best mean reward: -1113.60 - Last mean reward per episode: -1113.60
+Num timesteps: 8800
+Best mean reward: -1113.60 - Last mean reward per episode: -1108.51
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.11e+03 |
+| time/              |           |
+|    episodes        | 44        |
+|    fps             | 19        |
+|    time_elapsed    | 450       |
+|    total timesteps | 8800      |
+| train/             |           |
+|    actor_loss      | 187       |
+|    critic_loss     | 1.79      |
+|    learning_rate   | 0.001     |
+|    n_updates       | 8600      |
+----------------------------------
+Num timesteps: 8820
+Best mean reward: -1108.51 - Last mean reward per episode: -1108.51
+Num timesteps: 8840
+Best mean reward: -1108.51 - Last mean reward per episode: -1108.51
+Num timesteps: 8860
+Best mean reward: -1108.51 - Last mean reward per episode: -1108.51
+Num timesteps: 8880
+Best mean reward: -1108.51 - Last mean reward per episode: -1108.51
+Num timesteps: 8900
+Best mean reward: -1108.51 - Last mean reward per episode: -1108.51
+Num timesteps: 8920
+Best mean reward: -1108.51 - Last mean reward per episode: -1108.51
+Num timesteps: 8940
+Best mean reward: -1108.51 - Last mean reward per episode: -1108.51
+Num timesteps: 8960
+Best mean reward: -1108.51 - Last mean reward per episode: -1108.51
+Num timesteps: 8980
+Best mean reward: -1108.51 - Last mean reward per episode: -1108.51
+Num timesteps: 9000
+Best mean reward: -1108.51 - Last mean reward per episode: -1103.38
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 9020
+Best mean reward: -1103.38 - Last mean reward per episode: -1103.38
+Num timesteps: 9040
+Best mean reward: -1103.38 - Last mean reward per episode: -1103.38
+Num timesteps: 9060
+Best mean reward: -1103.38 - Last mean reward per episode: -1103.38
+Num timesteps: 9080
+Best mean reward: -1103.38 - Last mean reward per episode: -1103.38
+Num timesteps: 9100
+Best mean reward: -1103.38 - Last mean reward per episode: -1103.38
+Num timesteps: 9120
+Best mean reward: -1103.38 - Last mean reward per episode: -1103.38
+Num timesteps: 9140
+Best mean reward: -1103.38 - Last mean reward per episode: -1103.38
+Num timesteps: 9160
+Best mean reward: -1103.38 - Last mean reward per episode: -1103.38
+Num timesteps: 9180
+Best mean reward: -1103.38 - Last mean reward per episode: -1103.38
+Num timesteps: 9200
+Best mean reward: -1103.38 - Last mean reward per episode: -1100.81
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 9220
+Best mean reward: -1100.81 - Last mean reward per episode: -1100.81
+Num timesteps: 9240
+Best mean reward: -1100.81 - Last mean reward per episode: -1100.81
+Num timesteps: 9260
+Best mean reward: -1100.81 - Last mean reward per episode: -1100.81
+Num timesteps: 9280
+Best mean reward: -1100.81 - Last mean reward per episode: -1100.81
+Num timesteps: 9300
+Best mean reward: -1100.81 - Last mean reward per episode: -1100.81
+Num timesteps: 9320
+Best mean reward: -1100.81 - Last mean reward per episode: -1100.81
+Num timesteps: 9340
+Best mean reward: -1100.81 - Last mean reward per episode: -1100.81
+Num timesteps: 9360
+Best mean reward: -1100.81 - Last mean reward per episode: -1100.81
+Num timesteps: 9380
+Best mean reward: -1100.81 - Last mean reward per episode: -1100.81
+Num timesteps: 9400
+Best mean reward: -1100.81 - Last mean reward per episode: -1096.31
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 9420
+Best mean reward: -1096.31 - Last mean reward per episode: -1096.31
+Num timesteps: 9440
+Best mean reward: -1096.31 - Last mean reward per episode: -1096.31
+Num timesteps: 9460
+Best mean reward: -1096.31 - Last mean reward per episode: -1096.31
+Num timesteps: 9480
+Best mean reward: -1096.31 - Last mean reward per episode: -1096.31
+Num timesteps: 9500
+Best mean reward: -1096.31 - Last mean reward per episode: -1096.31
+Num timesteps: 9520
+Best mean reward: -1096.31 - Last mean reward per episode: -1096.31
+Num timesteps: 9540
+Best mean reward: -1096.31 - Last mean reward per episode: -1096.31
+Num timesteps: 9560
+Best mean reward: -1096.31 - Last mean reward per episode: -1096.31
+Num timesteps: 9580
+Best mean reward: -1096.31 - Last mean reward per episode: -1096.31
+Num timesteps: 9600
+Best mean reward: -1096.31 - Last mean reward per episode: -1094.19
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 200       |
+|    ep_rew_mean     | -1.09e+03 |
+| time/              |           |
+|    episodes        | 48        |
+|    fps             | 19        |
+|    time_elapsed    | 493       |
+|    total timesteps | 9600      |
+| train/             |           |
+|    actor_loss      | 195       |
+|    critic_loss     | 2.23      |
+|    learning_rate   | 0.001     |
+|    n_updates       | 9400      |
+----------------------------------
+Num timesteps: 9620
+Best mean reward: -1094.19 - Last mean reward per episode: -1094.19
+Num timesteps: 9640
+Best mean reward: -1094.19 - Last mean reward per episode: -1094.19
+Num timesteps: 9660
+Best mean reward: -1094.19 - Last mean reward per episode: -1094.19
+Num timesteps: 9680
+Best mean reward: -1094.19 - Last mean reward per episode: -1094.19
+Num timesteps: 9700
+Best mean reward: -1094.19 - Last mean reward per episode: -1094.19
+Num timesteps: 9720
+Best mean reward: -1094.19 - Last mean reward per episode: -1094.19
+Num timesteps: 9740
+Best mean reward: -1094.19 - Last mean reward per episode: -1094.19
+Num timesteps: 9760
+Best mean reward: -1094.19 - Last mean reward per episode: -1094.19
+Num timesteps: 9780
+Best mean reward: -1094.19 - Last mean reward per episode: -1094.19
+Num timesteps: 9800
+Best mean reward: -1094.19 - Last mean reward per episode: -1089.91
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+Num timesteps: 9820
+Best mean reward: -1089.91 - Last mean reward per episode: -1089.91
+Num timesteps: 9840
+Best mean reward: -1089.91 - Last mean reward per episode: -1089.91
+Num timesteps: 9860
+Best mean reward: -1089.91 - Last mean reward per episode: -1089.91
+Num timesteps: 9880
+Best mean reward: -1089.91 - Last mean reward per episode: -1089.91
+Num timesteps: 9900
+Best mean reward: -1089.91 - Last mean reward per episode: -1089.91
+Num timesteps: 9920
+Best mean reward: -1089.91 - Last mean reward per episode: -1089.91
+Num timesteps: 9940
+Best mean reward: -1089.91 - Last mean reward per episode: -1089.91
+Num timesteps: 9960
+Best mean reward: -1089.91 - Last mean reward per episode: -1089.91
+Num timesteps: 9980
+Best mean reward: -1089.91 - Last mean reward per episode: -1089.91
+Num timesteps: 10000
+Best mean reward: -1089.91 - Last mean reward per episode: -1085.70
+Saving new best model to /tmp/gym/w_tl_rs/best_model.zip
+--- 857.7670929431915 seconds ---
+
+Process finished with exit code 0
