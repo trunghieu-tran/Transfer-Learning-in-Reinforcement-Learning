@@ -38,13 +38,46 @@ def plot_results(log_folder, title='Learning Curve', moving_window=-1):
     # Truncate x
     x = x[len(x) - len(y):]
 
-    fig = plt.figure(title)
+    plt.figure(title)
     plt.plot(x, y)
     plt.xlabel('Number of Episodes')
     plt.ylabel('Rewards')
     plt.title(title)
     plt.show()
 
+def plot_multiple_results(log_dir_w_TL, log_dir_w_TL_rs, log_dir_wo_TL, title='Learning Curve', moving_window=-1):
+    """
+    plot the results
+
+    :param log_folder: (str) the save location of the results to plot
+    :param title: (str) the title of the task to plot
+    """
+    # With TL
+    x_w_TL, y_w_TL = ts2xy(load_results(log_dir_w_TL), 'episodes')
+    y_w_TL = moving_average(y_w_TL, window=moving_window)
+    x_w_TL = x_w_TL[len(x_w_TL) - len(y_w_TL):]
+
+    # With TL and reward shaping
+    x_w_TL_rs, y_w_TL_rs = ts2xy(load_results(log_dir_w_TL_rs), 'episodes')
+    y_w_TL_rs = moving_average(y_w_TL_rs, window=moving_window)
+    x_w_TL_rs = x_w_TL_rs[len(x_w_TL_rs) - len(y_w_TL_rs):]
+
+    # Without TL
+    x_wo_TL, y_wo_TL = ts2xy(load_results(log_dir_wo_TL), 'episodes')
+    y_wo_TL = moving_average(y_wo_TL, window=moving_window)
+    x_wo_TL = x_wo_TL[len(x_wo_TL) - len(y_wo_TL):]
+
+    plt.figure(title)
+
+    plt.plot(x_wo_TL, y_wo_TL, marker='x', markersize=8, linestyle='-', color='b', label='Without TL', linewidth=3)
+    plt.plot(x_w_TL, y_w_TL, marker='o', markersize=8, linestyle='-', color='g', label='With TL',  linewidth=3)
+    plt.plot(x_w_TL_rs, y_w_TL_rs, marker='s', markersize=8, linestyle='-', color='r', label='With TL rs', linewidth=3)
+
+    plt.legend(loc='upper left', title='Approaches', fontsize=14)
+    plt.xlabel('Number of Episodes')
+    plt.ylabel('Rewards')
+    plt.title(title)
+    plt.show()
 
 class SaveOnBestTrainingRewardCallback(BaseCallback):
     """
