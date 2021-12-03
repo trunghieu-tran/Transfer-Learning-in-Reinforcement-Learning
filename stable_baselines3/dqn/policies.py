@@ -4,6 +4,7 @@ import gym
 import torch as th
 from torch import nn
 
+from stable_baselines3.common.last_mlp import LastMLP
 from stable_baselines3.common.policies import BasePolicy, register_policy
 from stable_baselines3.common.torch_layers import (
     BaseFeaturesExtractor,
@@ -54,22 +55,31 @@ class QNetwork(BasePolicy):
         self.normalize_images = normalize_images
         action_dim = self.action_space.n  # number of actions
         q_net = create_mlp(self.features_dim, action_dim, self.net_arch, self.activation_fn)
-        self.q_net = nn.Sequential(*q_net)
+        self.q_net = LastMLP(q_net)
 
-    def forward(self, obs: th.Tensor) -> th.Tensor:
+    def forward(self, obs: th.Tensor, last = False) -> th.Tensor:
         """
         Predict the q-values.
 
         :param obs: Observation
         :return: The estimated Q-Value for each action.
         """
-        return self.q_net(self.extract_features(obs))
+        return self.q_net(self.extract_features(obs), last)
 
-    def _predict(self, observation: th.Tensor, deterministic: bool = True) -> th.Tensor:
-        q_values = self.forward(observation)
-        # Greedy action
-        action = q_values.argmax(dim=1).reshape(-1)
-        return action
+    def _predict(self, observation: th.Tensor, deterministic: bool = True, last = False) -> th.Tensor:
+        
+        if last:
+            q_values, q_embeddings = self.forward(observation, last)
+            
+            # Greedy action
+            action = q_values.argmax(dim=1).reshape(-1)
+            return action, q_embeddings
+        else:
+            q_values = self.forward(observation, last)
+            
+            # Greedy action
+            action = q_values.argmax(dim=1).reshape(-1)
+            return action
 
     def _get_constructor_parameters(self) -> Dict[str, Any]:
         data = super()._get_constructor_parameters()
@@ -171,11 +181,11 @@ class DQNPolicy(BasePolicy):
         net_args = self._update_features_extractor(self.net_args, features_extractor=None)
         return QNetwork(**net_args).to(self.device)
 
-    def forward(self, obs: th.Tensor, deterministic: bool = True) -> th.Tensor:
-        return self._predict(obs, deterministic=deterministic)
+    def forward(self, obs: th.Tensor, deterministic: bool = True, last = False) -> th.Tensor:
+        return self._predict(obs, deterministic=deterministic, last=last)
 
-    def _predict(self, obs: th.Tensor, deterministic: bool = True) -> th.Tensor:
-        return self.q_net._predict(obs, deterministic=deterministic)
+    def _predict(self, obs: th.Tensor, deterministic: bool = True, last = False) -> th.Tensor:
+        return self.q_net._predict(obs, deterministic=deterministic, last=last)
 
     def _get_constructor_parameters(self) -> Dict[str, Any]:
         data = super()._get_constructor_parameters()

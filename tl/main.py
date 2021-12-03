@@ -16,6 +16,7 @@ algorithm = 'TD3'
 moving_window = -1
 log_dir_w_TL = "/tmp/gym/w_tl/"
 log_dir_wo_TL = "/tmp/gym/wo_tl/"
+log_dir_w_TL_rs = "/tmp/gym/w_tl_rs/"
 extraInfo = "(" + env_name + '_' + algorithm + ")"
 
 source_env = get_source_env(env_name)
@@ -34,7 +35,16 @@ transfer_execute(source_env=source_env,
                  run_evaluation=False
                  )
 
-plot_results(log_dir_wo_TL, title=extraInfo+"Without-TL Learning Curve", moving_window=moving_window)
-plot_results(log_dir_w_TL, title=extraInfo+"With-TL Learning Curve", moving_window=moving_window)
+# This code is used for plotting log seperately
+# plot_results(log_dir_wo_TL, title=extraInfo+"Without-TL Learning Curve", moving_window=moving_window)
+# plot_results(log_dir_w_TL, title=extraInfo+"With-TL Learning Curve", moving_window=moving_window)
+# plot_results(log_dir_w_TL_rs, title=extraInfo+"With-TL-Reward-Shapings Learning Curve", moving_window=moving_window)
+
+# Use this code to plot all logs together
+plot_multiple_results(log_dir_w_TL=log_dir_w_TL,
+                      log_dir_wo_TL=log_dir_wo_TL,
+                      log_dir_w_TL_rs=log_dir_w_TL_rs,
+                      title=extraInfo,
+                      moving_window=moving_window)
 ######
 print("--- %s seconds ---" % (time.time() - start_time))
