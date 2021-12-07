@@ -17,6 +17,7 @@ moving_window = -1
 log_dir_w_TL = "/tmp/gym/w_tl/"
 log_dir_wo_TL = "/tmp/gym/wo_tl/"
 log_dir_w_TL_rs = "/tmp/gym/w_tl_rs/"
+log_dir_w_full_TL_rs = "/tmp/gym/w_full_tl_rs/"
 extraInfo = "(" + env_name + '_' + algorithm + ")"
 
 source_env = get_source_env(env_name)
@@ -32,6 +33,8 @@ transfer_execute(source_env=source_env,
                  evaluation_step=20,
                  log_dir_w_TL=log_dir_w_TL,
                  log_dir_wo_TL=log_dir_wo_TL,
+                 log_dir_w_TL_rs=log_dir_w_TL_rs,
+                 log_dir_w_full_TL_rs=log_dir_w_full_TL_rs,
                  run_evaluation=False
                  )
 
@@ -44,6 +47,7 @@ transfer_execute(source_env=source_env,
 plot_multiple_results(log_dir_w_TL=log_dir_w_TL,
                       log_dir_wo_TL=log_dir_wo_TL,
                       log_dir_w_TL_rs=log_dir_w_TL_rs,
+                      log_dir_w_full_TL_rs=log_dir_w_full_TL_rs,
                       title=extraInfo,
                       moving_window=moving_window)
 ######
