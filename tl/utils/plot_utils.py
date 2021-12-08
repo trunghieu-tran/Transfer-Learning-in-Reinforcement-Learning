@@ -1,4 +1,5 @@
 import os
+import math
 import numpy as np
 import matplotlib.pyplot as plt
 from stable_baselines3.common.callbacks import BaseCallback
@@ -79,6 +80,103 @@ def plot_multiple_results(log_dir_w_TL, log_dir_w_TL_rs, log_dir_wo_TL, log_dir_
     plt.plot(x_w_TL, y_w_TL, marker='o', markersize=8, linestyle='-', color='g', label='With TL',  linewidth=3)
     plt.plot(x_w_TL_rs, y_w_TL_rs, marker='s', markersize=8, linestyle='-', color='r', label='With TL rs', linewidth=3)
     plt.plot(x_w_full_TL_rs, y_w_full_TL_rs, marker='*', markersize=8, linestyle='-', color='y', label='With full TL rs', linewidth=3)
+
+    plt.legend(loc='upper left', title='Approaches', fontsize=14)
+    plt.xlabel('Number of Episodes')
+    plt.ylabel('Rewards')
+    plt.title(title)
+    plt.show()
+
+
+def get_avg_std(list_of_lists):
+    # Calculate average list
+    avg_list = None
+    for a_list in list_of_lists:
+        if avg_list is None:
+            avg_list = a_list
+        else:
+            avg_list = [(x + y) for (x, y) in zip(avg_list, a_list)]
+    num_lists = len(list_of_lists)
+    avg_list = [(x / num_lists) for x in avg_list]
+
+    if num_lists == 1:
+        std_list = [0.0 for x in range(len(avg_list))]
+        return avg_list, std_list
+
+    # Calculate sample standard dev. list
+    std_list = None
+    for a_list in list_of_lists:
+        to_add_list = [(x - y) * (x - y) for (x, y) in zip(a_list, avg_list)]
+        if std_list is None:
+            std_list = to_add_list
+        else:
+            std_list = [(x + y) for (x, y) in zip(to_add_list, std_list)]
+    std_list = [math.sqrt(x / (num_lists - 1)) for x in std_list]
+
+    return avg_list, std_list
+
+
+
+def loading_all_exp_result_from_directory(dir, running_time_num=1):
+    x = []
+    y = []
+    for i in range(running_time_num):
+        new_dir = dir + str(i) + "/"
+        xx, yy = ts2xy(load_results(new_dir), 'episodes')
+        x = xx
+        y.append(yy)
+
+    return x, y
+
+
+def extract_xy_for_plotting(dir, running_time_num, moving_window):
+    x, y = loading_all_exp_result_from_directory(dir, running_time_num)
+    y_ave, y_std = get_avg_std(y)
+
+    y_ave = moving_average(y_ave, window=moving_window)
+    y_std = moving_average(y_std, window=moving_window)
+
+    lower_list = [(x - y) for (x, y) in zip(y_ave, y_std)]
+    upper_list = [(x + y) for (x, y) in zip(y_ave, y_std)]
+
+    y_plot = y_ave
+    x_plot = x[len(x) - len(y_plot):]
+
+    return x_plot, y_plot, lower_list, upper_list
+
+def plot_multiple_results_with_multiple_runing_time(log_dir_w_TL,
+                                                    log_dir_w_TL_rs,
+                                                    log_dir_wo_TL,
+                                                    title='Learning Curve', moving_window=-1,
+                                                    running_time_num=1):
+    """
+    plot the results
+
+    :param log_folder: (str) the save location of the results to plot
+    :param title: (str) the title of the task to plot
+    """
+    # With TL
+    x_w_TL,y_w_TL,w_TL_lower_list, w_TL_upper_list = extract_xy_for_plotting(log_dir_w_TL, running_time_num, moving_window)
+
+
+    # With TL and reward shaping
+    x_w_TL_rs, y_w_TL_rs, w_TL_rs_lower_list, w_TL_rs_upper_list = extract_xy_for_plotting(log_dir_w_TL_rs, running_time_num,
+                                                                               moving_window)
+
+    # Without TL
+    x_wo_TL, y_wo_TL, wo_TL_lower_list, wo_TL_upper_list = extract_xy_for_plotting(log_dir_wo_TL, running_time_num,
+                                                                               moving_window)
+
+    plt.figure(title)
+
+    plt.plot(x_wo_TL, y_wo_TL, marker='x', markersize=8, linestyle='-', color='b', label='Without TL', linewidth=3)
+    plt.fill_between(x_wo_TL, wo_TL_lower_list, wo_TL_upper_list, color='lightblue', alpha=0.2)
+
+    plt.plot(x_w_TL, y_w_TL, marker='o', markersize=8, linestyle='-', color='g', label='With TL',  linewidth=3)
+    plt.fill_between(x_w_TL, w_TL_lower_list, w_TL_upper_list, color='lightgreen', alpha=0.2)
+
+    plt.plot(x_w_TL_rs, y_w_TL_rs, marker='s', markersize=8, linestyle='-', color='r', label='With TL rs', linewidth=3)
+    plt.fill_between(x_w_TL_rs, w_TL_rs_lower_list, w_TL_rs_upper_list, color='lightcoral', alpha=0.2)
 
     plt.legend(loc='upper left', title='Approaches', fontsize=14)
     plt.xlabel('Number of Episodes')
