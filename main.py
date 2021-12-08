@@ -17,7 +17,11 @@ moving_window = -1
 log_dir_w_TL = "/tmp/gym/w_tl/"
 log_dir_wo_TL = "/tmp/gym/wo_tl/"
 log_dir_w_TL_rs = "/tmp/gym/w_tl_rs/"
+log_dir_w_full_TL_rs = "/tmp/gym/w_full_tl_rs/"
 extraInfo = "(" + env_name + '_' + algorithm + ")"
+
+source_step_number=10000
+target_step_number=10000
 
 source_env = get_source_env(env_name)
 target_env = get_target_env(env_name)
@@ -26,12 +30,14 @@ transfer_execute(source_env=source_env,
                  target_env=target_env,
                  algo=algorithm,
                  policy_name='MlpPolicy',
-                 step_number=10000,
-                 step_number_small=10000,
+                 step_number=source_step_number,
+                 step_number_small=target_step_number,
                  callback_check_freq=20,
                  evaluation_step=20,
                  log_dir_w_TL=log_dir_w_TL,
                  log_dir_wo_TL=log_dir_wo_TL,
+                 log_dir_w_TL_rs=log_dir_w_TL_rs,
+                 log_dir_w_full_TL_rs=log_dir_w_full_TL_rs,
                  run_evaluation=False
                  )
 
@@ -44,6 +50,7 @@ transfer_execute(source_env=source_env,
 plot_multiple_results(log_dir_w_TL=log_dir_w_TL,
                       log_dir_wo_TL=log_dir_wo_TL,
                       log_dir_w_TL_rs=log_dir_w_TL_rs,
+                      log_dir_w_full_TL_rs=log_dir_w_full_TL_rs,
                       title=extraInfo,
                       moving_window=moving_window)
 ######

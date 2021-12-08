@@ -45,7 +45,7 @@ def plot_results(log_folder, title='Learning Curve', moving_window=-1):
     plt.title(title)
     plt.show()
 
-def plot_multiple_results(log_dir_w_TL, log_dir_w_TL_rs, log_dir_wo_TL, title='Learning Curve', moving_window=-1):
+def plot_multiple_results(log_dir_w_TL, log_dir_w_TL_rs, log_dir_wo_TL, log_dir_w_full_TL_rs, title='Learning Curve', moving_window=-1):
     """
     plot the results
 
@@ -67,11 +67,18 @@ def plot_multiple_results(log_dir_w_TL, log_dir_w_TL_rs, log_dir_wo_TL, title='L
     y_wo_TL = moving_average(y_wo_TL, window=moving_window)
     x_wo_TL = x_wo_TL[len(x_wo_TL) - len(y_wo_TL):]
 
+    # With full TL and reward shaping
+    x_w_full_TL_rs, y_w_full_TL_rs = ts2xy(load_results(log_dir_w_full_TL_rs), 'episodes')
+    y_w_full_TL_rs = moving_average(y_w_full_TL_rs, window=moving_window)
+    x_w_full_TL_rs = x_w_full_TL_rs[len(x_w_full_TL_rs) - len(y_w_full_TL_rs):]
+
+
     plt.figure(title)
 
     plt.plot(x_wo_TL, y_wo_TL, marker='x', markersize=8, linestyle='-', color='b', label='Without TL', linewidth=3)
     plt.plot(x_w_TL, y_w_TL, marker='o', markersize=8, linestyle='-', color='g', label='With TL',  linewidth=3)
     plt.plot(x_w_TL_rs, y_w_TL_rs, marker='s', markersize=8, linestyle='-', color='r', label='With TL rs', linewidth=3)
+    plt.plot(x_w_full_TL_rs, y_w_full_TL_rs, marker='*', markersize=8, linestyle='-', color='y', label='With full TL rs', linewidth=3)
 
     plt.legend(loc='upper left', title='Approaches', fontsize=14)
     plt.xlabel('Number of Episodes')
