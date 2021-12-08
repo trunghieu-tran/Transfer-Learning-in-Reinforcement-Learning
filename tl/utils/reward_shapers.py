@@ -16,7 +16,7 @@ def create_td3_reward_shaper(source_model, num_sampling_episodes):
 def create_dqn_reward_shaper(source_model, num_sampling_episodes):
     
     embeddings, q_vals = get_dqn_embeddings(source_model, num_sampling_episodes)
-    reward_shaper = DDPGRewardShaper(source_model, embeddings, q_vals, source_model.gamma)
+    reward_shaper = DQNRewardShaper(source_model, embeddings, q_vals, source_model.gamma)
     return reward_shaper
 
 class RewardShaper:

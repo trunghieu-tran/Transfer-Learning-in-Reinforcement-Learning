@@ -3,6 +3,8 @@ from tl.utils.model_evaluation import *
 from tl.utils.plot_utils import *
 from tl.utils.model_generator import *
 
+import copy
+
 def transfer_execute(source_env,
                      target_env,
                      algo='DDPG',
@@ -24,10 +26,11 @@ def transfer_execute(source_env,
     os.makedirs(log_dir_w_TL_rs, exist_ok=True)
     os.makedirs(log_dir_w_full_TL_rs, exist_ok=True)
 
+    ### ==================
+    ### Train source model
+    ### ==================
+
     source_model = get_model(policy_name, source_env, verbose=2, algo=algo)
-    #
-    # print(">>[Source] Evaluate un-trained agent:")
-    # evaluate(source_model, evaluation_step)
 
     source_model.learn(total_timesteps=step_number)
     source_model.save("./source_model_trained")
@@ -36,61 +39,75 @@ def transfer_execute(source_env,
         print(">>[Source] Evaluate trained agent:")
         evaluate(source_model, evaluation_step)
 
-    # sample an observation from the environment
-    obs = source_model.env.observation_space.sample()
+    ### =====================================================================
+    ### Train target model by applying source model directly in target domain
+    ### =====================================================================
 
-    # Check prediction before saving
-    print("pre saved", source_model.predict(obs, deterministic=True))
+    target_model = copy.deepcopy(source_model)
 
-    # del source_model  # delete trained model to demonstrate loading
-
-    ##### LOAD source model and train with target domain
-    target_model = load_model(algo=algo, src="./source_model_trained")
-    # Check that the prediction is the same after loading (for the same observation)
-    print("loaded", target_model.predict(obs, deterministic=True))
-
-    # as the environment is not serializable, we need to set a new instance of the environment
+    # As the environment is not serializable, we need to set a new instance of the environment
     target_env_monitor_with_TL = Monitor(target_env, log_dir_w_TL)
     target_model.set_env(target_env_monitor_with_TL)
-    callback_w_TL = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_w_TL)
-    # and continue training
-    target_model.learn(step_number_small, callback=callback_w_TL)
+    
+    # Not needed: callback_w_TL = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_w_TL)
+    
+    # Continue training on the target model
+    target_model.learn(step_number_small)
     if run_evaluation:
         print(">>[Target] Evaluate trained agent using source model:")
         evaluate(target_model, evaluation_step)
 
-    #### Train target model without transfer
+    ### ==================================================
+    ### Train target model from scratch (without transfer)
+    ### ==================================================
+
+    # Get monitor of the target environment as before
     target_env_monitor = Monitor(target_env, log_dir_wo_TL)
-    callback = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_wo_TL)
+    
+    # Not needed: callback = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_wo_TL)
+    
+    # Get a blank model and learn again
     target_model_wo_TL = get_model(policy_name, target_env_monitor, verbose=2, algo=algo)
-    target_model_wo_TL.learn(total_timesteps=step_number_small, callback=callback)
+    target_model_wo_TL.learn(total_timesteps=step_number_small)
     if run_evaluation:
         print(">>[Target] Evaluate trained agent without TL:")
         evaluate(target_model_wo_TL, evaluation_step)
 
-    ##### LOAD source model and train target domain with Reshape
-    loaded_src_model = source_model # can not load from file, since env will be empty
+    ### =======================================================
+    ### Train target model by using our reward shaping approach
+    ### =======================================================
+
+    # Get monitor of the target environment as before. Also, create a copy of the source model that is used in reshaping.
+    reshaping_source_model = copy.deepcopy(source_model)
     target_env_monitor_rs = Monitor(target_env, log_dir_w_TL_rs)
-    callback_w_TL_rs = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_w_TL_rs)
+    
+    # Not needed: callback_w_TL_rs = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_w_TL_rs)
+    
+    # Retrieve a reward shaping model on the target environment
     target_reward_reshaping_model = get_reward_shaping_model(policy_name=policy_name, env=target_env_monitor_rs,
-                                                            src_model=loaded_src_model, verbose=2, algo=algo,
+                                                            src_model=reshaping_source_model, verbose=2, algo=algo,
                                                             num_sampling_episodes=10)
-    target_reward_reshaping_model.learn(total_timesteps=step_number_small, callback=callback_w_TL_rs)
+    
+    # Learn this reward shaping model on the target environment
+    target_reward_reshaping_model.learn(total_timesteps=step_number_small)
     if run_evaluation:
         print(">>[Target] Evaluate trained agent with TL and Reward Shaping:")
         evaluate(target_reward_reshaping_model, evaluation_step)
 
-    ##### New model: source model + train with target + apply rs on top
-    loaded_src_model2 = source_model
-    loaded_src_model2.set_env(target_env)
-    loaded_src_model2.learn(total_timesteps=step_number_small)
-
+    """
+    # Get monitor of the target environment as before. Also, create a copy of the source model that is used in reshaping.
+    reshaping_source_model = copy.deepcopy(source_model)
     target_env_monitor_rs2 = Monitor(target_env, log_dir_w_full_TL_rs)
-    callback_w_full_TL_rs = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_w_full_TL_rs)
+    
+    # Not needed: callback_w_full_TL_rs = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_w_full_TL_rs)
+    
+    
     target_reward_reshaping_model2 = get_reward_shaping_model(policy_name=policy_name, env=target_env_monitor_rs2,
                                                             src_model=loaded_src_model2, verbose=2, algo=algo,
                                                             num_sampling_episodes=10)
+    
     target_reward_reshaping_model2.learn(total_timesteps=step_number_small, callback=callback_w_full_TL_rs)
     if run_evaluation:
         print(">>[Target] Evaluate trained agent with full TL and Reward Shaping:")
         evaluate(target_reward_reshaping_model2, evaluation_step)
+    """
