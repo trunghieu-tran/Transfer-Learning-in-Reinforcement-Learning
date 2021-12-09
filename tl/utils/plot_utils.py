@@ -131,10 +131,12 @@ def loading_all_exp_result_from_directory(dir, running_time_num=1):
 
 def extract_xy_for_plotting(dir, running_time_num, moving_window):
     x, y = loading_all_exp_result_from_directory(dir, running_time_num)
-    y_ave, y_std = get_avg_std(y)
 
-    y_ave = moving_average(y_ave, window=moving_window)
-    y_std = moving_average(y_std, window=moving_window)
+    y_moving_averages = []
+    for episode_reward_list in y:
+        y_moving_averages.append(moving_average(episode_reward_list, window=moving_window))
+
+    y_ave, y_std = get_avg_std(y_moving_averages)
 
     lower_list = [(x - y) for (x, y) in zip(y_ave, y_std)]
     upper_list = [(x + y) for (x, y) in zip(y_ave, y_std)]
