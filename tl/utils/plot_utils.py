@@ -148,7 +148,7 @@ def extract_xy_for_plotting(dir, running_time_num, moving_window):
 
     y_moving_averages = []
     for episode_reward_list in y:
-        y_moving_averages.append(moving_average(episode_reward_list, window=moving_window))
+        y_moving_averages.append(moving_average(episode_reward_list, window_size=moving_window))
 
     y_ave, y_std = get_avg_std(y_moving_averages)
 
