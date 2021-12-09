@@ -48,7 +48,7 @@ def transfer_execute(source_env,
     
     # Retrieve a reward shaping model on the target environment
     target_reward_reshaping_model = get_reward_shaping_model(policy_name=policy_name, env=target_env_monitor_rs,
-                                                            src_model=reshaping_source_model, verbose=2, algo=algo,
+                                                            src_model=source_model, verbose=2, algo=algo,
                                                             num_sampling_episodes=10)
     
     # Learn this reward shaping model on the target environment
