@@ -163,7 +163,8 @@ def plot_multiple_results_with_multiple_runing_time(log_dir_w_TL,
                                                     log_dir_w_TL_rs,
                                                     log_dir_wo_TL,
                                                     title='Learning Curve', moving_window=-1,
-                                                    running_time_num=1):
+                                                    running_time_num=1,
+                                                    figsize=(16,9)):
     """
     plot the results
 
@@ -182,7 +183,7 @@ def plot_multiple_results_with_multiple_runing_time(log_dir_w_TL,
     x_wo_TL, y_wo_TL, wo_TL_lower_list, wo_TL_upper_list = extract_xy_for_plotting(log_dir_wo_TL, running_time_num,
                                                                                moving_window)
 
-    plt.figure(title, figdim=(16,9))
+    plt.figure(title, figsize=figsize)
 
     plt.plot(x_wo_TL, y_wo_TL, marker='x', markersize=8, linestyle='-', color='b', label='Without TL', linewidth=3)
     plt.fill_between(x_wo_TL, wo_TL_lower_list, wo_TL_upper_list, color='lightblue', alpha=0.4)
