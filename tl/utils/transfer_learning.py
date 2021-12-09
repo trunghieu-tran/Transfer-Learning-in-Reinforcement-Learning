@@ -70,7 +70,7 @@ def transfer_execute(source_env,
     # As the environment is not serializable, we need to set a new instance of the environment
     target_env_monitor_with_TL = Monitor(target_env, log_dir_w_TL)
     target_model.set_env(target_env_monitor_with_TL)
-    
+
     # Not needed: callback_w_TL = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_w_TL)
     
     # Continue training on the target model
@@ -95,9 +95,11 @@ def transfer_execute(source_env,
         print(">>[Target] Evaluate trained agent without TL:")
         evaluate(target_model_wo_TL, evaluation_step)
 
+
     """
     # Get monitor of the target environment as before. Also, create a copy of the source model that is used in reshaping.
     reshaping_source_model = copy.deepcopy(source_model)
+
     target_env_monitor_rs2 = Monitor(target_env, log_dir_w_full_TL_rs)
     
     # Not needed: callback_w_full_TL_rs = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_w_full_TL_rs)
@@ -106,8 +108,9 @@ def transfer_execute(source_env,
     target_reward_reshaping_model2 = get_reward_shaping_model(policy_name=policy_name, env=target_env_monitor_rs2,
                                                             src_model=loaded_src_model2, verbose=2, algo=algo,
                                                             num_sampling_episodes=10)
-    
+
     target_reward_reshaping_model2.learn(total_timesteps=step_number_small, callback=callback_w_full_TL_rs)
+
     if run_evaluation:
         print(">>[Target] Evaluate trained agent with full TL and Reward Shaping:")
         evaluate(target_reward_reshaping_model2, evaluation_step)
