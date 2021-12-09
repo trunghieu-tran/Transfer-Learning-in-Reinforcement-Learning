@@ -16,7 +16,7 @@ def create_td3_reward_shaper(source_model, num_sampling_episodes):
 def create_dqn_reward_shaper(source_model, num_sampling_episodes):
     
     embeddings, q_vals = get_dqn_embeddings(source_model, num_sampling_episodes)
-    reward_shaper = DDPGRewardShaper(source_model, embeddings, q_vals, source_model.gamma)
+    reward_shaper = DQNRewardShaper(source_model, embeddings, q_vals, source_model.gamma)
     return reward_shaper
 
 class RewardShaper:
@@ -139,8 +139,11 @@ class DQNRewardShaper(RewardShaper):
         policy.set_training_mode(False)
 
         # Convert the observation and action to tensor for embedding calculation
-        tensor_obs, vectorized_env = policy.obs_to_tensor(state)
-        tensor_obs = tensor_obs.to(self.model.device)
+        if type(state) != th.Tensor:
+            tensor_obs, vectorized_env = policy.obs_to_tensor(state)
+        else:
+            tensor_obs = state
+        tensor_obs = th.reshape(tensor_obs, (1,-1)).to(self.model.device)
 
         # Do not keep the gradient computation graph
         with th.no_grad():
