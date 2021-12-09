@@ -41,7 +41,11 @@ def transfer_execute(source_env,
     ### Train target model by using our reward shaping approach
     ### =======================================================
     
-    # Get monitor of the target environment as before. 
+    # Reload the source model, which will effectively reset the replay buffer
+    source_model = source_model.load("./source_model_trained")
+    source_model.set_env(source_env)
+    
+    # Get monitor of the target environment.
     target_env_monitor_rs = Monitor(target_env, log_dir_w_TL_rs)
     
     # Not needed: callback_w_TL_rs = SaveOnBestTrainingRewardCallback(check_freq=callback_check_freq, log_dir=log_dir_w_TL_rs)
