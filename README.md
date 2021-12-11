@@ -18,6 +18,14 @@ A rough timeline of the project would be as follows:
 
 6. Analyze these results and begin writing the paper, noting the goal and contribution, related work, process, experiments, etc
 
+## Our presentations
+
+* Presentation 1 [here](https://docs.google.com/presentation/d/1BcU8_edTa50EC6Cxv-vd-XJShPOH5gRgiisUbYtAJXI/edit#slide=id.p)
+* Google Doc Folder [here](https://drive.google.com/drive/folders/17gtCWIyYdYkFkTXkSYCy4eERVDjVqPDb)
+
+## Our Google Colab
+
+https://colab.research.google.com/drive/1cQCV9Ko-prpB8sH6FlB4oj781On-ut_w?usp=sharing
 
 
 ## Install GYM
@@ -40,7 +48,7 @@ pip install -e .
 * We may need to install some dependencies, based on the hints when we run the `test.py`.
 * Don't add `gym` source code to our repository
 
-# Install Mujoco (optional)
+<!-- # Install Mujoco (optional)
 
 First way:
 1. Follow this: https://github.com/openai/mujoco-py/#install-mujoco
@@ -57,9 +65,9 @@ Unfortunately, I can not run Mujoco in Macbook M1. :(
 https://github.com/openai/mujoco-py/issues/605
 
 If you guys use linux, you can follow this
-https://www.chenshiyu.top/blog/2019/06/19/Tutorial-Installation-and-Configuration-of-MuJoCo-Gym-Baselines/
+https://www.chenshiyu.top/blog/2019/06/19/Tutorial-Installation-and-Configuration-of-MuJoCo-Gym-Baselines/ -->
 
-# Install Stable-Baseline3 (optional - since I added it to repos now)
+# Install Stable-Baseline3 (optional)
 
 Stable Baselines 3 [repo](https://github.com/DLR-RM/stable-baselines3)
 ```
@@ -111,11 +119,16 @@ Actions `gym.spaces`:
 
 ## How to run?
 
+### Run with python IDE
+
 1. Open `main.py`
 2. Modify `env_name` and `algorithm` that you want to run
 3. Modify parameters in `transfer_execute` function if needed
 4. Log will be printed out to the terminal and the plotting result will be shown on the new windows.
 
+### Run with Google Colab
+
+Follow our sample in file `Reward_Shaping_TL.ipynb` to run your own colab.
 
 ## Refercences
 
@@ -148,12 +161,4 @@ Actions `gym.spaces`:
 13. ACTOR-MIMIC DEEP MULTITASK AND TRANSFER REINFORCEMENT LEARNING ([paper](https://arxiv.org/pdf/1511.06342.pdf))
 14. DDPG ([link](https://spinningup.openai.com/en/latest/algorithms/ddpg.html))
 
-## Our presentations
-
-* Presentation 1 [here](https://docs.google.com/presentation/d/1BcU8_edTa50EC6Cxv-vd-XJShPOH5gRgiisUbYtAJXI/edit#slide=id.p)
-* Google Doc Folder [here](https://drive.google.com/drive/folders/17gtCWIyYdYkFkTXkSYCy4eERVDjVqPDb)
-
-## Our Google Colab
-
-https://colab.research.google.com/drive/1cQCV9Ko-prpB8sH6FlB4oj781On-ut_w?usp=sharing
 
