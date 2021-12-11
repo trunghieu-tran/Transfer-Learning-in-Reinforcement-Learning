@@ -150,7 +150,7 @@ Actions `gym.spaces`:
 
 ## Our presentations
 
-* Presentation 1 (Check file in our github repo)
+* Presentation 1 [here](https://docs.google.com/presentation/d/1BcU8_edTa50EC6Cxv-vd-XJShPOH5gRgiisUbYtAJXI/edit#slide=id.p)
 * Google Doc Folder [here](https://drive.google.com/drive/folders/17gtCWIyYdYkFkTXkSYCy4eERVDjVqPDb)
 
 ## Our Google Colab
