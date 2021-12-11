@@ -54,7 +54,7 @@ https://github.com/openai/mujoco-py/issues/605
 If you guys use linux, you can follow this
 https://www.chenshiyu.top/blog/2019/06/19/Tutorial-Installation-and-Configuration-of-MuJoCo-Gym-Baselines/ -->
 
-# Install Stable-Baseline3 (optional)
+<!-- # Install Stable-Baseline3 (optional)
 
 Stable Baselines 3 [repo](https://github.com/DLR-RM/stable-baselines3)
 ```
@@ -78,7 +78,7 @@ For example:
  
 ```
 python -m atari_py.import_roms "/Users/harrytran/OneDrive - The University of Texas at Dallas/Fall 2021/CS 7301/project"
-```
+``` -->
 
 
 ## How to run?
