@@ -80,6 +80,20 @@ For example:
 python -m atari_py.import_roms "/Users/harrytran/OneDrive - The University of Texas at Dallas/Fall 2021/CS 7301/project"
 ```
 
+
+## How to run?
+
+### Run with python IDE
+
+1. Open `main.py`
+2. Modify `env_name` and `algorithm` that you want to run
+3. Modify parameters in `transfer_execute` function if needed
+4. Log will be printed out to the terminal and the plotting result will be shown on the new windows.
+
+### Run with Google Colab
+
+Follow our sample in file `Reward_Shaping_TL.ipynb` to run your own colab.
+
 ## Implemented Algorithms in Stable-Baseline3 
 
 | **Name**         | **Recurrent**      | `Box`          | `Discrete`     | `MultiDiscrete` | `MultiBinary`  | **Multi Processing**              |
@@ -104,18 +118,6 @@ Actions `gym.spaces`:
  * `MultiBinary`: A list of possible actions, where each timestep any of the actions can be used in any combination.
 
 
-## How to run?
-
-### Run with python IDE
-
-1. Open `main.py`
-2. Modify `env_name` and `algorithm` that you want to run
-3. Modify parameters in `transfer_execute` function if needed
-4. Log will be printed out to the terminal and the plotting result will be shown on the new windows.
-
-### Run with Google Colab
-
-Follow our sample in file `Reward_Shaping_TL.ipynb` to run your own colab.
 
 ## Refercences
 
