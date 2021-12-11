@@ -153,9 +153,7 @@ Actions `gym.spaces`:
 * Presentation 1 (Check file in our github repo)
 * Google Doc Folder [here](https://drive.google.com/drive/folders/17gtCWIyYdYkFkTXkSYCy4eERVDjVqPDb)
 
-## Google Colab
+## Our Google Colab
 
-https://colab.research.google.com/drive/1NpICoFrJNTNOGjx8E7JcEedIZjbhDjnh
+https://colab.research.google.com/drive/1cQCV9Ko-prpB8sH6FlB4oj781On-ut_w?usp=sharing
 
-Stable Baselines3 - Getting Started
-https://colab.research.google.com/drive/1OTIlqgskIlnj48H0CRCy6mb63H-33sKf?usp=sharing
