@@ -15,7 +15,10 @@ In this paper, we approach the task of transfer learning between domains that di
 https://colab.research.google.com/drive/1cQCV9Ko-prpB8sH6FlB4oj781On-ut_w?usp=sharing
 
 
-## Install GYM
+## Setup
+
+1. Clone our repository
+2. Install Gym
 
 Using pip:
 
@@ -30,9 +33,6 @@ git clone https://github.com/openai/gym
 cd gym
 pip install -e .
 ```
-
-* We may need to install some dependencies, based on the hints when we run the `test.py`.
-* Don't add `gym` source code to our repository
 
 <!-- # Install Mujoco (optional)
 
