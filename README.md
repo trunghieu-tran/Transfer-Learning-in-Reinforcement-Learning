@@ -85,7 +85,7 @@ python -m atari_py.import_roms "/Users/harrytran/OneDrive - The University of Te
 
 ### Run with python IDE
 
-1. Open `main.py`
+1. Open `main.py`  or `main_multiple_run.py`
 2. Modify `env_name` and `algorithm` that you want to run
 3. Modify parameters in `transfer_execute` function if needed
 4. Log will be printed out to the terminal and the plotting result will be shown on the new windows.
