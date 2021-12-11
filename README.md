@@ -21,7 +21,6 @@ Using pip:
 
 ```
 pip install gym
-pip install Box2D
 ```
 
 Or Building from Source
@@ -134,7 +133,7 @@ Actions `gym.spaces`:
 
 
 
-### Related papers
+## Related papers
 1. Transfer Learning for Related Reinforcement Learning Tasks via Image-to-Image Translation ([paper](https://arxiv.org/pdf/1806.07377.pdf)), ([repo](https://github.com/ShaniGam/RL-GAN))
 2. Deep Transfer Reinforcement Learning for Text Summarization ([paper](https://arxiv.org/abs/1810.06667)),([repo](https://github.com/yaserkl/TransferRL)) 
 3. Using Transfer Learning Between Games to Improve Deep Reinforcement Learning Performance and Stability ([paper](https://web.stanford.edu/class/cs234/past_projects/2017/2017_Asawa_Elamri_Pan_Transfer_Learning_Paper.pdf)), ([poster](https://web.stanford.edu/class/cs234/past_projects/2017/2017_Asawa_Elamri_Pan_Transfer_Learning_Poster.pdf))
@@ -150,4 +149,7 @@ Actions `gym.spaces`:
 13. ACTOR-MIMIC DEEP MULTITASK AND TRANSFER REINFORCEMENT LEARNING ([paper](https://arxiv.org/pdf/1511.06342.pdf))
 14. DDPG ([link](https://spinningup.openai.com/en/latest/algorithms/ddpg.html))
 
-
+## Contributors
+1. Nathan Beck <nathan.beck@utdallas.edu>
+2. Abhiramon Rajasekharan <abhiramon.rajasekharan@utdallas.edu>
+3. Trung Hieu Tran <trunghieu.tran@utdallas.edu>
