@@ -1,6 +1,6 @@
 # Transfer-Learning-in-Reinforcement-Learning
-Transfer Learning in Reinforcement Learning project
 
+Transfer Reinforcement Learning for Differing Action Spaces via Q-Network Representations
 
 ## Final Report
 [Transfer Reinforcement Learning for Differing Action Spaces via Q-Network Representations](
