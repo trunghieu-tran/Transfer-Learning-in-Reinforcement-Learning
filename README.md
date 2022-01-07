@@ -1,6 +1,16 @@
 # Transfer-Learning-in-Reinforcement-Learning
 Transfer Learning in Reinforcement Learning project
 
+
+## Final Report
+[Transfer Reinforcement Learning for Differing Action Spaces via Q-Network Representations](
+https://github.com/saodem74/Transfer-Learning-in-Reinforcement-Learning/blob/d1f8f1d50c4b902720bbdd1c26ffc467a4d94d7e/Transfer%20Reinforcement%20Learning%20for%20Differing%20Action%20Spaces%20via%20Q-Network%20Representations.pdf)
+
+### Cite this work
+```
+Nathan Beck, Abhiramon Rajasekharan, Hieu Tran, "Transfer Reinforcement Learning for Differing Action Spaces via Q-Network Representations", 2021
+```
+
 ## Project description
 Transfer learning approaches in reinforcement learning aim to assist agents in learning their target domains by leveraging the knowledge learned from other agents that have been trained on similar source domains. For example, recent research focus within this space has been placed on knowledge transfer between tasks that have different transition dynamics and reward functions; however, little focus has been placed on knowledge transfer between tasks that have different action spaces. 
 
