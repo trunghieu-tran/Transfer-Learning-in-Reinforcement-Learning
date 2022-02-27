@@ -8,7 +8,14 @@ https://github.com/saodem74/Transfer-Learning-in-Reinforcement-Learning/blob/d1f
 
 ### Cite this work
 ```
-Nathan Beck, Abhiramon Rajasekharan, Hieu Tran, "Transfer Reinforcement Learning for Differing Action Spaces via Q-Network Representations", 2021
+@misc{beck2022transfer,
+    title={Transfer Reinforcement Learning for Differing Action Spaces via Q-Network Representations},
+    author={Nathan Beck and Abhiramon Rajasekharan and Hieu Tran},
+    year={2022},
+    eprint={2202.02442},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
 ```
 
 ## Project description
